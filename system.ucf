@@ -1,0 +1,9 @@
+
+# ==== Cloclk inputs (CLK) ====
+
+NET "clk" LOC = "P84" | IOSTANDARD = LVCMOS33;
+
+NET "pwm<0>" LOC = P78 | IOSTANDARD = LVCMOS33;
+#NET "pwm<1>" LOC = P80 | IOSTANDARD = LVCMOS33;
+#NET "pwm<2>" LOC = P82 | IOSTANDARD = LVCMOS33;	
+
