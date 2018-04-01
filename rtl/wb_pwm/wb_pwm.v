@@ -85,6 +85,8 @@ reg  ack;
 
 assign wb_ack_o = wb_stb_i & wb_cyc_i & ack;
 
+always @(*) wb_dat_o[7:0] <= dout;
+
 always @(posedge clk)
 begin
 	if (reset) begin
@@ -99,7 +101,7 @@ begin
 			rd <= 1;
 
 			adrs <= wb_adr_i;
-			wb_dat_o[7:0] <= dout;
+			//wb_dat_o[7:0] <= dout;
 
 		end else if (wb_wr & ~ack ) begin
 			ack <= 1;

@@ -139,39 +139,35 @@ typedef struct {
    volatile uint32_t en0;
    volatile uint32_t period0;
    volatile uint32_t duty0;
-
    volatile uint32_t en1;
    volatile uint32_t period1;
    volatile uint32_t duty1;
-   
    volatile uint32_t en2;
    volatile uint32_t period2;
    volatile uint32_t duty2;
-   
    volatile uint32_t en3;
    volatile uint32_t period3;
    volatile uint32_t duty3;
-   
    volatile uint32_t en4;
    volatile uint32_t period4;
    volatile uint32_t duty4;
-   
    volatile uint32_t en5;
    volatile uint32_t period5;
    volatile uint32_t duty5;
-   
    volatile uint32_t en6;
    volatile uint32_t period6;
    volatile uint32_t duty6;
-   
    volatile uint32_t en7;
    volatile uint32_t period7;
    volatile uint32_t duty7;
 } pwm_t;
 
-void pwm_en(int sel,int val);
-void pwm_period(int sel,int val);
-void pwm_duty(int sel,int val);
+void pwm_en(uint32_t sel,uint32_t val);
+void pwm_period(uint32_t sel,uint32_t val);
+void pwm_duty(uint32_t sel,uint32_t val);
+uint32_t pwm_geten(uint32_t sel);
+uint32_t pwm_getperiod(uint32_t sel);
+uint32_t pwm_getduty(uint32_t sel);
 
 
 /***************************************************************************
@@ -184,6 +180,7 @@ void pwm_duty(int sel,int val);
 extern timer_t  *timer0;
 extern uart_t   *uart0; 
 extern gpio_t   *gpio0; 
+extern pwm_t    *pwm0; 
 extern uint32_t *sram0; 
 
 #endif // SPIKEHW_H

@@ -175,7 +175,7 @@ char i2c_getchar();
  * PWM Functions
  */
 
-void pwm_en(int sel, int val){
+void pwm_en(uint32_t sel, uint32_t val){
 	switch(sel){
 		case 0:
 			pwm0->en0 = val;
@@ -210,7 +210,8 @@ void pwm_en(int sel, int val){
 			break;
 	}
 }
-void pwm_duty(int sel, int val){
+
+void pwm_duty(uint32_t sel, uint32_t val){
 	switch(sel){
 		case 0:
 			pwm0->duty0 = val;
@@ -246,7 +247,7 @@ void pwm_duty(int sel, int val){
 	}
 }
 
-void pwm_period(int sel, int val){
+void pwm_period(uint32_t sel, uint32_t val){
 	switch(sel){
 		case 0:
 			pwm0->period0 = val;
@@ -278,6 +279,114 @@ void pwm_period(int sel, int val){
 			
 		case 7:
 			pwm0->period7 = val;
+			break;
+	}
+}
+
+uint32_t pwm_geten(uint32_t sel){
+	switch(sel){
+		case 0:
+			return pwm0->en0;
+			break;
+
+		case 1:
+			return pwm0->en1;
+			break;
+			
+		case 2:
+			return pwm0->en2;
+			break;
+			
+		case 3:
+			return pwm0->en3;
+			break;
+			
+		case 4:
+			return pwm0->en4;
+			break;
+			
+		case 5:
+			return pwm0->en5;
+			break;
+			
+		case 6:
+			return pwm0->en6;
+			break;
+			
+		case 7:
+			return pwm0->en7;
+			break;
+	}
+}
+
+uint32_t pwm_getperiod(uint32_t sel){
+	switch(sel){
+		case 0:
+			return pwm0->period0;
+			break;
+
+		case 1:
+			return pwm0->period1;
+			break;
+			
+		case 2:
+			return pwm0->period2;
+			break;
+			
+		case 3:
+			return pwm0->period3;
+			break;
+			
+		case 4:
+			return pwm0->period4;
+			break;
+			
+		case 5:
+			return pwm0->period5;
+			break;
+			
+		case 6:
+			return pwm0->period6;
+			break;
+			
+		case 7:
+			return pwm0->period7;
+			break;
+	}
+}
+
+uint32_t pwm_getduty(uint32_t sel){
+	switch(sel){
+		case 0:
+			return pwm0->duty0;
+			break;
+
+		case 1:
+			return pwm0->duty1;
+			break;
+			
+		case 2:
+			return pwm0->duty2;
+			break;
+			
+		case 3:
+			return pwm0->duty3 ;
+			break;
+			
+		case 4:
+			return pwm0->duty4;
+			break;
+			
+		case 5:
+			return pwm0->duty5;
+			break;
+			
+		case 6:
+			return pwm0->duty6;
+			break;
+			
+		case 7:
+			return pwm0->duty7;
 			break;
 	}
 }
