@@ -162,9 +162,9 @@ typedef struct {
    volatile uint32_t duty7;
 } pwm_t;
 
-void pwm_en(uint32_t sel,uint32_t val);
-void pwm_period(uint32_t sel,uint32_t val);
-void pwm_duty(uint32_t sel,uint32_t val);
+void pwm_en(int sel,uint32_t val);
+void pwm_period(int sel,uint32_t val);
+void pwm_duty(int sel,uint32_t val);
 uint32_t pwm_geten(uint32_t sel);
 uint32_t pwm_getperiod(uint32_t sel);
 uint32_t pwm_getduty(uint32_t sel);
@@ -179,8 +179,7 @@ uint32_t pwm_getduty(uint32_t sel);
  */
 extern timer_t  *timer0;
 extern uart_t   *uart0; 
-extern gpio_t   *gpio0; 
-extern pwm_t    *pwm0; 
+extern gpio_t   *gpio0;
 extern uint32_t *sram0; 
 
 #endif // SPIKEHW_H

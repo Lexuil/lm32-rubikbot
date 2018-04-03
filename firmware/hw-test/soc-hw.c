@@ -175,218 +175,80 @@ char i2c_getchar();
  * PWM Functions
  */
 
-void pwm_en(uint32_t sel, uint32_t val){
-	switch(sel){
-		case 0:
-			pwm0->en0 = val;
-			break;
+void pwm_en(int sel, uint32_t val){
 
-		case 1:
-			pwm0->en1 = val;
-			break;
-			
-		case 2:
-			pwm0->en2 = val;
-			break;
-			
-		case 3:
-			pwm0->en3 = val;
-			break;
-			
-		case 4:
-			pwm0->en4 = val;
-			break;
-			
-		case 5:
-			pwm0->en5 = val;
-			break;
-			
-		case 6:
-			pwm0->en6 = val;
-			break;
-			
-		case 7:
-			pwm0->en7 = val;
-			break;
-	}
+	if(sel == 0) pwm0->en0 = val;
+	if(sel == 1) pwm0->en1 = val;
+	if(sel == 2) pwm0->en2 = val;
+	if(sel == 3) pwm0->en3 = val;
+	if(sel == 4) pwm0->en4 = val;
+	if(sel == 5) pwm0->en5 = val;
+	if(sel == 6) pwm0->en6 = val;
+	if(sel == 7) pwm0->en7 = val;
+
 }
 
-void pwm_duty(uint32_t sel, uint32_t val){
-	switch(sel){
-		case 0:
-			pwm0->duty0 = val;
-			break;
+void pwm_duty(int sel, uint32_t val){
 
-		case 1:
-			pwm0->duty1 = val;
-			break;
-			
-		case 2:
-			pwm0->duty2 = val;
-			break;
-			
-		case 3:
-			pwm0->duty3 = val;
-			break;
-			
-		case 4:
-			pwm0->duty4 = val;
-			break;
-			
-		case 5:
-			pwm0->duty5 = val;
-			break;
-			
-		case 6:
-			pwm0->duty6 = val;
-			break;
-			
-		case 7:
-			pwm0->duty7 = val;
-			break;
-	}
+	if(sel == 0) pwm0->duty0 = val;
+	if(sel == 1) pwm0->duty1 = val;
+	if(sel == 2) pwm0->duty2 = val;
+	if(sel == 3) pwm0->duty3 = val;
+	if(sel == 4) pwm0->duty4 = val;
+	if(sel == 5) pwm0->duty5 = val;
+	if(sel == 6) pwm0->duty6 = val;
+	if(sel == 7) pwm0->duty7 = val;
+
 }
 
-void pwm_period(uint32_t sel, uint32_t val){
-	switch(sel){
-		case 0:
-			pwm0->period0 = val;
-			break;
+void pwm_period(int sel, uint32_t val){
 
-		case 1:
-			pwm0->period1 = val;
-			break;
-			
-		case 2:
-			pwm0->period2 = val;
-			break;
-			
-		case 3:
-			pwm0->period3 = val;
-			break;
-			
-		case 4:
-			pwm0->period4 = val;
-			break;
-			
-		case 5:
-			pwm0->period5 = val;
-			break;
-			
-		case 6:
-			pwm0->period6 = val;
-			break;
-			
-		case 7:
-			pwm0->period7 = val;
-			break;
-	}
+	if(sel == 0) pwm0->period0 = val;
+	if(sel == 1) pwm0->period1 = val;
+	if(sel == 2) pwm0->period2 = val;
+	if(sel == 3) pwm0->period3 = val;
+	if(sel == 4) pwm0->period4 = val;
+	if(sel == 5) pwm0->period5 = val;
+	if(sel == 6) pwm0->period6 = val;
+	if(sel == 7) pwm0->period7 = val;
+
 }
 
 uint32_t pwm_geten(uint32_t sel){
-	switch(sel){
-		case 0:
-			return pwm0->en0;
-			break;
 
-		case 1:
-			return pwm0->en1;
-			break;
-			
-		case 2:
-			return pwm0->en2;
-			break;
-			
-		case 3:
-			return pwm0->en3;
-			break;
-			
-		case 4:
-			return pwm0->en4;
-			break;
-			
-		case 5:
-			return pwm0->en5;
-			break;
-			
-		case 6:
-			return pwm0->en6;
-			break;
-			
-		case 7:
-			return pwm0->en7;
-			break;
-	}
-}
+	if(sel == 0) return pwm0->en0;
+	if(sel == 1) return pwm0->en1;
+	if(sel == 2) return pwm0->en2;
+	if(sel == 3) return pwm0->en3;
+	if(sel == 4) return pwm0->en4;
+	if(sel == 5) return pwm0->en5;
+	if(sel == 6) return pwm0->en6;
+	if(sel == 7) return pwm0->en7;
 
-uint32_t pwm_getperiod(uint32_t sel){
-	switch(sel){
-		case 0:
-			return pwm0->period0;
-			break;
-
-		case 1:
-			return pwm0->period1;
-			break;
-			
-		case 2:
-			return pwm0->period2;
-			break;
-			
-		case 3:
-			return pwm0->period3;
-			break;
-			
-		case 4:
-			return pwm0->period4;
-			break;
-			
-		case 5:
-			return pwm0->period5;
-			break;
-			
-		case 6:
-			return pwm0->period6;
-			break;
-			
-		case 7:
-			return pwm0->period7;
-			break;
-	}
 }
 
 uint32_t pwm_getduty(uint32_t sel){
-	switch(sel){
-		case 0:
-			return pwm0->duty0;
-			break;
 
-		case 1:
-			return pwm0->duty1;
-			break;
-			
-		case 2:
-			return pwm0->duty2;
-			break;
-			
-		case 3:
-			return pwm0->duty3 ;
-			break;
-			
-		case 4:
-			return pwm0->duty4;
-			break;
-			
-		case 5:
-			return pwm0->duty5;
-			break;
-			
-		case 6:
-			return pwm0->duty6;
-			break;
-			
-		case 7:
-			return pwm0->duty7;
-			break;
-	}
+	if(sel == 0) return pwm0->duty0;
+	if(sel == 1) return pwm0->duty1;
+	if(sel == 2) return pwm0->duty2;
+	if(sel == 3) return pwm0->duty3;
+	if(sel == 4) return pwm0->duty4;
+	if(sel == 5) return pwm0->duty5;
+	if(sel == 6) return pwm0->duty6;
+	if(sel == 7) return pwm0->duty7;
+	
+}
+
+uint32_t pwm_getperiod(uint32_t sel){
+
+	if(sel == 0) return pwm0->period0;
+	if(sel == 1) return pwm0->period1;
+	if(sel == 2) return pwm0->period2;
+	if(sel == 3) return pwm0->period3;
+	if(sel == 4) return pwm0->period4;
+	if(sel == 5) return pwm0->period5;
+	if(sel == 6) return pwm0->period6;
+	if(sel == 7) return pwm0->period7;
+	
 }
