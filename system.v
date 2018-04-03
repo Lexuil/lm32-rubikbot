@@ -25,9 +25,6 @@ module system
 	input             spi_miso, 
 	output            spi_mosi,
 	output            spi_clk,
-	// 12c
-	inout             i2c_sda, 
-	inout             i2c_scl,
 	// pwm
 	output    [7:0]   pwm
 	
@@ -52,9 +49,7 @@ wire [31:0]  lm32i_adr,
              lm32d_adr,
              uart0_adr,
              spi0_adr,
-             i2c0_adr,
              timer0_adr,
-             gpio0_adr,
              pwm0_adr,
              ddr0_adr,
              bram0_adr,
@@ -69,12 +64,8 @@ wire [31:0]  lm32i_dat_r,
              uart0_dat_w,
              spi0_dat_r,
              spi0_dat_w,
-             i2c0_dat_r,
-             i2c0_dat_w,
              timer0_dat_r,
              timer0_dat_w,
-             gpio0_dat_r,
-             gpio0_dat_w,
              pwm0_dat_r,
              pwm0_dat_w,
              bram0_dat_r,
@@ -88,9 +79,7 @@ wire [3:0]   lm32i_sel,
              lm32d_sel,
              uart0_sel,
              spi0_sel,
-             i2c0_sel,
              timer0_sel,
-             gpio0_sel,
              pwm0_sel,
              bram0_sel,
              sram0_sel,
@@ -100,9 +89,7 @@ wire         lm32i_we,
              lm32d_we,
              uart0_we,
              spi0_we,
-             i2c0_we,
              timer0_we,
-             gpio0_we,
              pwm0_we,
              bram0_we,
              sram0_we,
@@ -113,9 +100,7 @@ wire         lm32i_cyc,
              lm32d_cyc,
              uart0_cyc,
              spi0_cyc,
-             i2c0_cyc,
              timer0_cyc,
-             gpio0_cyc,
              pwm0_cyc,
              bram0_cyc,
              sram0_cyc,
@@ -126,9 +111,7 @@ wire         lm32i_stb,
              lm32d_stb,
              uart0_stb,
              spi0_stb,
-             i2c0_stb,
              timer0_stb,
-             gpio0_stb,
              pwm0_stb,
              bram0_stb,
              sram0_stb,
@@ -138,9 +121,7 @@ wire         lm32i_ack,
              lm32d_ack,
              uart0_ack,
              spi0_ack,
-             i2c0_ack,
              timer0_ack,
-             gpio0_ack,
              pwm0_ack,
              bram0_ack,
              sram0_ack,
@@ -168,10 +149,9 @@ wire [1:0]   lm32i_bte,
 wire [31:0]  intr_n;
 wire         uart0_intr = 0;
 wire [1:0]   timer0_intr;
-wire         gpio0_intr;
 wire         pwm0_intr;
 
-assign intr_n = { 27'h7FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~gpio0_intr, ~timer0_intr[0], ~uart0_intr };
+assign intr_n = { 27'h7FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~timer0_intr[0], ~uart0_intr };
 
 //---------------------------------------------------------------------------
 // Wishbone Interconnect
@@ -179,12 +159,10 @@ assign intr_n = { 27'h7FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~gpio0_intr, ~timer0
 conbus #(
 	.s_addr_w(3),
 	.s0_addr(3'b000),	// bram     0x00000000 
-	.s1_addr(3'b001),	// uart0    0x10000000 
-	.s2_addr(3'b010),	// timer    0x20000000 
-	.s3_addr(3'b011),   // gpio     0x30000000 
-	.s4_addr(3'b100),	// spi      0x40000000 
-	.s5_addr(3'b101),	// i2c      0x50000000 
-	.s6_addr(3'b110)	// pwm      0x60000000 
+	.s1_addr(3'b010),	// uart0    0x20000000 
+	.s2_addr(3'b011),	// timer    0x30000000
+	.s4_addr(3'b100),	// spi      0x40000000
+	.s5_addr(3'b101)	// pwm      0x50000000 
 ) conbus0(
 	.sys_clk( clk ),
 	.sys_rst( ~rst ),
@@ -235,15 +213,6 @@ conbus #(
 	.s2_cyc_o(  timer0_cyc   ),
 	.s2_stb_o(  timer0_stb   ),
 	.s2_ack_i(  timer0_ack   ),
-	// Slave3
-	.s3_dat_i(  gpio0_dat_r ),
-	.s3_dat_o(  gpio0_dat_w ),
-	.s3_adr_o(  gpio0_adr   ),
-	.s3_sel_o(  gpio0_sel   ),
-	.s3_we_o(   gpio0_we    ),
-	.s3_cyc_o(  gpio0_cyc   ),
-	.s3_stb_o(  gpio0_stb   ),
-	.s3_ack_i(  gpio0_ack   ),
 	// Slave4
 	.s4_dat_i(  spi0_dat_r ),
 	.s4_dat_o(  spi0_dat_w ),
@@ -254,23 +223,14 @@ conbus #(
 	.s4_stb_o(  spi0_stb   ),
 	.s4_ack_i(  spi0_ack   ),
 	// Slave5
-	.s5_dat_i(  i2c0_dat_r ),
-	.s5_dat_o(  i2c0_dat_w ),
-	.s5_adr_o(  i2c0_adr   ),
-	.s5_sel_o(  i2c0_sel   ),
-	.s5_we_o(   i2c0_we    ),
-	.s5_cyc_o(  i2c0_cyc   ),
-	.s5_stb_o(  i2c0_stb   ),
-	.s5_ack_i(  i2c0_ack   ),
-	// Slave6
-	.s6_dat_i(  pwm0_dat_r ),
-	.s6_dat_o(  pwm0_dat_w ),
-	.s6_adr_o(  pwm0_adr   ),
-	.s6_sel_o(  pwm0_sel   ),
-	.s6_we_o(   pwm0_we    ),
-	.s6_cyc_o(  pwm0_cyc   ),
-	.s6_stb_o(  pwm0_stb   ),
-	.s6_ack_i(  pwm0_ack   )
+	.s5_dat_i(  pwm0_dat_r ),
+	.s5_dat_o(  pwm0_dat_w ),
+	.s5_adr_o(  pwm0_adr   ),
+	.s5_sel_o(  pwm0_sel   ),
+	.s5_we_o(   pwm0_we    ),
+	.s5_cyc_o(  pwm0_cyc   ),
+	.s5_stb_o(  pwm0_stb   ),
+	.s5_ack_i(  pwm0_ack   )
 	
 );
 
@@ -383,27 +343,6 @@ wb_spi  spi0 (
 	.spi_mosi( spi0_mosi ),
 	.spi_miso( spi0_miso )
 );
-//---------------------------------------------------------------------------
-// i2c0
-//---------------------------------------------------------------------------
- wire i2c0_sda;
- wire i2c0_scl;
-
-// TODO : interruption and asynchronous reset
- i2c_master_wb_top  i2c0 (
- 	.wb_clk_i( clk ),
-	.wb_rst_i( ~rst ),
-	//
-	.wb_adr_i( i2c0_adr ),
-	.wb_dat_i( i2c0_dat_w ),
-	.wb_dat_o( i2c0_dat_r ),
-	.wb_stb_i( i2c0_stb ),
-	.wb_cyc_i( i2c0_cyc ),
-	.wb_we_i(  i2c0_we ),
-	.wb_ack_o( i2c0_ack ), 
-	.scl(i2c0_scl),
-	.sda( i2c0_sda )
-);
 
 //---------------------------------------------------------------------------
 // timer0
@@ -426,28 +365,6 @@ wb_timer #(
 );
 
 //---------------------------------------------------------------------------
-// General Purpose IO
-//---------------------------------------------------------------------------
-
-wire [7:0] gpio0_io;
-wire        gpio0_irq;
-
-wb_gpio gpio0 (
-	.clk(      clk          ),
-	.rst(    ~rst          ),
-	//
-	.wb_adr_i( gpio0_adr    ),
-	.wb_dat_i( gpio0_dat_w  ),
-	.wb_dat_o( gpio0_dat_r  ),
-	.wb_stb_i( gpio0_stb    ),
-	.wb_cyc_i( gpio0_cyc    ),
-	.wb_we_i(  gpio0_we     ),
-	.wb_ack_o( gpio0_ack    ), 
-	// GPIO
-	.gpio_io(gpio0_io)
-);
-
-//---------------------------------------------------------------------------
 // PWM
 //---------------------------------------------------------------------------
 
@@ -463,7 +380,7 @@ wb_pwm pwm0 (
 	.wb_we_i(  pwm0_we     ),
 	.wb_ack_o( pwm0_ack    ), 
 	.wb_sel_i( timer0_sel   ),
-	// GPIO
+	// pwm
 	.pwmo(pwm)
 );
 
@@ -477,7 +394,4 @@ assign led       = ~uart_txd;
 assign spi_mosi  = spi0_mosi;
 assign spi0_miso = spi_miso;
 assign spi_clk = spi0_clk;
-
-assign i2c_sda = i2c0_sda;
-assign i2c_scl = i2c0_scl;
 endmodule 

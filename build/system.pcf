@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 03 14:01:29 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "pwm<0>" LOCATE = SITE "P78" LEVEL 1;
+COMP "pwm<2>" LOCATE = SITE "P82" LEVEL 1;
+SCHEMATIC END;
+

@@ -69,19 +69,6 @@ void tic_init();
 
 
 /***************************************************************************
- * GPIO0
- */
-typedef struct {
-	volatile uint32_t ctrl;
-	volatile uint32_t dummy1;
-	volatile uint32_t dummy2;
-	volatile uint32_t dummy3;
-	volatile uint32_t in;
-	volatile uint32_t out;
-	volatile uint32_t oe;
-} gpio_t;
-
-/***************************************************************************
  * UART0
  */
 #define UART_DR   0x01                    // RX Data Ready
@@ -113,23 +100,6 @@ typedef struct {
 void spi_init();
 void spi_putchar(char c);
 char spi_getchar();
-
-
-/***************************************************************************
- * I2C0
- */
-#define I2C_TIP 0x02
-typedef struct {
-   volatile uint8_t prerl;
-   volatile uint8_t prerh;
-   volatile uint8_t ctr;
-   volatile uint8_t TxRx;
-   volatile uint8_t crsr;
-} i2c_t;
-
-void i2c_init();
-void i2c_putchar(char c);
-char i2c_getchar();
 
 
 /***************************************************************************
@@ -178,8 +148,7 @@ uint32_t pwm_getduty(uint32_t sel);
  * Pointer to actual components
  */
 extern timer_t  *timer0;
-extern uart_t   *uart0; 
-extern gpio_t   *gpio0;
+extern uart_t   *uart0;
 extern uint32_t *sram0; 
 
 #endif // SPIKEHW_H

@@ -5,22 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 179: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 159: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 370: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 330: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 393: Port <arg fmt="%s" index="1">arst_i</arg> is not connected to this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 242: Assignment to <arg fmt="%s" index="1">gpio0_sel</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 260: Assignment to <arg fmt="%s" index="1">i2c0_sel</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 269: Assignment to <arg fmt="%s" index="1">pwm0_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 229: Assignment to <arg fmt="%s" index="1">pwm0_sel</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
@@ -35,22 +26,22 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 294: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 254: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 295: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 255: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 296: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 256: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 308: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 268: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 309: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 269: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 310: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 270: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
@@ -72,21 +63,6 @@
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_i2c/i2c_master_byte_ctrl.v" Line 228: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_byte_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_i2c/i2c_master_bit_ctrl.v" Line 360: Found full_case directive in module <arg fmt="%s" index="1">i2c_master_bit_ctrl</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 397: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_adr_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">3</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 398: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 399: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wb_dat_o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/counter.v" Line 22: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
@@ -125,28 +101,22 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 108: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 150: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 131: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 151: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 132: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 153: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 134: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 154: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 135: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 171: Net &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 152: Net &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 172: Net &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 188: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 393: Input port <arg fmt="%s" index="1">arst_i</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 166: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
@@ -158,61 +128,70 @@
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m1_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">arst_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">i2c0</arg>&apos;, is tied to GND.
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s3_dat_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s3_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s3_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s6_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">188</arg>: Output port &lt;<arg fmt="%s" index="3">s6_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">281</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">370</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">393</arg>: Output port &lt;<arg fmt="%s" index="3">wb_inta_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2c0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -225,9 +204,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">gpio0_intr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -284,76 +260,76 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;17&gt;</arg>&lt;<arg fmt="%d" index="2">18</arg>:<arg fmt="%d" index="3">18</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;28&gt;</arg>&lt;<arg fmt="%d" index="2">29</arg>:<arg fmt="%d" index="3">29</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;27&gt;</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">28</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">25</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;23&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">16</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;15&gt;</arg>&lt;<arg fmt="%d" index="2">19</arg>:<arg fmt="%d" index="3">19</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;14&gt;</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">15</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">15</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;14&gt;</arg>&lt;<arg fmt="%d" index="2">18</arg>:<arg fmt="%d" index="3">18</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">25</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;23&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;17&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">8</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;28&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;27&gt;</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">28</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">29</arg>:<arg fmt="%d" index="3">29</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;11&gt;</arg>&lt;<arg fmt="%d" index="2">12</arg>:<arg fmt="%d" index="3">12</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">11</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">11</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">9</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">16</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_uart</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -368,22 +344,10 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk_cnt</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_sel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;31:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_adr_i&lt;31:7&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -395,10 +359,22 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wb_dat_i&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;23&gt;</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">9</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;29&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;28&gt;</arg>&lt;<arg fmt="%d" index="2">29</arg>:<arg fmt="%d" index="3">29</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
@@ -407,73 +383,55 @@
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;27&gt;</arg>&lt;<arg fmt="%d" index="2">28</arg>:<arg fmt="%d" index="3">28</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;26&gt;</arg>&lt;<arg fmt="%d" index="2">27</arg>:<arg fmt="%d" index="3">27</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">25</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;24&gt;</arg>&lt;<arg fmt="%d" index="2">26</arg>:<arg fmt="%d" index="3">26</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">24</arg>:<arg fmt="%d" index="3">24</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;21&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;20&gt;</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">21</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;15&gt;</arg>&lt;<arg fmt="%d" index="2">16</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;14&gt;</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">15</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;10&gt;</arg>&lt;<arg fmt="%d" index="2">12</arg>:<arg fmt="%d" index="3">12</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;9&gt;</arg>&lt;<arg fmt="%d" index="2">10</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">9</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;30&gt;</arg>&lt;<arg fmt="%d" index="2">8</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">30</arg>:<arg fmt="%d" index="3">30</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;23&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">19</arg>:<arg fmt="%d" index="3">19</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;18&gt;</arg>&lt;<arg fmt="%d" index="2">20</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;17&gt;</arg>&lt;<arg fmt="%d" index="2">18</arg>:<arg fmt="%d" index="3">18</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;11&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;15&gt;</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;13&gt;</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">15</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;12&gt;</arg>&lt;<arg fmt="%d" index="2">13</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;31&gt;</arg>&lt;<arg fmt="%d" index="2">12</arg>:<arg fmt="%d" index="3">12</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;25&gt;</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">31</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;22&gt;</arg>&lt;<arg fmt="%d" index="2">25</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;19&gt;</arg>&lt;<arg fmt="%d" index="2">22</arg>:<arg fmt="%d" index="3">22</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;16&gt;</arg>&lt;<arg fmt="%d" index="2">19</arg>:<arg fmt="%d" index="3">19</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;14&gt;</arg>&lt;<arg fmt="%d" index="2">16</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;11&gt;</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o&lt;8&gt;</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">11</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_pwm</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">i_cyc_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">instruction_unit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_stb_o&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">gpio0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">23 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wb_dat_o_9&gt; &lt;wb_dat_o_10&gt; &lt;wb_dat_o_11&gt; &lt;wb_dat_o_12&gt; &lt;wb_dat_o_13&gt; &lt;wb_dat_o_14&gt; &lt;wb_dat_o_15&gt; &lt;wb_dat_o_16&gt; &lt;wb_dat_o_17&gt; &lt;wb_dat_o_18&gt; &lt;wb_dat_o_19&gt; &lt;wb_dat_o_20&gt; &lt;wb_dat_o_21&gt; &lt;wb_dat_o_22&gt; &lt;wb_dat_o_23&gt; &lt;wb_dat_o_24&gt; &lt;wb_dat_o_25&gt; &lt;wb_dat_o_26&gt; &lt;wb_dat_o_27&gt; &lt;wb_dat_o_28&gt; &lt;wb_dat_o_29&gt; &lt;wb_dat_o_30&gt; &lt;wb_dat_o_31&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">gpio0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_dat_o_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -653,9 +611,6 @@
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">d_adr_o_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">load_store_unit</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">wb_dat_o</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">wb_gpio</arg>&gt;.
-</msg>
-
 <msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_registers</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
@@ -754,12 +709,7 @@
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_adr_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_instruction_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">wb_gpio</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ip_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ip_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -840,16 +790,13 @@
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ip_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ip_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -930,7 +877,7 @@
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ip_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">lm32_interrupt</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1419,16 +1366,16 @@
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/multiplier/multiplier_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/operand_1_x_29&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">system</arg>&gt;, final ratio is <arg fmt="%i" index="2">149</arg>.
+<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">system</arg>&gt;, final ratio is <arg fmt="%i" index="2">135</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/size_m_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">16 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_15_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_14_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_13_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_12_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_11_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_10_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_9_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_8_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_31_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_30_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_29_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_28_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_27_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_26_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_25_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/m_result_sel_compare_x</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/m_bypass_enable_x_BRB3&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/store_data_m_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_8_BRB1&gt; &lt;lm0/load_store_unit/store_data_m_16_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB4&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/size_m_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">16 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_15_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_14_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_13_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_12_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_11_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_10_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_9_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_8_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_31_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_30_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_29_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_28_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_27_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_26_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_25_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_24_BRB0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/load_store_unit/store_data_m_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/load_store_unit/store_data_m_9_BRB1&gt; &lt;lm0/load_store_unit/store_data_m_17_BRB0&gt; &lt;lm0/load_store_unit/store_data_m_25_BRB4&gt; </arg>
