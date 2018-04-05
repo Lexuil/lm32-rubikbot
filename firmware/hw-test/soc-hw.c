@@ -216,3 +216,49 @@ uint32_t pwm_getperiod(uint32_t sel){
 	return 0;
 	
 }
+
+/***************************************************************************
+ * ARM Functions
+ */
+
+void arm::home(){
+	pwm_duty(serv2,DER);
+	msleep(1000);
+	pwm_duty(serv1,MID);
+	msleep(1000);
+	pwm_duty(serv2,IZ);
+}
+
+void arm::derecha(){
+	pwm_duty(serv1,MID);
+	msleep(1000);
+	pwm_duty(serv1,DER);
+	msleep(1000);
+	pwm_duty(serv2,IZ);
+	msleep(1000);
+	pwm_duty(serv1,MID);
+	msleep(1000);
+	pwm_duty(serv2,DER);
+}
+void arm::izquierda(){
+	pwm_duty(serv1,MID);
+	msleep(1000);
+	pwm_duty(serv1,IZ);
+	msleep(1000);
+	pwm_duty(serv2,IZ);
+	msleep(1000);
+	pwm_duty(serv1,MID);
+	msleep(1000);
+	pwm_duty(serv2,DER);
+}
+
+void arm::set_serv(int x,int y){
+	serv1 = x;
+	serv2 = y;
+	pwm_period(serv1,200);
+	pwm_period(serv2,200);
+	pwm_duty(serv1,MID);
+	pwm_duty(serv2,IZ);
+	pwm_en(serv1,1);
+	pwm_en(serv2,1);
+}

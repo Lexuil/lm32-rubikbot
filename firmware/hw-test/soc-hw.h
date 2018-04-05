@@ -13,6 +13,10 @@
 
 #define UART_RXBUFSIZE 32
 
+#define DER 25
+#define IZ  5
+#define MID 15
+
 
 /****************************************************************************
  * Types
@@ -140,11 +144,26 @@ uint32_t pwm_getperiod(uint32_t sel);
 uint32_t pwm_getduty(uint32_t sel);
 
 
+/**************************************************************************
+   Arm class
+*/
+
+
+
+class  arm{
+   int serv1,serv2;
+
+   public:
+      void derecha();
+      void izquierda();
+      void home();
+      void set_serv(int,int);
+};
+
+
+
+
 /***************************************************************************
-
-
-
-
  * Pointer to actual components
  */
 extern timer_t  *timer0;
