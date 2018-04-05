@@ -185,6 +185,7 @@ uint32_t pwm_geten(uint32_t sel){
 	if(sel == 5) return pwm0->en5;
 	if(sel == 6) return pwm0->en6;
 	if(sel == 7) return pwm0->en7;
+	return 0;
 
 }
 
@@ -198,6 +199,7 @@ uint32_t pwm_getduty(uint32_t sel){
 	if(sel == 5) return pwm0->duty5;
 	if(sel == 6) return pwm0->duty6;
 	if(sel == 7) return pwm0->duty7;
+	return 0;
 	
 }
 
@@ -211,5 +213,6 @@ uint32_t pwm_getperiod(uint32_t sel){
 	if(sel == 5) return pwm0->period5;
 	if(sel == 6) return pwm0->period6;
 	if(sel == 7) return pwm0->period7;
+	return 0;
 	
 }

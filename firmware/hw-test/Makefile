@@ -1,4 +1,4 @@
-LM32_CC=lm32-elf-gcc
+LM32_CC=lm32-elf-g++
 LM32_LD=lm32-elf-ld
 LM32_OBJCOPY=lm32-elf-objcopy
 LM32_OBJDUMP=lm32-elf-objdump

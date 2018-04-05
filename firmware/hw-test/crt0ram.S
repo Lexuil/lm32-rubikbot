@@ -135,6 +135,9 @@ _crt0:
 	mvi     r3, 0
 	calli   main
 
+irq_handler:
+	ret
+
 irq_enable:
 	mvi     r1, 1
 	wcsr	IE, r1

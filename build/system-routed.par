@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ubuntu::  Tue Apr 03 14:01:31 2018
+ubuntu::  Wed Apr 04 21:16:53 2018
 
 par -ol high -w system.ncd system-routed.ncd 
 
@@ -102,8 +102,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 5 secs 
-Finished initial Timing Analysis.  REAL time: 5 secs 
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
 
 Starting Router
 
@@ -112,9 +112,9 @@ Phase  1  : 13228 unrouted;      REAL time: 5 secs
 
 Phase  2  : 11497 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 7730 unrouted;      REAL time: 16 secs 
+Phase  3  : 7730 unrouted;      REAL time: 15 secs 
 
-Phase  4  : 7730 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  4  : 7730 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
 Updating file: system-routed.ncd with current fully routed design.
 
@@ -126,11 +126,11 @@ Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4
 
 Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 45 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 45 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 46 secs 
-Total REAL time to Router completion: 46 secs 
-Total CPU time to Router completion: 47 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
+Total REAL time to Router completion: 47 secs 
+Total CPU time to Router completion: 48 secs 
 
 Partition Implementation Status
 -------------------------------
