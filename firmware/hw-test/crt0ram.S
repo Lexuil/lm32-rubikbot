@@ -29,7 +29,6 @@
 	.global     irq_enable, irq_disable, irq_set_mask, irq_get_mask
 	.global     jump, halt
 	.global     get_sp, get_gp
-	.extern irq_handler
 
 _start:    
 _reset_handler:
@@ -96,7 +95,7 @@ _interrupt_handler:
 	sw      (sp+0), ra
 	calli   _save_all
 	rcsr	r1, IP 
-	calli   irq_handler_tmp
+	calli   irq_handler
 	mvhi    r1, 0xffff
 	ori     r1, r1, 0xffff
 	wcsr	IP, r1 
@@ -246,7 +245,4 @@ get_sp:
 
 get_gp:
 	mv      r1, gp
-	ret       
-
-irq_handler_tmp:
 	ret

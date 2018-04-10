@@ -1,3 +1,8 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #ifndef SPIKEHW_H
 #define SPIKEHW_H
 
@@ -33,7 +38,7 @@ void     irq_disable();
 void     irq_set_mask(uint32_t mask);
 uint32_t irq_get_mak();
 
-void irq_handler(uint32_t pending);
+//void irq_handler(uint32_t pending);
 
 
 void     isr_init();
@@ -111,4 +116,9 @@ char spi_getchar();
 extern timer_t  *timer0;
 extern uart_t   *uart0;
 extern uint32_t *sram0;
+
 #endif // SPIKEHW_H
+
+#ifdef __cplusplus
+}
+#endif

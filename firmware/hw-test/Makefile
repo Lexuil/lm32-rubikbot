@@ -14,13 +14,13 @@ SEGMENTS = -j .text -j .rodata -j .data
 all: image.srec $(VRAMFILE) 
 
 crt0ram.o: crt0ram.S
-	$(LM32_CCP) $(CFLAGS) -c crt0ram.S
+	$(LM32_CC) $(CFLAGS) -c crt0ram.S
 
 main.o: main.c
 	$(LM32_CCP) $(CFLAGS) -c main.c
 
 soc-hw.o: soc-hw.c
-	$(LM32_CCP) $(CFLAGS) -c soc-hw.c
+	$(LM32_CC) $(CFLAGS) -c soc-hw.c
 
 pwm.o: pwm.cpp
 	$(LM32_CCP) $(CFLAGS) -c pwm.cpp

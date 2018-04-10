@@ -1,6 +1,5 @@
 #include "pwm.h"
 
-
 void pwm::pause(){
 
 	msleep(1000);

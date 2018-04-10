@@ -1,16 +1,15 @@
 #include "servos.h"
 
 void arm::home(){
-	pwm_duty(serv2,DER);
+	pwm_duty(serv2,IZ);
 	pause();
 	pwm_duty(serv1,MID);
 	pause();
-	pwm_duty(serv2,IZ);
+	pwm_duty(serv2,DER);
+	pause();
 };
 
 void arm::derecha(){
-	pwm_duty(serv1,MID);
-	pause();
 	pwm_duty(serv1,DER);
 	pause();
 	pwm_duty(serv2,IZ);
@@ -18,11 +17,10 @@ void arm::derecha(){
 	pwm_duty(serv1,MID);
 	pause();
 	pwm_duty(serv2,DER);
+	pause();
 };
 
 void arm::izquierda(){
-	pwm_duty(serv1,MID);
-	pause();
 	pwm_duty(serv1,IZ);
 	pause();
 	pwm_duty(serv2,IZ);
@@ -30,6 +28,7 @@ void arm::izquierda(){
 	pwm_duty(serv1,MID);
 	pause();
 	pwm_duty(serv2,DER);
+	pause();
 };
 
 void arm::set_serv(int x,int y){
@@ -41,4 +40,5 @@ void arm::set_serv(int x,int y){
 	pwm_duty(serv2,IZ);
 	pwm_en(serv1,1);
 	pwm_en(serv2,1);
+	pause();
 };
