@@ -3,7 +3,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=10413f8997f24845b523c36d10372a0d
+ProjectID=fd7490d07c4b4292adeb16554407c62b
 ProjectIteration=2
 
 WebTalk Summary
@@ -13,4 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - /home/lexuil/Documents/GitHub/lm32-rubikbot/build/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - /home/lexuil/Documents/lm32-rubikbot/build/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

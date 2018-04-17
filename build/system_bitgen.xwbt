@@ -1,7 +1,7 @@
-INFILE=/home/lexuil/Documents/GitHub/lm32-rubikbot/build/system-routed.ncd
-OUTFILE=/home/lexuil/Documents/GitHub/lm32-rubikbot/build/system.bit
+INFILE=/home/lexuil/Documents/lm32-rubikbot/build/system-routed.ncd
+OUTFILE=/home/lexuil/Documents/lm32-rubikbot/build/system.bit
 FAMILY=Spartan6
 PART=xc6slx4-2tqg144
-WORKINGDIR=/home/lexuil/Documents/GitHub/lm32-rubikbot/build
+WORKINGDIR=/home/lexuil/Documents/lm32-rubikbot/build
 LICENSE=WebPack
 USER_INFO=211315887_0_0_657
