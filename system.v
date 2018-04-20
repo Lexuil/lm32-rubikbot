@@ -11,7 +11,7 @@ module system
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
 	parameter   bootram_file     = "../firmware/hw-test/image.ram",
 	parameter   clk_freq         = 50000000,
-	parameter   uart_baud_rate   = 115200
+	parameter   uart_baud_rate   = 38400
 ) (
 	input             clk,
 	// Debug 

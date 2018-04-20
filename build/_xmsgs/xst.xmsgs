@@ -5,121 +5,121 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 159: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 159: Port <arg fmt="%s" index="1">m0_cti_i</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 330: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 330: Port <arg fmt="%s" index="1">spi_cs</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 229: Assignment to <arg fmt="%s" index="1">pwm0_sel</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 229: Assignment to <arg fmt="%s" index="1">pwm0_sel</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 461: Assignment to <arg fmt="%s" index="1">pc_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_simtrace.v" Line 20: Empty module &lt;<arg fmt="%s" index="1">lm32_simtrace</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_decoder.v" Line 559: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">30</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to <arg fmt="%s" index="1">x_result_sel_logic_x</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 254: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 254: Assignment to <arg fmt="%s" index="1">lm32i_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 255: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 255: Assignment to <arg fmt="%s" index="1">lm32i_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 256: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 256: Assignment to <arg fmt="%s" index="1">lm32i_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 268: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 268: Assignment to <arg fmt="%s" index="1">lm32d_cti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 269: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 269: Assignment to <arg fmt="%s" index="1">lm32d_lock</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 270: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 270: Assignment to <arg fmt="%s" index="1">lm32d_bte</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 39: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 88: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 135: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lac/uart.v" Line 138: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_spi/wb_spi.v" Line 57: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_spi/wb_spi.v" Line 63: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/counter.v" Line 22: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/counter.v" Line 22: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/counter.v" Line 26: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/counter.v" Line 26: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 88: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 88: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 92: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 92: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 96: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 96: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 100: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 100: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 104: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 104: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 108: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 108: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 112: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 112: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 116: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 116: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 108: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 108: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 131: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 131: Net &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 132: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 132: Net &lt;<arg fmt="%s" index="1">lm32d_rty</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 134: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 134: Net &lt;<arg fmt="%s" index="1">lm32i_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 135: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 135: Net &lt;<arg fmt="%s" index="1">lm32d_err</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 152: Net &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 152: Net &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lexuil/Documents/lm32-rubikbot/system.v" Line 166: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="new" >"/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 166: Input port <arg fmt="%s" index="1">m0_cti_i[2]</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%d" index="2">483</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">simtrace</arg>&gt; of block &lt;<arg fmt="%s" index="4">lm32_simtrace</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">lm32_cpu</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">m0_cti_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
@@ -134,64 +134,64 @@
 <msg type="warning" file="Xst" num="2898" delta="new" >Port &apos;<arg fmt="%s" index="1">s3_ack_i</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">conbus0</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s0_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s1_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s2_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_dat_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s4_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_cti_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s5_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_we_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_cyc_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">s3_stb_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">conbus0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_CTI_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_BTE_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">I_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">241</arg>: Output port &lt;<arg fmt="%s" index="3">D_LOCK_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">lm0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v</arg>&quot; line <arg fmt="%s" index="2">330</arg>: Output port &lt;<arg fmt="%s" index="3">spi_cs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">spi0</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">lm32i_rty</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -209,10 +209,10 @@
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">pwm0_intr</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">436</arg>: Output port &lt;<arg fmt="%s" index="3">pc_x</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">instruction_unit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v</arg>&quot; line <arg fmt="%s" index="2">495</arg>: Output port &lt;<arg fmt="%s" index="3">x_result_sel_logic</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">decoder</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">valid_f</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1142,12 +1142,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">uart0/uart0/enable16_counter_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">system</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lm0/multiplier/muliplicand_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">system</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lm0/operand_0_x_10&gt; </arg>
