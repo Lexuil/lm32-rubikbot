@@ -5,7 +5,7 @@ run
 -opt_mode AREA
 -opt_level 2
 -ofn system.ngc
--p xc6slx4-2tqg144
+-p XC7A100T-3CSG324
 -register_balancing yes
 -rtlview yes
 

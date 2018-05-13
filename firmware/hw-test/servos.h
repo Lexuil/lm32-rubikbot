@@ -22,7 +22,8 @@ public:
       void set_serv(int,int);
       void calib(char,int);
 private:
-   	int serv1,serv2,der,iz,mid,atr,ade;
+   	int serv1,serv2;
+   	int der,iz,mid,atr,ade;
 
 };
 

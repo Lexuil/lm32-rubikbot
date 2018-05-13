@@ -1,17 +1,36 @@
+## Clock signal
+NET "clk"   LOC = "E3"	| IOSTANDARD = "LVCMOS33";					
+NET "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%; 
 
-# ==== Cloclk inputs (CLK) ====
+## UART signals
+NET "uart_rxd" LOC = "C4" | IOSTANDARD = LVCMOS33;
+NET "uart_txd" LOC = "D4" | IOSTANDARD = LVCMOS33;
+NET "uart1_rxd" LOC = "H4" | IOSTANDARD = LVCMOS33;
+NET "uart1_txd" LOC = "H1" | IOSTANDARD = LVCMOS33;
 
-NET "clk" LOC = "P84" | IOSTANDARD = LVCMOS33;
+#NET "uart1_rxd" LOC = "C4" | IOSTANDARD = LVCMOS33;
+#NET "uart1_txd" LOC = "D4" | IOSTANDARD = LVCMOS33;
+#NET "uart_rxd" LOC = "H4" | IOSTANDARD = LVCMOS33;
+#NET "uart_txd" LOC = "H1" | IOSTANDARD = LVCMOS33;
 
-NET "uart_rxd" LOC = "P79" | IOSTANDARD = LVCMOS33;
-NET "uart_txd" LOC = "P81" | IOSTANDARD = LVCMOS33;
 
-NET "pwm<0>" LOC = P78 | IOSTANDARD = LVCMOS33;
-NET "pwm<1>" LOC = P80 | IOSTANDARD = LVCMOS33;
-NET "pwm<2>" LOC = P82 | IOSTANDARD = LVCMOS33;	
-NET "pwm<3>" LOC = P85 | IOSTANDARD = LVCMOS33;	
-NET "pwm<4>" LOC = P88 | IOSTANDARD = LVCMOS33;	
-NET "pwm<5>" LOC = P94 | IOSTANDARD = LVCMOS33;	
-NET "pwm<6>" LOC = P98 | IOSTANDARD = LVCMOS33;	
-NET "pwm<7>" LOC = P101 | IOSTANDARD = LVCMOS33;	
+## PWM signals
+NET "pwm<0>" LOC = A14 | IOSTANDARD = LVCMOS33; ##JB<1>
+NET "pwm<1>" LOC = A13 | IOSTANDARD = LVCMOS33; ##JB<1>
+NET "pwm<2>" LOC = A16 | IOSTANDARD = LVCMOS33; ##JB<2>	
+NET "pwm<3>" LOC = A15 | IOSTANDARD = LVCMOS33; ##JB<3>	
+NET "pwm<4>" LOC = B17 | IOSTANDARD = LVCMOS33; ##JB<4>	
+NET "pwm<5>" LOC = B16 | IOSTANDARD = LVCMOS33; ##JB<5>	
+NET "pwm<6>" LOC = A18 | IOSTANDARD = LVCMOS33; ##JB<6>	
+NET "pwm<7>" LOC = B18 | IOSTANDARD = LVCMOS33; ##JB<7>	
+
+## Reset signal and others
+NET "rst" LOC = C12      | IOSTANDARD = LVCMOS33;
+NET "led" LOC = R12      | IOSTANDARD = LVCMOS33;
+#NET "spi_mosi" LOC = C7  | IOSTANDARD = LVCMOS33;
+#NET "spi_clk" LOC = D18  | IOSTANDARD = LVCMOS33;
+#NET "spi_miso" LOC = E18 | IOSTANDARD = LVCMOS33;
+
+
 

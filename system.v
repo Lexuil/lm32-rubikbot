@@ -10,7 +10,7 @@ module system
 //	parameter   bootram_file     = "../firmware/arch_examples/image.ram",
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
 	parameter   bootram_file     = "../firmware/hw-test/image.ram",
-	parameter   clk_freq         = 50000000,
+	parameter   clk_freq         = 100000000,
 	parameter   uart_baud_rate   = 38400
 ) (
 	input             clk,
@@ -21,10 +21,8 @@ module system
 	// UART
 	input             uart_rxd, 
 	output            uart_txd,
-	// SPI
-	input             spi_miso, 
-	output            spi_mosi,
-	output            spi_clk,
+	input             uart1_rxd, 
+	output            uart1_txd,
 	// pwm
 	output    [7:0]   pwm
 	
@@ -48,7 +46,7 @@ wire  [31:0] gnd32 = 32'h00000000;
 wire [31:0]  lm32i_adr,
              lm32d_adr,
              uart0_adr,
-             spi0_adr,
+             uart1_adr,
              timer0_adr,
              pwm0_adr,
              ddr0_adr,
@@ -62,8 +60,8 @@ wire [31:0]  lm32i_dat_r,
              lm32d_dat_w,
              uart0_dat_r,
              uart0_dat_w,
-             spi0_dat_r,
-             spi0_dat_w,
+             uart1_dat_r,
+             uart1_dat_w,
              timer0_dat_r,
              timer0_dat_w,
              pwm0_dat_r,
@@ -78,7 +76,7 @@ wire [31:0]  lm32i_dat_r,
 wire [3:0]   lm32i_sel,
              lm32d_sel,
              uart0_sel,
-             spi0_sel,
+             uart1_sel,
              timer0_sel,
              pwm0_sel,
              bram0_sel,
@@ -88,7 +86,7 @@ wire [3:0]   lm32i_sel,
 wire         lm32i_we,
              lm32d_we,
              uart0_we,
-             spi0_we,
+             uart1_we,
              timer0_we,
              pwm0_we,
              bram0_we,
@@ -99,7 +97,7 @@ wire         lm32i_we,
 wire         lm32i_cyc,
              lm32d_cyc,
              uart0_cyc,
-             spi0_cyc,
+             uart1_cyc,
              timer0_cyc,
              pwm0_cyc,
              bram0_cyc,
@@ -110,7 +108,7 @@ wire         lm32i_cyc,
 wire         lm32i_stb,
              lm32d_stb,
              uart0_stb,
-             spi0_stb,
+             uart1_stb,
              timer0_stb,
              pwm0_stb,
              bram0_stb,
@@ -120,7 +118,7 @@ wire         lm32i_stb,
 wire         lm32i_ack,
              lm32d_ack,
              uart0_ack,
-             spi0_ack,
+             uart1_ack,
              timer0_ack,
              pwm0_ack,
              bram0_ack,
@@ -148,10 +146,11 @@ wire [1:0]   lm32i_bte,
 //---------------------------------------------------------------------------
 wire [31:0]  intr_n;
 wire         uart0_intr = 0;
+wire         uart1_intr = 0;
 wire [1:0]   timer0_intr;
 wire         pwm0_intr;
 
-assign intr_n = { 27'h7FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~timer0_intr[0], ~uart0_intr };
+assign intr_n = { 26'h3FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~timer0_intr[0], ~uart0_intr , ~uart1_intr };
 
 //---------------------------------------------------------------------------
 // Wishbone Interconnect
@@ -161,8 +160,8 @@ conbus #(
 	.s0_addr(3'b000),	// bram     0x00000000 
 	.s1_addr(3'b010),	// uart0    0x20000000 
 	.s2_addr(3'b011),	// timer    0x30000000
-	.s4_addr(3'b100),	// spi      0x40000000
-	.s5_addr(3'b101)	// pwm      0x50000000 
+	.s4_addr(3'b100),	// uart1    0x40000000
+	.s5_addr(3'b101)	// pwm      0x50000000
 ) conbus0(
 	.sys_clk( clk ),
 	.sys_rst( ~rst ),
@@ -213,15 +212,15 @@ conbus #(
 	.s2_cyc_o(  timer0_cyc   ),
 	.s2_stb_o(  timer0_stb   ),
 	.s2_ack_i(  timer0_ack   ),
-	// Slave4
-	.s4_dat_i(  spi0_dat_r ),
-	.s4_dat_o(  spi0_dat_w ),
-	.s4_adr_o(  spi0_adr   ),
-	.s4_sel_o(  spi0_sel   ),
-	.s4_we_o(   spi0_we    ),
-	.s4_cyc_o(  spi0_cyc   ),
-	.s4_stb_o(  spi0_stb   ),
-	.s4_ack_i(  spi0_ack   ),
+	// Slave6
+	.s4_dat_i(  uart1_dat_r ),
+	.s4_dat_o(  uart1_dat_w ),
+	.s4_adr_o(  uart1_adr   ),
+	.s4_sel_o(  uart1_sel   ),
+	.s4_we_o(   uart1_we    ),
+	.s4_cyc_o(  uart1_cyc   ),
+	.s4_stb_o(  uart1_stb   ),
+	.s4_ack_i(  uart1_ack   ),
 	// Slave5
 	.s5_dat_i(  pwm0_dat_r ),
 	.s5_dat_o(  pwm0_dat_w ),
@@ -320,28 +319,32 @@ wb_uart #(
 	.uart_txd( uart0_txd )
 );
 
-//---------------------------------------------------------------------------
-// spi0
-//---------------------------------------------------------------------------
-wire spi0_mosi;
-wire spi0_miso;
-wire spi0_clk;
 
-wb_spi  spi0 (
+
+//---------------------------------------------------------------------------
+// uart1
+//---------------------------------------------------------------------------
+wire uart0_rxd1;
+wire uart0_txd1;
+
+wb_uart #(
+	.clk_freq( clk_freq        ),
+	.baud(     uart_baud_rate  )
+) uart1 (
 	.clk( clk ),
 	.reset( ~rst ),
 	//
-	.wb_adr_i( spi0_adr ),
-	.wb_dat_i( spi0_dat_w ),
-	.wb_dat_o( spi0_dat_r ),
-	.wb_stb_i( spi0_stb ),
-	.wb_cyc_i( spi0_cyc ),
-	.wb_we_i(  spi0_we ),
-	.wb_sel_i( spi0_sel ),
-	.wb_ack_o( spi0_ack ), 
-	.spi_sck(spi0_clk),
-	.spi_mosi( spi0_mosi ),
-	.spi_miso( spi0_miso )
+	.wb_adr_i( uart1_adr ),
+	.wb_dat_i( uart1_dat_w ),
+	.wb_dat_o( uart1_dat_r ),
+	.wb_stb_i( uart1_stb ),
+	.wb_cyc_i( uart1_cyc ),
+	.wb_we_i(  uart1_we ),
+	.wb_sel_i( uart1_sel ),
+	.wb_ack_o( uart1_ack ), 
+//	.intr(       uart0_intr ),
+	.uart_rxd( uart0_rxd1 ),
+	.uart_txd( uart0_txd1 )
 );
 
 //---------------------------------------------------------------------------
@@ -389,9 +392,8 @@ wb_pwm pwm0 (
 //----------------------------------------------------------------------------
 assign uart_txd  = uart0_txd;
 assign uart0_rxd = uart_rxd;
+assign uart1_txd  = uart0_txd1;
+assign uart0_rxd1 = uart1_rxd;
 assign led       = ~uart_txd;
 
-assign spi_mosi  = spi0_mosi;
-assign spi0_miso = spi_miso;
-assign spi_clk = spi0_clk;
 endmodule 

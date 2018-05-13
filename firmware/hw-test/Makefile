@@ -28,8 +28,11 @@ pwm.o: pwm.cpp
 servos.o: servos.cpp
 	$(LM32_CCP) $(CFLAGS) -c servos.cpp
 
-image:  main.o soc-hw.o crt0ram.o pwm.o servos.o
-	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o servos.o
+cam.o: cam.cpp
+	$(LM32_CCP) $(CFLAGS) -c cam.cpp
+
+image:  main.o soc-hw.o crt0ram.o pwm.o servos.o cam.o
+	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o servos.o cam.o
 
 image.lst: image
 	$(LM32_OBJDUMP) -h -S $< > $@

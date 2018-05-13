@@ -14,7 +14,7 @@ extern "C" {
 #define RAM_START 0x40000000
 #define RAM_SIZE  0x04000000
 
-#define FCPU      50000000
+#define FCPU      100000000
 
 #define UART_RXBUFSIZE 32
 
@@ -93,21 +93,10 @@ void uart_putchar(char c);
 void uart_putstr(char *str);
 char uart_getchar();
 
-/***************************************************************************
- * SPI0
- */
-
-typedef struct {
-   volatile uint32_t rxtx;
-   volatile uint32_t run;
-   volatile uint32_t cs;
-   volatile uint32_t nop2;
-   volatile uint32_t divisor;
-} spi_t;
-
-void spi_init();
-void spi_putchar(char c);
-char spi_getchar();
+void uart1_init();
+void uart1_putchar(char c);
+void uart1_putstr(char *str);
+char uart1_getchar();
 
 
 /***************************************************************************

@@ -57,26 +57,20 @@ void arm::set_serv(int x,int y){
 };
 
 void arm::calib(char dir,int val){
-	switch(dir){
-		case 0x20:
-			der = val;
-			break;
-
-		case 0x21:
-			iz = val;
-			break;
-
-		case 0x22:
-			mid = val;
-			break;
-
-		case 0x23:
-			atr = val;
-			break;
-
-		case 0x24:
-			ade = val;
-			break;
+	if(dir == 0x20){
+		der = val;
+	}
+	if(dir == 0x21){
+		iz = val;
+	}
+	if(dir == 0x22){
+		mid = val;
+	}
+	if(dir == 0x23){
+		atr = val;
+	}
+	if(dir == 0x24){
+		ade = val;
 	}
 };
 
