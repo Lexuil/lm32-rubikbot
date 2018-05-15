@@ -11,7 +11,9 @@ module system
 //	parameter   bootram_file     = "../firmware/boot0-serial/image.ram",
 	parameter   bootram_file     = "../firmware/hw-test/image.ram",
 	parameter   clk_freq         = 100000000,
-	parameter   uart_baud_rate   = 38400
+	parameter   uart_baud_rate   = 38400,
+	parameter   fifo_dato_width  = 8,
+	parameter   fifo_length      = 5
 ) (
 	input             clk,
 	// Debug 
@@ -49,6 +51,7 @@ wire [31:0]  lm32i_adr,
              uart1_adr,
              timer0_adr,
              pwm0_adr,
+             fifo0_adr,
              ddr0_adr,
              bram0_adr,
              sram0_adr;
@@ -66,6 +69,8 @@ wire [31:0]  lm32i_dat_r,
              timer0_dat_w,
              pwm0_dat_r,
              pwm0_dat_w,
+             fifo0_dat_r,
+             fifo0_dat_w,
              bram0_dat_r,
              bram0_dat_w,
              sram0_dat_w,
@@ -79,6 +84,7 @@ wire [3:0]   lm32i_sel,
              uart1_sel,
              timer0_sel,
              pwm0_sel,
+             fifo0_sel,
              bram0_sel,
              sram0_sel,
              ddr0_sel;
@@ -89,6 +95,7 @@ wire         lm32i_we,
              uart1_we,
              timer0_we,
              pwm0_we,
+             fifo0_we,
              bram0_we,
              sram0_we,
              ddr0_we;
@@ -100,6 +107,7 @@ wire         lm32i_cyc,
              uart1_cyc,
              timer0_cyc,
              pwm0_cyc,
+             fifo0_cyc,
              bram0_cyc,
              sram0_cyc,
              ddr0_cyc;
@@ -111,6 +119,7 @@ wire         lm32i_stb,
              uart1_stb,
              timer0_stb,
              pwm0_stb,
+             fifo0_stb,
              bram0_stb,
              sram0_stb,
              ddr0_stb;
@@ -121,6 +130,7 @@ wire         lm32i_ack,
              uart1_ack,
              timer0_ack,
              pwm0_ack,
+             fifo0_ack,
              bram0_ack,
              sram0_ack,
              ddr0_ack;
@@ -149,8 +159,9 @@ wire         uart0_intr = 0;
 wire         uart1_intr = 0;
 wire [1:0]   timer0_intr;
 wire         pwm0_intr;
+wire         fifo0_intr;
 
-assign intr_n = { 26'h3FFFFFF, ~pwm0_intr, ~timer0_intr[1], ~timer0_intr[0], ~uart0_intr , ~uart1_intr };
+assign intr_n = { 26'h3FFFFFF, ~fifo0_intr , ~pwm0_intr, ~timer0_intr[1], ~timer0_intr[0], ~uart0_intr , ~uart1_intr };
 
 //---------------------------------------------------------------------------
 // Wishbone Interconnect
@@ -161,7 +172,8 @@ conbus #(
 	.s1_addr(3'b010),	// uart0    0x20000000 
 	.s2_addr(3'b011),	// timer    0x30000000
 	.s4_addr(3'b100),	// uart1    0x40000000
-	.s5_addr(3'b101)	// pwm      0x50000000
+	.s5_addr(3'b101),	// pwm      0x50000000
+	.s6_addr(3'b110)	// fifo     0x60000000
 ) conbus0(
 	.sys_clk( clk ),
 	.sys_rst( ~rst ),
@@ -229,7 +241,16 @@ conbus #(
 	.s5_we_o(   pwm0_we    ),
 	.s5_cyc_o(  pwm0_cyc   ),
 	.s5_stb_o(  pwm0_stb   ),
-	.s5_ack_i(  pwm0_ack   )
+	.s5_ack_i(  pwm0_ack   ),
+	// Slave6
+	.s6_dat_i(  fifo0_dat_r ),
+	.s6_dat_o(  fifo0_dat_w ),
+	.s6_adr_o(  fifo0_adr   ),
+	.s6_sel_o(  fifo0_sel   ),
+	.s6_we_o(   fifo0_we    ),
+	.s6_cyc_o(  fifo0_cyc   ),
+	.s6_stb_o(  fifo0_stb   ),
+	.s6_ack_i(  fifo0_ack   )
 	
 );
 
@@ -382,9 +403,30 @@ wb_pwm pwm0 (
 	.wb_cyc_i( pwm0_cyc    ),
 	.wb_we_i(  pwm0_we     ),
 	.wb_ack_o( pwm0_ack    ), 
-	.wb_sel_i( timer0_sel   ),
+	.wb_sel_i( pwm0_sel   ),
 	// pwm
 	.pwmo(pwm)
+);
+
+//---------------------------------------------------------------------------
+// FIFO
+//---------------------------------------------------------------------------
+
+wb_fifo #(
+		.DATO_WIDTH(fifo_dato_width),
+		.FIFO_LENGTH(fifo_length)
+) fifo0 (
+	.clk(      clk          ),
+	.reset(    ~rst          ),
+	//
+	.wb_adr_i( fifo0_adr    ),
+	.wb_dat_i( fifo0_dat_w  ),
+	.wb_dat_o( fifo0_dat_r  ),
+	.wb_stb_i( fifo0_stb    ),
+	.wb_cyc_i( fifo0_cyc    ),
+	.wb_we_i(  fifo0_we     ),
+	.wb_ack_o( fifo0_ack    ), 
+	.wb_sel_i( fifo0_sel   )
 );
 
 //----------------------------------------------------------------------------

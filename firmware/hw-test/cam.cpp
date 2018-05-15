@@ -68,18 +68,32 @@ void cam::getsize(){
 void cam::sendpicture(){
 
 	uint32_t Z [9];
-	int length;
+	uint32_t X [9];
 	char R1;
 
-	length = (((int)xh)*256)+((int)xl);
-	uart_putchar(length);
+	for(int i = 0;i < 5;i++){
+		uart1_putchar(GET_SIZE[i]);
+	}
+
+	for(int i = 0;i < 9;i++){
+		X[i] = uart1_getchar();
+	}
+
+	if(X[0] == 0x76 && X[2] == 0x34){
+		xh = X[7];
+		xl = X[8];
+	}
+
+	uart_putchar(xh);
+	uart_putchar(xl);
 
 	for(int i = 0;i < 12;i++){
 		uart1_putchar(SEND_JPG[i]);
+
 	}
 
-	uart1_putchar(xh);
-	uart1_putchar(xl);
+	uart1_putchar(X[7]);
+	uart1_putchar(X[8]);
 	uart1_putchar(0x00);
 	uart1_putchar(0x0a);
 
@@ -92,9 +106,11 @@ void cam::sendpicture(){
 		//uart_putchar('\n');
 		//uart_putstr("Receiving...");
 
-		for(int i = 0;i < length;i++){
+		
+		for(uint32_t i = 0;i < (X[7]*256 + X[8]);i++){
 			R1 = uart1_getchar();
 			uart_putchar(R1);
+			//uart_putchar(i);
 		}
 
 		for(int i = 0;i < 5;i++){

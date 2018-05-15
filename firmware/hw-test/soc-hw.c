@@ -3,6 +3,7 @@
 uart_t  *uart0  = (uart_t *)   0x20000000;
 uart_t  *uart1  = (uart_t *)   0x40000000;
 timer_t *timer0 = (timer_t *)  0x30000000;
+fifo_t  *fifo0  = (fifo_t *)   0x60000000;
 
 isr_ptr_t isr_table[32];
 
@@ -159,4 +160,29 @@ void uart1_putstr(char *str)
 		uart1_putchar(*c);
 		c++;
 	}
+}
+
+
+/***************************************************************************
+ * FIFO Functions
+ */
+
+uint8_t fifo_read()
+{
+	return fifo0->datout;
+}
+
+void fifo_write(uint8_t c)
+{
+	fifo0->datin = c;
+}
+
+uint8_t fifo_state()
+{
+	return fifo0->dat;
+}
+
+void fifo_reset()
+{
+	fifo0->reset = 1;
 }

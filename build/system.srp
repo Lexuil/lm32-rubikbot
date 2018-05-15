@@ -126,6 +126,11 @@ Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/w
 Parsing module <wb_pwm>.
 Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" into library work
 Parsing module <pwm>.
+Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_fifo/wb_fifo.v" into library work
+Parsing module <wb_fifo>.
+Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_fifo/FIFO.v" into library work
+Parsing module <FIFO>.
+INFO:HDLCompiler:693 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_fifo/FIFO.v" Line 17. parameter declaration becomes local in FIFO with formal parameter declaration list
 Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/counter.v" into library work
 Parsing module <counter>.
 Analyzing Verilog file "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_timer/wb_timer.v" into library work
@@ -142,14 +147,13 @@ Parsing module <conbus_arb>.
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 158: Port m0_cti_i is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 169: Port m0_cti_i is not connected to this instance
 
 Elaborating module <system>.
 
-Elaborating module <conbus(s_addr_w=3,s0_addr=3'b0,s1_addr=3'b010,s2_addr=3'b011,s4_addr=3'b100,s5_addr=3'b101)>.
+Elaborating module <conbus(s_addr_w=3,s0_addr=3'b0,s1_addr=3'b010,s2_addr=3'b011,s4_addr=3'b100,s5_addr=3'b101,s6_addr=3'b110)>.
 
 Elaborating module <conbus_arb>.
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 228: Assignment to pwm0_sel ignored, since the identifier is never used
 
 Elaborating module <lm32_cpu>.
 
@@ -171,18 +175,21 @@ Elaborating module <lm32_addsub>.
 
 Elaborating module <lm32_logic_op>.
 
+Elaborating module <lm32_shifter>.
+WARNING:HDLCompiler:413 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_shifter.v" Line 123: Result of 64-bit expression is truncated to fit in 32-bit target.
+
 Elaborating module <lm32_multiplier>.
 
 Elaborating module <lm32_mc_arithmetic>.
 
 Elaborating module <lm32_interrupt>.
 WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" Line 1138: Assignment to x_result_sel_logic_x ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 253: Assignment to lm32i_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 254: Assignment to lm32i_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 255: Assignment to lm32i_bte ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 267: Assignment to lm32d_cti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 268: Assignment to lm32d_lock ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 269: Assignment to lm32d_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 274: Assignment to lm32i_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 275: Assignment to lm32i_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 276: Assignment to lm32i_bte ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 288: Assignment to lm32d_cti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 289: Assignment to lm32d_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 290: Assignment to lm32d_bte ignored, since the identifier is never used
 
 Elaborating module <wb_bram(adr_width=13,mem_file_name="../firmware/hw-test/image.ram")>.
 Reading initialization file \"../firmware/hw-test/image.ram\".
@@ -215,12 +222,17 @@ WARNING:HDLCompiler:413 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pw
 WARNING:HDLCompiler:413 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/pwm.v" Line 116: Result of 8-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 101: Result of 32-bit expression is truncated to fit in 7-bit target.
 WARNING:HDLCompiler:413 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_pwm/wb_pwm.v" Line 108: Result of 32-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 129: Net <lm32i_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 130: Net <lm32d_rty> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 132: Net <lm32i_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 133: Net <lm32d_err> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 151: Net <pwm0_intr> does not have a driver.
-WARNING:HDLCompiler:552 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 165: Input port m0_cti_i[2] is not connected on this instance
+
+Elaborating module <wb_fifo(DATO_WIDTH=8,FIFO_LENGTH=5)>.
+
+Elaborating module <FIFO(DATO_WIDTH=8,FIFO_LENGTH=5)>.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 139: Net <lm32i_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 140: Net <lm32d_rty> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 142: Net <lm32i_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 143: Net <lm32d_err> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 161: Net <pwm0_intr> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 162: Net <fifo0_intr> does not have a driver.
+WARNING:HDLCompiler:552 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 177: Input port m0_cti_i[2] is not connected on this instance
 WARNING:Xst:2972 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v" line 483. All outputs of instance <simtrace> of block <lm32_simtrace> are unconnected in block <lm32_cpu>. Underlying logic will be removed.
 
 =========================================================================
@@ -232,43 +244,37 @@ Synthesizing Unit <system>.
         bootram_file = "../firmware/hw-test/image.ram"
         clk_freq = 100000000
         uart_baud_rate = 38400
+        fifo_dato_width = 8
+        fifo_length = 5
 WARNING:Xst:2898 - Port 'm0_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 'm1_cti_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 's3_dat_i', unconnected in block instance 'conbus0', is tied to GND.
-WARNING:Xst:2898 - Port 's6_dat_i', unconnected in block instance 'conbus0', is tied to GND.
 WARNING:Xst:2898 - Port 's3_ack_i', unconnected in block instance 'conbus0', is tied to GND.
-WARNING:Xst:2898 - Port 's6_ack_i', unconnected in block instance 'conbus0', is tied to GND.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s5_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s3_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 165: Output port <s6_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 240: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s0_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s1_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s2_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_dat_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_adr_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_sel_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s4_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s5_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s6_cti_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_we_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_cyc_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 177: Output port <s3_stb_o> of the instance <conbus0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <I_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <I_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <D_CTI_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <D_BTE_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <I_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" line 261: Output port <D_LOCK_O> of the instance <lm0> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <lm32i_rty> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <lm32d_rty> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <lm32i_err> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <lm32d_err> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <pwm0_intr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <fifo0_intr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <system> synthesized.
@@ -356,10 +362,10 @@ INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v
     Found 1-bit register for signal <valid_w>.
     Found 1-bit register for signal <x_result_sel_csr_x>.
     Found 1-bit register for signal <x_result_sel_mc_arith_x>.
-    Found 1-bit register for signal <x_result_sel_shift_x>.
     Found 1-bit register for signal <x_result_sel_sext_x>.
     Found 1-bit register for signal <x_result_sel_add_x>.
     Found 1-bit register for signal <m_result_sel_compare_x>.
+    Found 1-bit register for signal <m_result_sel_shift_x>.
     Found 1-bit register for signal <w_result_sel_load_x>.
     Found 1-bit register for signal <w_result_sel_mul_x>.
     Found 1-bit register for signal <x_bypass_enable_x>.
@@ -370,12 +376,14 @@ INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v
     Found 1-bit register for signal <sign_extend_x>.
     Found 1-bit register for signal <adder_op_x>.
     Found 1-bit register for signal <adder_op_x_n>.
+    Found 1-bit register for signal <direction_x>.
     Found 1-bit register for signal <branch_x>.
     Found 1-bit register for signal <system_call_exception>.
     Found 1-bit register for signal <eret_x>.
     Found 1-bit register for signal <instruction_bus_error_exception>.
     Found 1-bit register for signal <csr_write_enable_x>.
     Found 1-bit register for signal <m_result_sel_compare_m>.
+    Found 1-bit register for signal <m_result_sel_shift_m>.
     Found 1-bit register for signal <w_result_sel_load_m>.
     Found 1-bit register for signal <w_result_sel_mul_m>.
     Found 1-bit register for signal <m_bypass_enable_m>.
@@ -404,7 +412,7 @@ INFO:Xst:3210 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_cpu.v
     Summary:
 	inferred   2 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred 311 D-type flip-flop(s).
+	inferred 313 D-type flip-flop(s).
 	inferred   8 Comparator(s).
 	inferred  37 Multiplexer(s).
 Unit <lm32_cpu> synthesized.
@@ -441,7 +449,7 @@ Unit <lm32_instruction_unit> synthesized.
 Synthesizing Unit <lm32_decoder>.
     Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_decoder.v".
     Summary:
-	inferred  19 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <lm32_decoder> synthesized.
 
 Synthesizing Unit <lm32_load_store_unit>.
@@ -533,6 +541,18 @@ Synthesizing Unit <lm32_logic_op>.
 	inferred  32 Multiplexer(s).
 Unit <lm32_logic_op> synthesized.
 
+Synthesizing Unit <lm32_shifter>.
+    Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_shifter.v".
+WARNING:Xst:647 - Input <operand_1_x<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <right_shift_result>.
+    Found 1-bit register for signal <direction_m>.
+    Found 64-bit shifter logical right for signal <n0026> created at line 123
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <lm32_shifter> synthesized.
+
 Synthesizing Unit <lm32_multiplier>.
     Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/lm32/lm32_multiplier.v".
     Found 32-bit register for signal <multiplier>.
@@ -568,7 +588,7 @@ Synthesizing Unit <lm32_mc_arithmetic>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 33-bit subtractor for signal <t> created at line 130.
-    Found 6-bit subtractor for signal <cycles[5]_GND_19_o_sub_20_OUT> created at line 224.
+    Found 6-bit subtractor for signal <cycles[5]_GND_20_o_sub_20_OUT> created at line 224.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 135 D-type flip-flop(s).
@@ -624,30 +644,30 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     Found 1-bit register for signal <tx_wr>.
     Found 1-bit register for signal <rx_ack>.
     Found 1-bit register for signal <ack>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><22:22>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><27:27>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><21:21>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><31:31>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><28:28>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><26:26>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><27:27>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><26:26>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><25:25>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><24:24>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><23:23>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><23:23>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><21:21>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><20:20>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><18:18>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><18:18>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><17:17>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><16:16>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><14:14>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><12:12>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><11:11>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><8:8>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><30:30>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><25:25>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><17:17>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><13:13>> (without init value) have a constant value of 0 in block <wb_uart>.
     Summary:
 	inferred  11 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
@@ -672,11 +692,11 @@ Synthesizing Unit <uart>.
     Found 4-bit register for signal <tx_bitcount>.
     Found 4-bit register for signal <tx_count16>.
     Found 16-bit register for signal <enable16_counter>.
-    Found 4-bit adder for signal <rx_count16[3]_GND_23_o_add_11_OUT> created at line 88.
-    Found 4-bit adder for signal <rx_bitcount[3]_GND_23_o_add_13_OUT> created at line 91.
-    Found 4-bit adder for signal <tx_count16[3]_GND_23_o_add_41_OUT> created at line 135.
-    Found 4-bit adder for signal <tx_bitcount[3]_GND_23_o_add_43_OUT> created at line 138.
-    Found 16-bit subtractor for signal <GND_23_o_GND_23_o_sub_3_OUT<15:0>> created at line 39.
+    Found 4-bit adder for signal <rx_count16[3]_GND_24_o_add_11_OUT> created at line 88.
+    Found 4-bit adder for signal <rx_bitcount[3]_GND_24_o_add_13_OUT> created at line 91.
+    Found 4-bit adder for signal <tx_count16[3]_GND_24_o_add_41_OUT> created at line 135.
+    Found 4-bit adder for signal <tx_bitcount[3]_GND_24_o_add_43_OUT> created at line 138.
+    Found 16-bit subtractor for signal <GND_24_o_GND_24_o_sub_3_OUT<15:0>> created at line 39.
     Summary:
 	inferred   5 Adder/Subtractor(s).
 	inferred  63 D-type flip-flop(s).
@@ -702,8 +722,8 @@ WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved an
     Found 1-bit register for signal <irqen0>.
     Found 1-bit register for signal <irqen1>.
     Found 1-bit register for signal <ack>.
-    Found 32-bit adder for signal <counter0[31]_GND_24_o_add_6_OUT> created at line 92.
-    Found 32-bit adder for signal <counter1[31]_GND_24_o_add_9_OUT> created at line 98.
+    Found 32-bit adder for signal <counter0[31]_GND_25_o_add_6_OUT> created at line 92.
+    Found 32-bit adder for signal <counter1[31]_GND_25_o_add_9_OUT> created at line 98.
     Found 32-bit 7-to-1 multiplexer for signal <_n0179> created at line 109.
     Found 32-bit comparator equal for signal <match0> created at line 64
     Found 32-bit comparator equal for signal <match1> created at line 65
@@ -732,30 +752,30 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     Found 7-bit register for signal <adrs>.
     Found 1-bit register for signal <wr>.
     Found 8-bit register for signal <din>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><0:0>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><28:28>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><13:13>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><10:10>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><25:25>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><17:17>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><15:15>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><8:8>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><31:31>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><24:24>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><23:23>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><0:0>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><23:23>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><26:26>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><17:17>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><27:27>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><25:25>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><24:24>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><21:21>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><18:18>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><14:14>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><9:9>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><29:29>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><27:27>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><26:26>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><22:22>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><20:20>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><16:16>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><18:18>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><16:16>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><12:12>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><8:8>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><20:20>> (without init value) have a constant value of 0 in block <wb_pwm>.
     Summary:
 	inferred  26 D-type flip-flop(s).
 Unit <wb_pwm> synthesized.
@@ -797,12 +817,12 @@ Synthesizing Unit <counter>.
     Found 15-bit register for signal <contmsec>.
     Found 1-bit register for signal <state>.
     Found 6-bit register for signal <contusec>.
-    Found 16-bit subtractor for signal <GND_27_o_GND_27_o_sub_5_OUT> created at line 19.
-    Found 16-bit subtractor for signal <GND_27_o_GND_27_o_sub_19_OUT> created at line 35.
-    Found 15-bit adder for signal <contmsec[14]_GND_27_o_add_6_OUT> created at line 22.
-    Found 6-bit adder for signal <contusec[5]_GND_27_o_add_8_OUT> created at line 26.
-    Found 8x7-bit multiplier for signal <period[7]_PWR_24_o_MuLt_3_OUT> created at line 19.
-    Found 8x7-bit multiplier for signal <duty[7]_PWR_24_o_MuLt_17_OUT> created at line 35.
+    Found 16-bit subtractor for signal <GND_28_o_GND_28_o_sub_5_OUT> created at line 19.
+    Found 16-bit subtractor for signal <GND_28_o_GND_28_o_sub_19_OUT> created at line 35.
+    Found 15-bit adder for signal <contmsec[14]_GND_28_o_add_6_OUT> created at line 22.
+    Found 6-bit adder for signal <contusec[5]_GND_28_o_add_8_OUT> created at line 26.
+    Found 8x7-bit multiplier for signal <period[7]_PWR_25_o_MuLt_3_OUT> created at line 19.
+    Found 8x7-bit multiplier for signal <duty[7]_PWR_25_o_MuLt_17_OUT> created at line 35.
     Found 32-bit comparator lessequal for signal <n0003> created at line 19
     Found 32-bit comparator lessequal for signal <n0017> created at line 35
     Summary:
@@ -812,59 +832,145 @@ Synthesizing Unit <counter>.
 	inferred   2 Comparator(s).
 Unit <counter> synthesized.
 
+Synthesizing Unit <wb_fifo>.
+    Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_fifo/wb_fifo.v".
+        DATO_WIDTH = 8
+        FIFO_LENGTH = 5
+WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_adr_i<31:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <wb_dat_o<7>>.
+    Found 1-bit register for signal <wb_dat_o<6>>.
+    Found 1-bit register for signal <wb_dat_o<5>>.
+    Found 1-bit register for signal <wb_dat_o<4>>.
+    Found 1-bit register for signal <wb_dat_o<3>>.
+    Found 1-bit register for signal <wb_dat_o<2>>.
+    Found 1-bit register for signal <wb_dat_o<1>>.
+    Found 1-bit register for signal <wb_dat_o<0>>.
+    Found 1-bit register for signal <wclk>.
+    Found 1-bit register for signal <rclk>.
+    Found 1-bit register for signal <rst>.
+    Found 1-bit register for signal <ack>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><2:2>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><27:27>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><26:26>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><25:25>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><24:24>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><23:23>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><21:21>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><20:20>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><18:18>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><11:11>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><8:8>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><17:17>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <wb_fifo> synthesized.
+
+Synthesizing Unit <FIFO>.
+    Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_fifo/FIFO.v".
+        DATO_WIDTH = 8
+        FIFO_LENGTH = 5
+    Found 32-bit register for signal <cont>.
+    Found 32-bit register for signal <contw>.
+    Found 32-bit register for signal <contr>.
+    Found 8-bit register for signal <datout>.
+    Found 32-bit subtractor for signal <cont[31]_GND_31_o_sub_13_OUT> created at line 54.
+    Found 32-bit adder for signal <cont[31]_GND_31_o_add_5_OUT> created at line 42.
+    Found 32-bit adder for signal <contw[31]_GND_31_o_add_25_OUT> created at line 79.
+    Found 32-bit adder for signal <contr[31]_GND_31_o_add_30_OUT> created at line 89.
+    Found 32x8-bit dual-port RAM <Mram_f> for signal <f>.
+WARNING:Xst:737 - Found 1-bit latch for signal <empty>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dato>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <full>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator lessequal for signal <n0012> created at line 81
+    Found 32-bit comparator lessequal for signal <n0019> created at line 91
+    Found 32-bit comparator greater for signal <GND_31_o_cont[31]_LessThan_59_o> created at line 111
+    Found 32-bit comparator greater for signal <cont[31]_GND_31_o_LessThan_60_o> created at line 111
+    Found 5-bit comparator equal for signal <_n0116> created at line 37
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 104 D-type flip-flop(s).
+	inferred   3 Latch(s).
+	inferred   5 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <FIFO> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
+# RAMs                                                 : 4
  2048x32-bit single-port RAM                           : 1
  32x32-bit dual-port RAM                               : 2
+ 32x8-bit dual-port RAM                                : 1
 # Multipliers                                          : 17
  32x32-bit multiplier                                  : 1
  8x7-bit multiplier                                    : 16
-# Adders/Subtractors                                   : 52
+# Adders/Subtractors                                   : 55
  15-bit adder                                          : 8
  16-bit subtractor                                     : 18
  30-bit adder                                          : 2
- 32-bit adder                                          : 2
+ 32-bit adder                                          : 4
+ 32-bit addsub                                         : 1
  33-bit adder                                          : 2
  33-bit subtractor                                     : 3
  4-bit adder                                           : 8
  6-bit adder                                           : 8
  6-bit subtractor                                      : 1
-# Registers                                            : 226
- 1-bit register                                        : 126
+# Registers                                            : 246
+ 1-bit register                                        : 141
  15-bit register                                       : 8
  16-bit register                                       : 2
  2-bit register                                        : 3
  24-bit register                                       : 1
  3-bit register                                        : 2
  30-bit register                                       : 7
- 32-bit register                                       : 29
+ 32-bit register                                       : 33
  4-bit register                                        : 11
  5-bit register                                        : 3
  6-bit register                                        : 9
  7-bit register                                        : 1
- 8-bit register                                        : 24
-# Comparators                                          : 26
+ 8-bit register                                        : 25
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Comparators                                          : 31
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 3
- 32-bit comparator lessequal                           : 16
- 5-bit comparator equal                                : 6
-# Multiplexers                                         : 248
- 1-bit 2-to-1 multiplexer                              : 76
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 18
+ 5-bit comparator equal                                : 7
+# Multiplexers                                         : 282
+ 1-bit 2-to-1 multiplexer                              : 94
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 1
  3-bit 2-to-1 multiplexer                              : 2
  30-bit 2-to-1 multiplexer                             : 3
- 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 2-to-1 multiplexer                             : 50
  32-bit 3-to-1 multiplexer                             : 3
  32-bit 7-to-1 multiplexer                             : 1
  5-bit 2-to-1 multiplexer                              : 3
  6-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 77
+ 8-bit 2-to-1 multiplexer                              : 89
+# Logic shifters                                       : 1
+ 64-bit shifter logical right                          : 1
 # FSMs                                                 : 2
 
 =========================================================================
@@ -908,11 +1014,31 @@ WARNING:Xst:2677 - Node <d_adr_o_26> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <d_adr_o_27> of sequential type is unconnected in block <load_store_unit>.
 WARNING:Xst:2677 - Node <d_adr_o_31> of sequential type is unconnected in block <load_store_unit>.
 
+Synthesizing (advanced) Unit <FIFO>.
+The following registers are absorbed into counter <cont>: 1 register on signal <cont>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <contw> prevents it from being combined with the RAM <Mram_f> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <orwr>          | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <contw<4:0>>    |          |
+    |     diA            | connected to signal <_n0206>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <contr<4:0>>    |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <FIFO> synthesized (advanced).
+
 Synthesizing (advanced) Unit <counter>.
 The following registers are absorbed into counter <contusec>: 1 register on signal <contusec>.
 The following registers are absorbed into counter <contmsec>: 1 register on signal <contmsec>.
-	Multiplier <Mmult_period[7]_PWR_24_o_MuLt_3_OUT> in block <counter> and adder/subtractor <Msub_GND_27_o_GND_27_o_sub_5_OUT> in block <counter> are combined into a MAC<Maddsub_period[7]_PWR_24_o_MuLt_3_OUT>.
-	Multiplier <Mmult_duty[7]_PWR_24_o_MuLt_17_OUT> in block <counter> and adder/subtractor <Msub_GND_27_o_GND_27_o_sub_19_OUT> in block <counter> are combined into a MAC<Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT>.
+	Multiplier <Mmult_period[7]_PWR_25_o_MuLt_3_OUT> in block <counter> and adder/subtractor <Msub_GND_28_o_GND_28_o_sub_5_OUT> in block <counter> are combined into a MAC<Maddsub_period[7]_PWR_25_o_MuLt_3_OUT>.
+	Multiplier <Mmult_duty[7]_PWR_25_o_MuLt_17_OUT> in block <counter> and adder/subtractor <Msub_GND_28_o_GND_28_o_sub_19_OUT> in block <counter> are combined into a MAC<Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT>.
 Unit <counter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <lm32_cpu>.
@@ -985,44 +1111,49 @@ Unit <wb_bram> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
+# RAMs                                                 : 4
  2048x32-bit single-port block RAM                     : 1
  32x32-bit dual-port distributed RAM                   : 2
+ 32x8-bit dual-port distributed RAM                    : 1
 # MACs                                                 : 16
  8x7-to-16-bit MAC                                     : 16
 # Multipliers                                          : 1
  32x32-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 7
+# Adders/Subtractors                                   : 9
  30-bit adder                                          : 2
- 32-bit adder                                          : 2
+ 32-bit adder                                          : 4
  33-bit adder carry in                                 : 1
  33-bit subtractor                                     : 1
  33-bit subtractor borrow in                           : 1
-# Counters                                             : 27
+# Counters                                             : 28
  15-bit up counter                                     : 8
  16-bit down counter                                   : 2
+ 32-bit updown counter                                 : 1
  4-bit up counter                                      : 8
  6-bit down counter                                    : 1
  6-bit up counter                                      : 8
-# Registers                                            : 1494
- Flip-Flops                                            : 1494
-# Comparators                                          : 26
+# Registers                                            : 1613
+ Flip-Flops                                            : 1613
+# Comparators                                          : 31
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 3
- 32-bit comparator lessequal                           : 16
- 5-bit comparator equal                                : 6
-# Multiplexers                                         : 336
- 1-bit 2-to-1 multiplexer                              : 170
+ 32-bit comparator greater                             : 2
+ 32-bit comparator lessequal                           : 18
+ 5-bit comparator equal                                : 7
+# Multiplexers                                         : 401
+ 1-bit 2-to-1 multiplexer                              : 220
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 1
  3-bit 2-to-1 multiplexer                              : 2
  30-bit 2-to-1 multiplexer                             : 3
- 32-bit 2-to-1 multiplexer                             : 43
+ 32-bit 2-to-1 multiplexer                             : 46
  32-bit 3-to-1 multiplexer                             : 3
  32-bit 7-to-1 multiplexer                             : 1
  5-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 77
+ 8-bit 2-to-1 multiplexer                              : 89
+# Logic shifters                                       : 1
+ 64-bit shifter logical right                          : 1
 # FSMs                                                 : 2
 
 =========================================================================
@@ -1058,6 +1189,27 @@ WARNING:Xst:1710 - FF/Latch <conbus_arb/state_FSM_FFd1> (without init value) has
 WARNING:Xst:1710 - FF/Latch <conbus_arb/state_FSM_FFd2> (without init value) has a constant value of 0 in block <conbus>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <i_adr_o_0> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_adr_o_1> (without init value) has a constant value of 0 in block <lm32_instruction_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    full in unit <FIFO>
+    empty in unit <FIFO>
+    dato in unit <FIFO>
+
 
 Optimizing unit <system> ...
 
@@ -1066,7 +1218,8 @@ Optimizing unit <conbus> ...
 Optimizing unit <lm32_cpu> ...
 
 Optimizing unit <lm32_interrupt> ...
-WARNING:Xst:1710 - FF/Latch <ip_30> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ip_31> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_30> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_29> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_28> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_27> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
@@ -1095,7 +1248,8 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_5> (without init
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_4> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_1> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_0> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ip_30> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ip_31> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_30> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_29> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_28> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ip_27> (without init value) has a constant value of 0 in block <lm32_interrupt>. This FF/Latch will be trimmed during the optimization process.
@@ -1130,6 +1284,8 @@ Optimizing unit <lm32_instruction_unit> ...
 Optimizing unit <lm32_load_store_unit> ...
 INFO:Xst:2261 - The FF/Latch <d_stb_o> in Unit <lm32_load_store_unit> is equivalent to the following FF/Latch, which will be removed : <d_cyc_o> 
 
+Optimizing unit <lm32_shifter> ...
+
 Optimizing unit <lm32_multiplier> ...
 
 Optimizing unit <lm32_mc_arithmetic> ...
@@ -1147,6 +1303,10 @@ Optimizing unit <wb_pwm> ...
 Optimizing unit <pwm> ...
 
 Optimizing unit <counter> ...
+
+Optimizing unit <wb_fifo> ...
+
+Optimizing unit <FIFO> ...
 WARNING:Xst:1710 - FF/Latch <lm0/bus_error_x> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <lm0/instruction_unit/pc_w_31> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/instruction_unit/pc_w_30> of sequential type is unconnected in block <system>.
@@ -1218,7 +1378,61 @@ WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_16> of sequential type is u
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_15> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_14> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_13> of sequential type is unconnected in block <system>.
-WARNING:Xst:1710 - FF/Latch <uart0/uart0/enable16_counter_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_8> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_9> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_8> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_9> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_13> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_14> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_15> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_16> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_17> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_18> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_19> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_20> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_21> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_22> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_13> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_14> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_15> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_16> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_17> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_18> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_19> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_20> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_21> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_22> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_13> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_15> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_11> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1267,6 +1481,7 @@ INFO:Xst:2261 - The FF/Latch <lm0/multiplier/multiplier_7> in Unit <system> is e
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/multiplier_8> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_1_x_8> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/multiplier_9> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_1_x_9> 
 INFO:Xst:2261 - The FF/Latch <lm0/logic_op_x_2> in Unit <system> is equivalent to the following 2 FFs/Latches, which will be removed : <lm0/sign_extend_x> <lm0/condition_x_2> 
+INFO:Xst:2261 - The FF/Latch <lm0/logic_op_x_3> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/direction_x> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_0> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_0> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_1> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_1> 
 INFO:Xst:2261 - The FF/Latch <lm0/multiplier/muliplicand_2> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/operand_0_x_2> 
@@ -1313,26 +1528,25 @@ INFO:Xst:2261 - The FF/Latch <lm0/multiplier/multiplier_29> in Unit <system> is 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 5.
+Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 6.
 Forward register balancing over carry chain lm0/Mcompar_cmp_zero_cy<0>
-Forward register balancing over carry chain pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm7/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm6/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm5/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm4/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm0/Maddsub_duty[7]_PWR_24_o_MuLt_17_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm7/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm6/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm5/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm4/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<5>
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
-INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
+Forward register balancing over carry chain pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm7/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm6/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm5/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm4/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm0/Maddsub_duty[7]_PWR_25_o_MuLt_17_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm7/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm6/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm5/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm4/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
+Forward register balancing over carry chain fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<0>
 INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_8_BRB1> <lm0/load_store_unit/store_data_m_16_BRB0> <lm0/load_store_unit/store_data_m_24_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_9_BRB1> <lm0/load_store_unit/store_data_m_17_BRB0> <lm0/load_store_unit/store_data_m_25_BRB4> 
@@ -1342,14 +1556,17 @@ INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_4> in Unit <syste
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_13_BRB1> <lm0/load_store_unit/store_data_m_21_BRB0> <lm0/load_store_unit/store_data_m_29_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_14_BRB1> <lm0/load_store_unit/store_data_m_22_BRB0> <lm0/load_store_unit/store_data_m_30_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB1> <lm0/load_store_unit/store_data_m_23_BRB0> <lm0/load_store_unit/store_data_m_31_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
-INFO:Xst:2261 - The FF/Latch <lm0/size_x_1> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_mul_x_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_shift_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
+INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB2> 
 
 Pipelining and Register Balancing Report ...
 
 Processing Unit <system> :
 	Register(s) lm0/operand_w_1 lm0/operand_w_0 lm0/load_store_unit/data_w_15 lm0/load_store_unit/data_w_7 lm0/load_store_unit/data_w_23 lm0/load_store_unit/data_w_31 has(ve) been forward balanced into : lm0/load_store_unit/load_data_w<10>41_FRB.
 	Register(s) lm0/branch_x has(ve) been backward balanced into : lm0/branch_x_BRB0 lm0/branch_x_BRB1 lm0/branch_x_BRB2 lm0/branch_x_BRB3 lm0/branch_x_BRB4 lm0/branch_x_BRB5.
+	Register(s) lm0/condition_met_m has(ve) been backward balanced into : lm0/condition_met_m_BRB0 lm0/condition_met_m_BRB1 lm0/condition_met_m_BRB2 lm0/condition_met_m_BRB3 lm0/condition_met_m_BRB4 lm0/condition_met_m_BRB5.
 	Register(s) lm0/load_store_unit/store_data_m_10 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_10_BRB2.
 	Register(s) lm0/load_store_unit/store_data_m_11 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_11_BRB2.
 	Register(s) lm0/load_store_unit/store_data_m_12 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_12_BRB2.
@@ -1363,7 +1580,7 @@ Processing Unit <system> :
 	Register(s) lm0/load_store_unit/store_data_m_20 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_20_BRB3.
 	Register(s) lm0/load_store_unit/store_data_m_21 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_21_BRB3.
 	Register(s) lm0/load_store_unit/store_data_m_22 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_22_BRB3.
-	Register(s) lm0/load_store_unit/store_data_m_23 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_23_BRB1 lm0/load_store_unit/store_data_m_23_BRB2 lm0/load_store_unit/store_data_m_23_BRB3.
+	Register(s) lm0/load_store_unit/store_data_m_23 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_23_BRB3.
 	Register(s) lm0/load_store_unit/store_data_m_24 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_24_BRB3 .
 	Register(s) lm0/load_store_unit/store_data_m_25 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_25_BRB3 .
 	Register(s) lm0/load_store_unit/store_data_m_26 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_26_BRB3 .
@@ -1377,6 +1594,7 @@ Processing Unit <system> :
 	Register(s) lm0/mc_arithmetic/a_31 has(ve) been backward balanced into : lm0/mc_arithmetic/a_31_BRB0 lm0/mc_arithmetic/a_31_BRB1 lm0/mc_arithmetic/a_31_BRB2.
 	Register(s) lm0/store_x has(ve) been backward balanced into : lm0/store_x_BRB0 lm0/store_x_BRB5.
 	Register(s) lm0/w_result_sel_mul_m has(ve) been backward balanced into : lm0/w_result_sel_mul_m_BRB0 lm0/w_result_sel_mul_m_BRB1.
+	Register(s) lm0/w_result_sel_mul_x has(ve) been backward balanced into : lm0/w_result_sel_mul_x_BRB0 .
 	Register(s) pwm0/pwm0/dout_0 has(ve) been backward balanced into : pwm0/pwm0/dout_0_BRB0 pwm0/pwm0/dout_0_BRB1 pwm0/pwm0/dout_0_BRB2 pwm0/pwm0/dout_0_BRB3 pwm0/pwm0/dout_0_BRB4.
 	Register(s) pwm0/pwm0/dout_1 has(ve) been backward balanced into : pwm0/pwm0/dout_1_BRB1 pwm0/pwm0/dout_1_BRB3 pwm0/pwm0/dout_1_BRB4 pwm0/pwm0/dout_1_BRB5.
 	Register(s) pwm0/pwm0/dout_2 has(ve) been backward balanced into : pwm0/pwm0/dout_2_BRB1 pwm0/pwm0/dout_2_BRB3 pwm0/pwm0/dout_2_BRB4 pwm0/pwm0/dout_2_BRB5.
@@ -1403,8 +1621,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1742
- Flip-Flops                                            : 1742
+# Registers                                            : 1842
+ Flip-Flops                                            : 1842
 
 =========================================================================
 
@@ -1427,33 +1645,35 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4124
+# BELS                             : 4535
 #      GND                         : 1
-#      INV                         : 242
-#      LUT1                        : 212
-#      LUT2                        : 242
-#      LUT3                        : 240
-#      LUT4                        : 367
-#      LUT5                        : 467
-#      LUT6                        : 770
-#      MUXCY                       : 856
-#      MUXF7                       : 8
+#      INV                         : 244
+#      LUT1                        : 222
+#      LUT2                        : 283
+#      LUT3                        : 290
+#      LUT4                        : 321
+#      LUT5                        : 604
+#      LUT6                        : 874
+#      MUXCY                       : 921
+#      MUXF7                       : 12
 #      VCC                         : 1
-#      XORCY                       : 718
-# FlipFlops/Latches                : 1742
-#      FD                          : 334
-#      FDC                         : 123
-#      FDCE                        : 716
-#      FDE                         : 143
-#      FDPE                        : 33
-#      FDR                         : 28
-#      FDRE                        : 296
+#      XORCY                       : 762
+# FlipFlops/Latches                : 1845
+#      FD                          : 335
+#      FDC                         : 122
+#      FDCE                        : 749
+#      FDE                         : 145
+#      FDPE                        : 36
+#      FDR                         : 31
+#      FDRE                        : 354
 #      FDS                         : 3
-#      FDSE                        : 66
-# RAMS                             : 66
-#      RAM32X1D                    : 64
+#      FDSE                        : 67
+#      LD                          : 3
+# RAMS                             : 74
+#      RAM32X1D                    : 72
 #      RAMB36E1                    : 2
-# Clock Buffers                    : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 14
 #      IBUF                        : 3
@@ -1468,18 +1688,18 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1730  out of  126800     1%  
- Number of Slice LUTs:                 2668  out of  63400     4%  
-    Number used as Logic:              2540  out of  63400     4%  
-    Number used as Memory:              128  out of  19000     0%  
-       Number used as RAM:              128
+ Number of Slice Registers:            1833  out of  126800     1%  
+ Number of Slice LUTs:                 2982  out of  63400     4%  
+    Number used as Logic:              2838  out of  63400     4%  
+    Number used as Memory:              144  out of  19000     0%  
+       Number used as RAM:              144
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2942
-   Number with an unused Flip Flop:    1212  out of   2942    41%  
-   Number with an unused LUT:           274  out of   2942     9%  
-   Number of fully used LUT-FF pairs:  1456  out of   2942    49%  
-   Number of unique control sets:        62
+ Number of LUT Flip Flop pairs used:   3259
+   Number with an unused Flip Flop:    1426  out of   3259    43%  
+   Number with an unused LUT:           277  out of   3259     8%  
+   Number of fully used LUT-FF pairs:  1556  out of   3259    47%  
+   Number of unique control sets:        71
 
 IO Utilization: 
  Number of IOs:                          15
@@ -1489,7 +1709,7 @@ IO Utilization:
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                2  out of    135     1%  
     Number using Block RAM only:          2
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
  Number of DSP48E1s:                      3  out of    240     1%  
 
 ---------------------------
@@ -1510,11 +1730,19 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1808  |
------------------------------------+------------------------+-------+
+------------------------------------------+-----------------------------+-------+
+Clock Signal                              | Clock buffer(FF name)       | Load  |
+------------------------------------------+-----------------------------+-------+
+clk                                       | BUFGP                       | 1857  |
+fifo0/fifo0/orwr(fifo0/fifo0/orwr1:O)     | BUFG(*)(fifo0/fifo0/cont_31)| 59    |
+fifo0/fifo0/full_G(fifo0/fifo0/full_G:O)  | NONE(*)(fifo0/fifo0/full)   | 1     |
+fifo0/fifo0/empty_G(fifo0/fifo0/empty_G:O)| NONE(*)(fifo0/fifo0/empty)  | 1     |
+fifo0/fifo0/dato_G(fifo0/fifo0/dato_G:O)  | NONE(*)(fifo0/fifo0/dato)   | 1     |
+------------------------------------------+-----------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1524,8 +1752,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.288ns (Maximum Frequency: 159.043MHz)
-   Minimum input arrival time before clock: 3.295ns
+   Minimum period: 6.370ns (Maximum Frequency: 156.992MHz)
+   Minimum input arrival time before clock: 3.296ns
    Maximum output required time after clock: 1.037ns
    Maximum combinational path delay: No path found
 
@@ -1535,10 +1763,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.288ns (frequency: 159.043MHz)
-  Total number of paths / destination ports: 1412270 / 4032
+  Clock period: 6.370ns (frequency: 156.992MHz)
+  Total number of paths / destination ports: 1424431 / 4127
 -------------------------------------------------------------------------
-Delay:               6.288ns (Levels of Logic = 3)
+Delay:               6.370ns (Levels of Logic = 3)
   Source:            lm0/multiplier/multiplier_3 (FF)
   Destination:       lm0/multiplier/product_31 (FF)
   Source Clock:      clk rising
@@ -1548,38 +1776,89 @@ Delay:               6.288ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             7   0.361   0.307  lm0/multiplier/multiplier_3 (lm0/multiplier/multiplier_3)
+     FDCE:C->Q            54   0.361   0.389  lm0/multiplier/multiplier_3 (lm0/multiplier/multiplier_3)
      DSP48E1:A3->PCOUT47    1   2.970   0.000  lm0/multiplier/Mmult_n0019 (lm0/multiplier/Mmult_n0019_PCOUT_to_Mmult_n00191_PCIN_47)
      DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  lm0/multiplier/Mmult_n00191 (lm0/multiplier/Mmult_n00191_PCOUT_to_Mmult_n00192_PCIN_47)
      DSP48E1:PCIN47->P14    1   1.107   0.279  lm0/multiplier/Mmult_n00192 (lm0/multiplier/n0019<31>)
      FDCE:D                    0.008          lm0/multiplier/product_31
     ----------------------------------------
-    Total                      6.288ns (5.701ns logic, 0.587ns route)
-                                       (90.7% logic, 9.3% route)
+    Total                      6.370ns (5.701ns logic, 0.669ns route)
+                                       (89.5% logic, 10.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 6376 / 1583
+Timing constraint: Default period analysis for Clock 'fifo0/fifo0/orwr'
+  Clock period: 3.524ns (frequency: 283.768MHz)
+  Total number of paths / destination ports: 2416 / 131
 -------------------------------------------------------------------------
-Offset:              3.295ns (Levels of Logic = 7)
-  Source:            rst (PAD)
-  Destination:       pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_13_FRB (FF)
-  Destination Clock: clk rising
+Delay:               3.524ns (Levels of Logic = 30)
+  Source:            fifo0/fifo0/cont_0 (FF)
+  Destination:       fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB (FF)
+  Source Clock:      fifo0/fifo0/orwr rising
+  Destination Clock: fifo0/fifo0/orwr rising
 
-  Data Path: rst to pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_13_FRB
+  Data Path: fifo0/fifo0/cont_0 to fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           234   0.001   0.821  rst_IBUF (rst_IBUF)
-     LUT5:I0->O           10   0.097   0.735  pwm0/pwm0/Mmux_duty0[7]_adrs[6]_mux_68_OUT1841 (pwm0/pwm0/period2[7]_adrs[6]_mux_71_OUT<4>)
-     LUT6:I0->O            1   0.097   0.693  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd_1111 (N220)
-     LUT6:I0->O            1   0.097   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_lut<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_lut<11>)
-     MUXCY:S->O            1   0.353   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<12> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_cy<12>)
-     XORCY:CI->O           1   0.370   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_Madd2_xor<13> (N451)
-     FD:D                      0.008          pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_24_o_MuLt_3_OUT_13_FRB
+     FDRE:C->Q             2   0.361   0.383  fifo0/fifo0/cont_0 (fifo0/fifo0/cont_0)
+     LUT2:I0->O            1   0.097   0.000  fifo0/fifo0/Mcount_cont_lut<0> (fifo0/fifo0/Mcount_cont_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  fifo0/fifo0/Mcount_cont_cy<0> (fifo0/fifo0/Mcount_cont_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<1> (fifo0/fifo0/Mcount_cont_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<2> (fifo0/fifo0/Mcount_cont_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<3> (fifo0/fifo0/Mcount_cont_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<4> (fifo0/fifo0/Mcount_cont_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<5> (fifo0/fifo0/Mcount_cont_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<6> (fifo0/fifo0/Mcount_cont_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<7> (fifo0/fifo0/Mcount_cont_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<8> (fifo0/fifo0/Mcount_cont_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<9> (fifo0/fifo0/Mcount_cont_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<10> (fifo0/fifo0/Mcount_cont_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<11> (fifo0/fifo0/Mcount_cont_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<12> (fifo0/fifo0/Mcount_cont_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<13> (fifo0/fifo0/Mcount_cont_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<14> (fifo0/fifo0/Mcount_cont_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<15> (fifo0/fifo0/Mcount_cont_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<16> (fifo0/fifo0/Mcount_cont_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<17> (fifo0/fifo0/Mcount_cont_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<18> (fifo0/fifo0/Mcount_cont_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<19> (fifo0/fifo0/Mcount_cont_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<20> (fifo0/fifo0/Mcount_cont_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<21> (fifo0/fifo0/Mcount_cont_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<22> (fifo0/fifo0/Mcount_cont_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<23> (fifo0/fifo0/Mcount_cont_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<24> (fifo0/fifo0/Mcount_cont_cy<24>)
+     XORCY:CI->O           2   0.370   0.688  fifo0/fifo0/Mcount_cont_xor<25> (fifo0/fifo0/Result<25>)
+     LUT5:I0->O            1   0.097   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_lut<5> (fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_lut<5>)
+     MUXCY:S->O            1   0.353   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<5> (fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<5>)
+     MUXCY:CI->O           1   0.262   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6> (N429)
+     FDSE:D                    0.008          fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB
     ----------------------------------------
-    Total                      3.295ns (1.046ns logic, 2.249ns route)
+    Total                      3.524ns (2.453ns logic, 1.071ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6431 / 1638
+-------------------------------------------------------------------------
+Offset:              3.296ns (Levels of Logic = 7)
+  Source:            rst (PAD)
+  Destination:       pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_13_FRB (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to pwm0/pwm0/pwm0/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_13_FRB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           243   0.001   0.822  rst_IBUF (fifo0/reset_inv)
+     LUT5:I0->O           10   0.097   0.735  pwm0/pwm0/Mmux_duty0[7]_adrs[6]_mux_68_OUT1841 (pwm0/pwm0/period2[7]_adrs[6]_mux_71_OUT<4>)
+     LUT6:I0->O            1   0.097   0.693  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd_1111 (N186)
+     LUT6:I0->O            1   0.097   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_lut<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_lut<11>)
+     MUXCY:S->O            1   0.353   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<12> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<12>)
+     XORCY:CI->O           1   0.370   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_xor<13> (N417)
+     FD:D                      0.008          pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_13_FRB
+    ----------------------------------------
+    Total                      3.296ns (1.046ns logic, 2.250ns route)
                                        (31.7% logic, 68.3% route)
 
 =========================================================================
@@ -1608,25 +1887,64 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    6.288|         |         |         |
----------------+---------+---------+---------+---------+
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+clk                |    6.370|         |         |         |
+fifo0/fifo0/dato_G |         |    0.956|         |         |
+fifo0/fifo0/empty_G|         |    1.025|         |         |
+fifo0/fifo0/full_G |         |    1.021|         |         |
+fifo0/fifo0/orwr   |    1.022|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fifo0/fifo0/dato_G
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+fifo0/fifo0/orwr|         |         |    4.949|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fifo0/fifo0/empty_G
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+fifo0/fifo0/orwr|         |         |    4.817|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fifo0/fifo0/full_G
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+fifo0/fifo0/orwr|         |         |    4.817|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fifo0/fifo0/orwr
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+clk                |    3.545|         |         |         |
+fifo0/fifo0/empty_G|         |    1.837|         |         |
+fifo0/fifo0/full_G |         |    1.965|         |         |
+fifo0/fifo0/orwr   |    3.524|         |         |         |
+-------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 21.05 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 24.33 secs
  
 --> 
 
 
-Total memory usage is 517052 kilobytes
+Total memory usage is 519612 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  299 (   0 filtered)
-Number of infos    :  123 (   0 filtered)
+Number of warnings :  388 (   0 filtered)
+Number of infos    :  119 (   0 filtered)
 

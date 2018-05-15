@@ -19,6 +19,8 @@ verilog work ../rtl/wb_bram/wb_bram.v
 verilog work ../rtl/wb_uart/wb_uart.v
 verilog work ../rtl/wb_pwm/wb_pwm.v
 verilog work ../rtl/wb_pwm/pwm.v
+verilog work ../rtl/wb_fifo/wb_fifo.v
+verilog work ../rtl/wb_fifo/FIFO.v
 verilog work ../rtl/wb_pwm/counter.v
 verilog work ../rtl/wb_timer/wb_timer.v
 verilog work ../rtl/wb_gpio/wb_gpio.v

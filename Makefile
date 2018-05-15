@@ -36,8 +36,10 @@ SRC=                                      \
 	../rtl/wb_bram/wb_bram.v           \
 	../rtl/wb_uart/wb_uart.v           \
 	../rtl/wb_pwm/wb_pwm.v             \
-	../rtl/wb_pwm/pwm.v             \
-	../rtl/wb_pwm/counter.v             \
+	../rtl/wb_pwm/pwm.v                \
+	../rtl/wb_fifo/wb_fifo.v           \
+	../rtl/wb_fifo/FIFO.v              \
+	../rtl/wb_pwm/counter.v            \
 	../rtl/wb_timer/wb_timer.v         \
 	../rtl/wb_gpio/wb_gpio.v           \
 	../rtl/wb_spi/wb_spi.v             \

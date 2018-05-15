@@ -100,6 +100,23 @@ char uart1_getchar();
 
 
 /***************************************************************************
+ * FIFO0
+ */
+
+typedef struct {
+   volatile uint32_t dat;
+   volatile uint32_t datout;
+   volatile uint32_t datin;
+   volatile uint32_t reset;
+} fifo_t;
+
+uint8_t fifo_read();
+void fifo_write(uint8_t c);
+uint8_t fifo_state();
+void fifo_reset();
+
+
+/***************************************************************************
  * Pointer to actual components
  */
 extern timer_t  *timer0;

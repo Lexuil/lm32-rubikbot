@@ -4,7 +4,7 @@ Loading device for application Rf_Device from file '7a100t.nph' in environment
 /opt/Xilinx/14.7/ISE_DS/ISE/.
    "system" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
 
-Thu May 10 12:09:30 2018
+Tue May 15 14:22:39 2018
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -w system-routed.ncd system.bit 
 
@@ -144,7 +144,17 @@ Summary of Bitgen Options:
 No constraints file was processed.
 
 Running DRC.
-DRC detected 0 errors and 0 warnings.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net fifo0/fifo0/dato_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net fifo0/fifo0/empty_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net fifo0/fifo0/full_G is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "system.bit".
 Bitstream generation is complete.

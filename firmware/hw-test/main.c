@@ -46,6 +46,17 @@ uint8_t read_command(){
 
 int main(){
 
+	// uint8_t abc;
+
+	// uart_putchar('a');
+
+	// abc = fifo_state();
+
+	// fifo_write(19);
+	// abc = fifo_read();
+	// fifo_write(30);
+	// abc = fifo_state();
+
 	cam camera;
 
 	uart_putstr("Initializing...");

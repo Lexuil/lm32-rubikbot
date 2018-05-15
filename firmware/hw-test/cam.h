@@ -19,7 +19,7 @@ public:
 	void getsize();
 	void stoptaking();
 private:
-	char xh,xl;
+	uint8_t xh,xl;
 };
 
 
