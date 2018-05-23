@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 15 14:21:39 2018
+// Written by: Map P.20131013 on Wed May 23 12:05:51 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -983,7 +983,7 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_13_FRB" BEL
         "pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<13>_FRB"
         BEL "lm0/w_result_sel_mul_m_BRB0" BEL "lm0/w_result_sel_mul_m_BRB1"
-        BEL "lm0/mc_arithmetic/a_31_BRB0" BEL "lm0/mc_arithmetic/a_31_BRB1"
+        BEL "lm0/mc_arithmetic/a_31_BRB0" BEL "lm0/mc_arithmetic/a_31_BRB2"
         BEL "pwm0/pwm0/dout_0_BRB0" BEL "pwm0/pwm0/dout_0_BRB1" BEL
         "pwm0/pwm0/dout_0_BRB2" BEL "pwm0/pwm0/dout_0_BRB3" BEL
         "pwm0/pwm0/dout_0_BRB4" BEL "pwm0/pwm0/dout_7_BRB1" BEL
@@ -1004,14 +1004,14 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/condition_met_m_BRB1" BEL "lm0/condition_met_m_BRB2" BEL
         "lm0/condition_met_m_BRB3" BEL "lm0/condition_met_m_BRB4" BEL
         "lm0/condition_met_m_BRB5" BEL
-        "lm0/load_store_unit/store_data_m_15_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_14_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_13_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_12_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_11_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_10_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_9_BRB2" BEL
-        "lm0/load_store_unit/store_data_m_8_BRB2" BEL
+        "lm0/load_store_unit/store_data_m_15_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_14_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_13_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_12_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_11_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_10_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_9_BRB1" BEL
+        "lm0/load_store_unit/store_data_m_8_BRB1" BEL
         "lm0/load_store_unit/store_data_m_23_BRB3" BEL
         "lm0/load_store_unit/store_data_m_22_BRB3" BEL
         "lm0/load_store_unit/store_data_m_21_BRB3" BEL
@@ -1032,7 +1032,7 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/branch_x_BRB1" BEL "lm0/branch_x_BRB2" BEL "lm0/branch_x_BRB3"
         BEL "lm0/branch_x_BRB4" BEL "lm0/branch_x_BRB5" BEL "lm0/store_x_BRB0"
         BEL "lm0/store_x_BRB5" BEL "lm0/load_store_unit/load_data_w<10>41_FRB"
-        BEL "lm0/w_result_sel_mul_x_BRB0" BEL "lm0/mc_arithmetic/a_31_BRB2"
+        BEL "lm0/w_result_sel_mul_x_BRB0" BEL "lm0/mc_arithmetic/a_31_BRB1"
         BEL "clk_BUFGP/BUFG" BEL "pwm0/pwm0/pwm7/state_1" BEL
         "pwm0/pwm0/pwm6/state_1" BEL "pwm0/pwm0/pwm5/state_1" BEL
         "pwm0/pwm0/pwm4/state_1" BEL "pwm0/pwm0/pwm3/state_1" BEL

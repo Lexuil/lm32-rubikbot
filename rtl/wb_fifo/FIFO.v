@@ -35,6 +35,7 @@ module FIFO
 					if(~full) begin
 
 						f[contw] = datin;
+						datout = f[contr]; //solo para lm32
 						contw = contw + 1'b1;	
 
 						if(contw >= fifo_depth) contw = 1'b0;
@@ -45,7 +46,7 @@ module FIFO
 				2'b10:
 					if(~empty) begin
 
-						datout = f[contr];
+						datout = f[contr+1]; //+1 solo para lm32
 						//f[contr] = 0;
 						contr = contr + 1'b1;
 

@@ -167,17 +167,17 @@ void uart1_putstr(char *str)
  * FIFO Functions
  */
 
-uint8_t fifo_read()
+uint32_t fifo_read()
 {
 	return fifo0->datout;
 }
 
-void fifo_write(uint8_t c)
+void fifo_write(uint32_t c)
 {
 	fifo0->datin = c;
 }
 
-uint8_t fifo_state()
+uint32_t fifo_state()
 {
 	return fifo0->dat;
 }

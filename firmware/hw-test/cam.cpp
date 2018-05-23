@@ -70,6 +70,7 @@ void cam::sendpicture(){
 	uint32_t Z [9];
 	uint32_t X [9];
 	char R1;
+	char R2;
 
 	for(int i = 0;i < 5;i++){
 		uart1_putchar(GET_SIZE[i]);
@@ -108,9 +109,17 @@ void cam::sendpicture(){
 
 		
 		for(uint32_t i = 0;i < (X[7]*256 + X[8]);i++){
+			
+			// R1 = uart1_getchar();
+			// uart_putchar(R1);
+
 			R1 = uart1_getchar();
-			uart_putchar(R1);
-			//uart_putchar(i);
+			fifo_write(R1);
+
+			if(i >= 50){
+				R2 = fifo_read();
+				uart_putchar(R2);
+			}
 		}
 
 		for(int i = 0;i < 5;i++){

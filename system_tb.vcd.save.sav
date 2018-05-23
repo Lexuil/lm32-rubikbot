@@ -1,15 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Tue May 22 21:08:41 2018
+[*]
+[dumpfile] "/home/lexuil/Documents/GitHub/lm32-rubikbot/simulation/system_tb.vcd"
+[dumpfile_mtime] "Tue May 22 21:06:06 2018"
+[dumpfile_size] 7592136
+[savefile] "/home/lexuil/Documents/GitHub/lm32-rubikbot/system_tb.vcd.save.sav"
 [timestart] 0
-[size] 1000 600
+[size] 1375 876
 [pos] -1 -1
-*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-24.420576 5000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] system_tb.
 [treeopen] system_tb.dut.
+[treeopen] system_tb.dut.fifo0.
+[sst_width] 225
+[signals_width] 334
+[sst_expanded] 1
+[sst_vpaned_height] 257
 @22
-system_tb.dut.gpio0.gpio_dir[7:0]
-system_tb.dut.gpio0.gpio_i[7:0]
-system_tb.dut.gpio0.gpio_io[7:0]
-system_tb.dut.gpio0.gpio_o[7:0]
-@23
-system_tb.dut.gpio0.wb_adr_i[31:0]
-system_tb.dut.gpio0.wb_dat_i[31:0]
-system_tb.dut.gpio0.wb_dat_o[31:0]
+system_tb.dut.lm32d_adr[31:0]
+@28
+system_tb.dut.lm32d_we
+[pattern_trace] 1
+[pattern_trace] 0

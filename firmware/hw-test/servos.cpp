@@ -74,6 +74,30 @@ void arm::calib(char dir,int val){
 	}
 };
 
+void arm::derecha0(){
+	pwm_duty(serv2,der);
+};
+
+
+void arm::izquierda0(){
+	pwm_duty(serv2,iz);
+};
+
+
+void arm::medio0(){
+	pwm_duty(serv2,mid);
+};
+
+
+void arm::atras0(){
+	pwm_duty(serv2,atr);
+};
+
+
+void arm::adelante0(){
+	pwm_duty(serv2,ade);
+};
+
 /*
 void arm::test(){
 	pwm_period(5,200);

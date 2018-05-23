@@ -110,9 +110,9 @@ typedef struct {
    volatile uint32_t reset;
 } fifo_t;
 
-uint8_t fifo_read();
-void fifo_write(uint8_t c);
-uint8_t fifo_state();
+uint32_t fifo_read();
+void fifo_write(uint32_t c);
+uint32_t fifo_state();
 void fifo_reset();
 
 

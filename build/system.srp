@@ -289,7 +289,6 @@ Synthesizing Unit <conbus>.
         s4_addr = 3'b100
         s5_addr = 3'b101
         s6_addr = 3'b110
-WARNING:Xst:647 - Input <s6_ack_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <conbus> synthesized.
@@ -644,7 +643,8 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     Found 1-bit register for signal <tx_wr>.
     Found 1-bit register for signal <rx_ack>.
     Found 1-bit register for signal <ack>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><2:2>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><10:10>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_uart>.
@@ -665,8 +665,7 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><11:11>> (without init value) have a constant value of 0 in block <wb_uart>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_uart>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><11:11>> (without init value) have a constant value of 0 in block <wb_uart>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_uart>.
     Summary:
 	inferred  11 D-type flip-flop(s).
@@ -752,30 +751,30 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     Found 7-bit register for signal <adrs>.
     Found 1-bit register for signal <wr>.
     Found 8-bit register for signal <din>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><0:0>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><23:23>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><26:26>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><17:17>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><31:31>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><0:0>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><27:27>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><15:15>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><16:16>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<31><11:11>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><31:31>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><27:27>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><28:28>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><26:26>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><25:25>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><24:24>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><21:21>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><24:24>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><23:23>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><22:22>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><20:20>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><18:18>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><16:16>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><18:18>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><12:12>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_pwm>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><8:8>> (without init value) have a constant value of 0 in block <wb_pwm>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><20:20>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<30><8:8>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><30:30>> (without init value) have a constant value of 0 in block <wb_pwm>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><21:21>> (without init value) have a constant value of 0 in block <wb_pwm>.
     Summary:
 	inferred  26 D-type flip-flop(s).
 Unit <wb_pwm> synthesized.
@@ -857,25 +856,25 @@ WARNING:Xst:647 - Input <wb_dat_i<31:8>> is never used. This port will be preser
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<29><30:30>> (without init value) have a constant value of 0 in block <wb_fifo>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<28><29:29>> (without init value) have a constant value of 0 in block <wb_fifo>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<27><28:28>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><27:27>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><26:26>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<25><27:27>> (without init value) have a constant value of 0 in block <wb_fifo>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<24><25:25>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><24:24>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><23:23>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><22:22>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><21:21>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><20:20>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<19><24:24>> (without init value) have a constant value of 0 in block <wb_fifo>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<18><19:19>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><18:18>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><15:15>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><14:14>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><13:13>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><12:12>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><11:11>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><10:10>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><18:18>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<15><16:16>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<11><15:15>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<9><11:11>> (without init value) have a constant value of 0 in block <wb_fifo>.
     WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<8><9:9>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><8:8>> (without init value) have a constant value of 0 in block <wb_fifo>.
-    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<16><17:17>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<21><8:8>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<20><21:21>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<14><20:20>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<12><14:14>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<23><12:12>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<10><23:23>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<22><10:10>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<17><22:22>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<13><17:17>> (without init value) have a constant value of 0 in block <wb_fifo>.
+    WARNING:Xst:2404 -  FFs/Latches <wb_dat_o<26><13:13>> (without init value) have a constant value of 0 in block <wb_fifo>.
     Summary:
 	inferred  12 D-type flip-flop(s).
 	inferred  12 Multiplexer(s).
@@ -889,36 +888,37 @@ Synthesizing Unit <FIFO>.
     Found 32-bit register for signal <contw>.
     Found 32-bit register for signal <contr>.
     Found 8-bit register for signal <datout>.
-    Found 32-bit subtractor for signal <cont[31]_GND_31_o_sub_13_OUT> created at line 54.
-    Found 32-bit adder for signal <cont[31]_GND_31_o_add_5_OUT> created at line 42.
-    Found 32-bit adder for signal <contw[31]_GND_31_o_add_25_OUT> created at line 79.
-    Found 32-bit adder for signal <contr[31]_GND_31_o_add_30_OUT> created at line 89.
+    Found 32-bit subtractor for signal <cont[31]_GND_31_o_sub_16_OUT> created at line 55.
+    Found 32-bit adder for signal <cont[31]_GND_31_o_add_6_OUT> created at line 43.
+    Found 32-bit adder for signal <n0085[31:0]> created at line 49.
+    Found 32-bit adder for signal <contw[31]_GND_31_o_add_28_OUT> created at line 80.
     Found 32x8-bit dual-port RAM <Mram_f> for signal <f>.
 WARNING:Xst:737 - Found 1-bit latch for signal <empty>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dato>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <full>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator lessequal for signal <n0012> created at line 81
-    Found 32-bit comparator lessequal for signal <n0019> created at line 91
-    Found 32-bit comparator greater for signal <GND_31_o_cont[31]_LessThan_59_o> created at line 111
-    Found 32-bit comparator greater for signal <cont[31]_GND_31_o_LessThan_60_o> created at line 111
-    Found 5-bit comparator equal for signal <_n0116> created at line 37
+    Found 32-bit comparator lessequal for signal <n0015> created at line 82
+    Found 32-bit comparator lessequal for signal <n0021> created at line 92
+    Found 32-bit comparator greater for signal <GND_31_o_cont[31]_LessThan_62_o> created at line 112
+    Found 32-bit comparator greater for signal <cont[31]_GND_31_o_LessThan_63_o> created at line 112
+    Found 5-bit comparator equal for signal <_n0120> created at line 37
+    Found 5-bit comparator equal for signal <_n0123> created at line 37
     Summary:
-	inferred   1 RAM(s).
+	inferred   2 RAM(s).
 	inferred   3 Adder/Subtractor(s).
 	inferred 104 D-type flip-flop(s).
 	inferred   3 Latch(s).
-	inferred   5 Comparator(s).
-	inferred  24 Multiplexer(s).
+	inferred   6 Comparator(s).
+	inferred  26 Multiplexer(s).
 Unit <FIFO> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
+# RAMs                                                 : 5
  2048x32-bit single-port RAM                           : 1
  32x32-bit dual-port RAM                               : 2
- 32x8-bit dual-port RAM                                : 1
+ 32x8-bit dual-port RAM                                : 2
 # Multipliers                                          : 17
  32x32-bit multiplier                                  : 1
  8x7-bit multiplier                                    : 16
@@ -949,13 +949,13 @@ Macro Statistics
  8-bit register                                        : 25
 # Latches                                              : 3
  1-bit latch                                           : 3
-# Comparators                                          : 31
+# Comparators                                          : 32
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 3
  32-bit comparator greater                             : 2
  32-bit comparator lessequal                           : 18
- 5-bit comparator equal                                : 7
-# Multiplexers                                         : 282
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 284
  1-bit 2-to-1 multiplexer                              : 94
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
@@ -968,7 +968,7 @@ Macro Statistics
  32-bit 7-to-1 multiplexer                             : 1
  5-bit 2-to-1 multiplexer                              : 3
  6-bit 2-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 89
+ 8-bit 2-to-1 multiplexer                              : 91
 # Logic shifters                                       : 1
  64-bit shifter logical right                          : 1
 # FSMs                                                 : 2
@@ -1025,11 +1025,27 @@ INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the 
     |     clkA           | connected to signal <orwr>          | rise     |
     |     weA            | connected to internal node          | high     |
     |     addrA          | connected to signal <contw<4:0>>    |          |
-    |     diA            | connected to signal <_n0206>        |          |
+    |     diA            | connected to signal <_n0219>        |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 32-word x 8-bit                     |          |
     |     addrB          | connected to signal <contr<4:0>>    |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <contw> prevents it from being combined with the RAM <Mram_f1> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <orwr>          | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <contw<4:0>>    |          |
+    |     diA            | connected to signal <_n0219>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <n0085[31:0]<4:0>> |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <FIFO> synthesized (advanced).
@@ -1111,10 +1127,10 @@ Unit <wb_bram> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 4
+# RAMs                                                 : 5
  2048x32-bit single-port block RAM                     : 1
  32x32-bit dual-port distributed RAM                   : 2
- 32x8-bit dual-port distributed RAM                    : 1
+ 32x8-bit dual-port distributed RAM                    : 2
 # MACs                                                 : 16
  8x7-to-16-bit MAC                                     : 16
 # Multipliers                                          : 1
@@ -1134,13 +1150,13 @@ Macro Statistics
  6-bit up counter                                      : 8
 # Registers                                            : 1613
  Flip-Flops                                            : 1613
-# Comparators                                          : 31
+# Comparators                                          : 32
  1-bit comparator equal                                : 1
  32-bit comparator equal                               : 3
  32-bit comparator greater                             : 2
  32-bit comparator lessequal                           : 18
- 5-bit comparator equal                                : 7
-# Multiplexers                                         : 401
+ 5-bit comparator equal                                : 8
+# Multiplexers                                         : 403
  1-bit 2-to-1 multiplexer                              : 220
  1-bit 4-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
@@ -1151,7 +1167,7 @@ Macro Statistics
  32-bit 3-to-1 multiplexer                             : 3
  32-bit 7-to-1 multiplexer                             : 1
  5-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 89
+ 8-bit 2-to-1 multiplexer                              : 91
 # Logic shifters                                       : 1
  64-bit shifter logical right                          : 1
 # FSMs                                                 : 2
@@ -1378,23 +1394,15 @@ WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_16> of sequential type is u
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_15> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_14> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_13> of sequential type is unconnected in block <system>.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_8> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_9> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1403,25 +1411,14 @@ WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_9> has a constant value of 0 in b
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_13> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_14> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_15> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_16> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_17> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_18> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_19> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_20> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_21> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_22> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_5> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_6> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_7> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_8> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_9> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_10> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_11> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_12> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_13> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_14> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_15> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1432,6 +1429,25 @@ WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_19> has a constant value of 0 in 
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_20> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_21> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_22> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_31> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_30> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_29> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_28> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_27> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_26> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_13> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_14> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_15> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_16> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_17> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_18> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_19> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_20> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_21> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contw_22> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_14> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_13> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart0/uart0/enable16_counter_15> (without init value) has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1546,16 +1562,16 @@ Forward register balancing over carry chain pwm0/pwm0/pwm4/Maddsub_period[7]_PWR
 Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
 Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
 Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
-Forward register balancing over carry chain fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<0>
+Forward register balancing over carry chain fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_62_o_cy<0>
 INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_8_BRB1> <lm0/load_store_unit/store_data_m_16_BRB0> <lm0/load_store_unit/store_data_m_24_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_9_BRB1> <lm0/load_store_unit/store_data_m_17_BRB0> <lm0/load_store_unit/store_data_m_25_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_10_BRB1> <lm0/load_store_unit/store_data_m_18_BRB0> <lm0/load_store_unit/store_data_m_26_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_3> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_11_BRB1> <lm0/load_store_unit/store_data_m_19_BRB0> <lm0/load_store_unit/store_data_m_27_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_4> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_12_BRB1> <lm0/load_store_unit/store_data_m_20_BRB0> <lm0/load_store_unit/store_data_m_28_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_13_BRB1> <lm0/load_store_unit/store_data_m_21_BRB0> <lm0/load_store_unit/store_data_m_29_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_14_BRB1> <lm0/load_store_unit/store_data_m_22_BRB0> <lm0/load_store_unit/store_data_m_30_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB1> <lm0/load_store_unit/store_data_m_23_BRB0> <lm0/load_store_unit/store_data_m_31_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_8_BRB2> <lm0/load_store_unit/store_data_m_16_BRB0> <lm0/load_store_unit/store_data_m_24_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_9_BRB2> <lm0/load_store_unit/store_data_m_17_BRB0> <lm0/load_store_unit/store_data_m_25_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_10_BRB2> <lm0/load_store_unit/store_data_m_18_BRB0> <lm0/load_store_unit/store_data_m_26_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_3> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_11_BRB2> <lm0/load_store_unit/store_data_m_19_BRB0> <lm0/load_store_unit/store_data_m_27_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_4> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_12_BRB2> <lm0/load_store_unit/store_data_m_20_BRB0> <lm0/load_store_unit/store_data_m_28_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_13_BRB2> <lm0/load_store_unit/store_data_m_21_BRB0> <lm0/load_store_unit/store_data_m_29_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_14_BRB2> <lm0/load_store_unit/store_data_m_22_BRB0> <lm0/load_store_unit/store_data_m_30_BRB4> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB2> <lm0/load_store_unit/store_data_m_23_BRB0> <lm0/load_store_unit/store_data_m_31_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_shift_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
@@ -1567,12 +1583,12 @@ Processing Unit <system> :
 	Register(s) lm0/operand_w_1 lm0/operand_w_0 lm0/load_store_unit/data_w_15 lm0/load_store_unit/data_w_7 lm0/load_store_unit/data_w_23 lm0/load_store_unit/data_w_31 has(ve) been forward balanced into : lm0/load_store_unit/load_data_w<10>41_FRB.
 	Register(s) lm0/branch_x has(ve) been backward balanced into : lm0/branch_x_BRB0 lm0/branch_x_BRB1 lm0/branch_x_BRB2 lm0/branch_x_BRB3 lm0/branch_x_BRB4 lm0/branch_x_BRB5.
 	Register(s) lm0/condition_met_m has(ve) been backward balanced into : lm0/condition_met_m_BRB0 lm0/condition_met_m_BRB1 lm0/condition_met_m_BRB2 lm0/condition_met_m_BRB3 lm0/condition_met_m_BRB4 lm0/condition_met_m_BRB5.
-	Register(s) lm0/load_store_unit/store_data_m_10 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_10_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_11 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_11_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_12 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_12_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_13 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_13_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_14 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_14_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_15 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_15_BRB2.
+	Register(s) lm0/load_store_unit/store_data_m_10 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_10_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_11 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_11_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_12 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_12_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_13 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_13_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_14 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_14_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_15 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_15_BRB1 .
 	Register(s) lm0/load_store_unit/store_data_m_16 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_16_BRB3.
 	Register(s) lm0/load_store_unit/store_data_m_17 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_17_BRB3.
 	Register(s) lm0/load_store_unit/store_data_m_18 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_18_BRB3.
@@ -1589,8 +1605,8 @@ Processing Unit <system> :
 	Register(s) lm0/load_store_unit/store_data_m_29 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_29_BRB3 .
 	Register(s) lm0/load_store_unit/store_data_m_30 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_30_BRB3 .
 	Register(s) lm0/load_store_unit/store_data_m_31 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_31_BRB1 lm0/load_store_unit/store_data_m_31_BRB3 .
-	Register(s) lm0/load_store_unit/store_data_m_8 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_8_BRB2.
-	Register(s) lm0/load_store_unit/store_data_m_9 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_9_BRB2.
+	Register(s) lm0/load_store_unit/store_data_m_8 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_8_BRB1 .
+	Register(s) lm0/load_store_unit/store_data_m_9 has(ve) been backward balanced into : lm0/load_store_unit/store_data_m_9_BRB1 .
 	Register(s) lm0/mc_arithmetic/a_31 has(ve) been backward balanced into : lm0/mc_arithmetic/a_31_BRB0 lm0/mc_arithmetic/a_31_BRB1 lm0/mc_arithmetic/a_31_BRB2.
 	Register(s) lm0/store_x has(ve) been backward balanced into : lm0/store_x_BRB0 lm0/store_x_BRB5.
 	Register(s) lm0/w_result_sel_mul_m has(ve) been backward balanced into : lm0/w_result_sel_mul_m_BRB0 lm0/w_result_sel_mul_m_BRB1.
@@ -1645,15 +1661,15 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4535
+# BELS                             : 4538
 #      GND                         : 1
 #      INV                         : 244
 #      LUT1                        : 222
-#      LUT2                        : 283
-#      LUT3                        : 290
+#      LUT2                        : 284
+#      LUT3                        : 291
 #      LUT4                        : 321
-#      LUT5                        : 604
-#      LUT6                        : 874
+#      LUT5                        : 591
+#      LUT6                        : 888
 #      MUXCY                       : 921
 #      MUXF7                       : 12
 #      VCC                         : 1
@@ -1669,8 +1685,8 @@ Primitive and Black Box Usage:
 #      FDS                         : 3
 #      FDSE                        : 67
 #      LD                          : 3
-# RAMS                             : 74
-#      RAM32X1D                    : 72
+# RAMS                             : 82
+#      RAM32X1D                    : 80
 #      RAMB36E1                    : 2
 # Clock Buffers                    : 2
 #      BUFG                        : 1
@@ -1689,16 +1705,16 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1833  out of  126800     1%  
- Number of Slice LUTs:                 2982  out of  63400     4%  
-    Number used as Logic:              2838  out of  63400     4%  
-    Number used as Memory:              144  out of  19000     0%  
-       Number used as RAM:              144
+ Number of Slice LUTs:                 3001  out of  63400     4%  
+    Number used as Logic:              2841  out of  63400     4%  
+    Number used as Memory:              160  out of  19000     0%  
+       Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3259
-   Number with an unused Flip Flop:    1426  out of   3259    43%  
-   Number with an unused LUT:           277  out of   3259     8%  
-   Number of fully used LUT-FF pairs:  1556  out of   3259    47%  
+ Number of LUT Flip Flop pairs used:   3277
+   Number with an unused Flip Flop:    1444  out of   3277    44%  
+   Number with an unused LUT:           276  out of   3277     8%  
+   Number of fully used LUT-FF pairs:  1557  out of   3277    47%  
    Number of unique control sets:        71
 
 IO Utilization: 
@@ -1734,7 +1750,7 @@ Clock Information:
 Clock Signal                              | Clock buffer(FF name)       | Load  |
 ------------------------------------------+-----------------------------+-------+
 clk                                       | BUFGP                       | 1857  |
-fifo0/fifo0/orwr(fifo0/fifo0/orwr1:O)     | BUFG(*)(fifo0/fifo0/cont_31)| 59    |
+fifo0/fifo0/orwr(fifo0/fifo0/orwr1:O)     | BUFG(*)(fifo0/fifo0/cont_31)| 67    |
 fifo0/fifo0/full_G(fifo0/fifo0/full_G:O)  | NONE(*)(fifo0/fifo0/full)   | 1     |
 fifo0/fifo0/empty_G(fifo0/fifo0/empty_G:O)| NONE(*)(fifo0/fifo0/empty)  | 1     |
 fifo0/fifo0/dato_G(fifo0/fifo0/dato_G:O)  | NONE(*)(fifo0/fifo0/dato)   | 1     |
@@ -1764,7 +1780,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.370ns (frequency: 156.992MHz)
-  Total number of paths / destination ports: 1424431 / 4127
+  Total number of paths / destination ports: 1424766 / 4127
 -------------------------------------------------------------------------
 Delay:               6.370ns (Levels of Logic = 3)
   Source:            lm0/multiplier/multiplier_3 (FF)
@@ -1787,54 +1803,31 @@ Delay:               6.370ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'fifo0/fifo0/orwr'
-  Clock period: 3.524ns (frequency: 283.768MHz)
-  Total number of paths / destination ports: 2416 / 131
+  Clock period: 3.953ns (frequency: 252.947MHz)
+  Total number of paths / destination ports: 3024 / 211
 -------------------------------------------------------------------------
-Delay:               3.524ns (Levels of Logic = 30)
-  Source:            fifo0/fifo0/cont_0 (FF)
-  Destination:       fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB (FF)
+Delay:               3.953ns (Levels of Logic = 7)
+  Source:            fifo0/fifo0/contr_0 (FF)
+  Destination:       fifo0/fifo0/datout_7 (FF)
   Source Clock:      fifo0/fifo0/orwr rising
   Destination Clock: fifo0/fifo0/orwr rising
 
-  Data Path: fifo0/fifo0/cont_0 to fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB
+  Data Path: fifo0/fifo0/contr_0 to fifo0/fifo0/datout_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.361   0.383  fifo0/fifo0/cont_0 (fifo0/fifo0/cont_0)
-     LUT2:I0->O            1   0.097   0.000  fifo0/fifo0/Mcount_cont_lut<0> (fifo0/fifo0/Mcount_cont_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  fifo0/fifo0/Mcount_cont_cy<0> (fifo0/fifo0/Mcount_cont_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<1> (fifo0/fifo0/Mcount_cont_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<2> (fifo0/fifo0/Mcount_cont_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<3> (fifo0/fifo0/Mcount_cont_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<4> (fifo0/fifo0/Mcount_cont_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<5> (fifo0/fifo0/Mcount_cont_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<6> (fifo0/fifo0/Mcount_cont_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<7> (fifo0/fifo0/Mcount_cont_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<8> (fifo0/fifo0/Mcount_cont_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<9> (fifo0/fifo0/Mcount_cont_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<10> (fifo0/fifo0/Mcount_cont_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<11> (fifo0/fifo0/Mcount_cont_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<12> (fifo0/fifo0/Mcount_cont_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<13> (fifo0/fifo0/Mcount_cont_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<14> (fifo0/fifo0/Mcount_cont_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<15> (fifo0/fifo0/Mcount_cont_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<16> (fifo0/fifo0/Mcount_cont_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<17> (fifo0/fifo0/Mcount_cont_cy<17>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<18> (fifo0/fifo0/Mcount_cont_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<19> (fifo0/fifo0/Mcount_cont_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<20> (fifo0/fifo0/Mcount_cont_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<21> (fifo0/fifo0/Mcount_cont_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<22> (fifo0/fifo0/Mcount_cont_cy<22>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<23> (fifo0/fifo0/Mcount_cont_cy<23>)
-     MUXCY:CI->O           1   0.023   0.000  fifo0/fifo0/Mcount_cont_cy<24> (fifo0/fifo0/Mcount_cont_cy<24>)
-     XORCY:CI->O           2   0.370   0.688  fifo0/fifo0/Mcount_cont_xor<25> (fifo0/fifo0/Result<25>)
-     LUT5:I0->O            1   0.097   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_lut<5> (fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_lut<5>)
-     MUXCY:S->O            1   0.353   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<5> (fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<5>)
-     MUXCY:CI->O           1   0.262   0.000  fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6> (N429)
-     FDSE:D                    0.008          fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_59_o_cy<6>_FRB
+     FDRE:C->Q            11   0.361   0.326  fifo0/fifo0/contr_0 (fifo0/fifo0/contr_0)
+     INV:I->O              1   0.113   0.000  fifo0/fifo0/Madd_n0085[31:0]_lut<0>_INV_0 (fifo0/fifo0/Madd_n0085[31:0]_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  fifo0/fifo0/Madd_n0085[31:0]_cy<0> (fifo0/fifo0/Madd_n0085[31:0]_cy<0>)
+     XORCY:CI->O          10   0.370   0.725  fifo0/fifo0/Madd_n0085[31:0]_xor<1> (fifo0/fifo0/n0085[31:0]<1>)
+     LUT6:I1->O            1   0.097   0.295  fifo0/fifo0/_n01241 (fifo0/fifo0/_n01241)
+     LUT6:I5->O            2   0.097   0.300  fifo0/fifo0/_n01243 (fifo0/fifo0/_n0124)
+     LUT3:I2->O            8   0.097   0.715  fifo0/fifo0/Mmux_rclk_datout[7]_wide_mux_44_OUT1031 (fifo0/fifo0/Mmux_rclk_datout[7]_wide_mux_44_OUT103)
+     LUT6:I1->O            1   0.097   0.000  fifo0/fifo0/Mmux_rclk_datout[7]_wide_mux_44_OUT103 (fifo0/fifo0/rclk_datout[7]_wide_mux_44_OUT<4>)
+     FDRE:D                    0.008          fifo0/fifo0/datout_4
     ----------------------------------------
-    Total                      3.524ns (2.453ns logic, 1.071ns route)
-                                       (69.6% logic, 30.4% route)
+    Total                      3.953ns (1.593ns logic, 2.360ns route)
+                                       (40.3% logic, 59.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -1851,11 +1844,11 @@ Offset:              3.296ns (Levels of Logic = 7)
     ----------------------------------------  ------------
      IBUF:I->O           243   0.001   0.822  rst_IBUF (fifo0/reset_inv)
      LUT5:I0->O           10   0.097   0.735  pwm0/pwm0/Mmux_duty0[7]_adrs[6]_mux_68_OUT1841 (pwm0/pwm0/period2[7]_adrs[6]_mux_71_OUT<4>)
-     LUT6:I0->O            1   0.097   0.693  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd_1111 (N186)
+     LUT6:I0->O            1   0.097   0.693  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd_1111 (N188)
      LUT6:I0->O            1   0.097   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_lut<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_lut<11>)
      MUXCY:S->O            1   0.353   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<11> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<11>)
      MUXCY:CI->O           1   0.023   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<12> (pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<12>)
-     XORCY:CI->O           1   0.370   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_xor<13> (N417)
+     XORCY:CI->O           1   0.370   0.000  pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_xor<13> (N419)
      FD:D                      0.008          pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_13_FRB
     ----------------------------------------
     Total                      3.296ns (1.046ns logic, 2.250ns route)
@@ -1894,7 +1887,7 @@ Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 clk                |    6.370|         |         |         |
 fifo0/fifo0/dato_G |         |    0.956|         |         |
 fifo0/fifo0/empty_G|         |    1.025|         |         |
-fifo0/fifo0/full_G |         |    1.021|         |         |
+fifo0/fifo0/full_G |         |    1.030|         |         |
 fifo0/fifo0/orwr   |    1.022|         |         |         |
 -------------------+---------+---------+---------+---------+
 
@@ -1928,23 +1921,23 @@ Clock to Setup on destination clock fifo0/fifo0/orwr
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
 clk                |    3.545|         |         |         |
-fifo0/fifo0/empty_G|         |    1.837|         |         |
-fifo0/fifo0/full_G |         |    1.965|         |         |
-fifo0/fifo0/orwr   |    3.524|         |         |         |
+fifo0/fifo0/empty_G|         |    1.969|         |         |
+fifo0/fifo0/full_G |         |    3.024|         |         |
+fifo0/fifo0/orwr   |    3.953|         |         |         |
 -------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.33 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 26.66 secs
  
 --> 
 
 
-Total memory usage is 519612 kilobytes
+Total memory usage is 519680 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  388 (   0 filtered)
-Number of infos    :  119 (   0 filtered)
+Number of warnings :  387 (   0 filtered)
+Number of infos    :  120 (   0 filtered)
 

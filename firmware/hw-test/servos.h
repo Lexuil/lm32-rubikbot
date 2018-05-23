@@ -21,6 +21,11 @@ public:
       void home();
       void set_serv(int,int);
       void calib(char,int);
+      void derecha0();
+      void izquierda0();
+      void medio0();
+      void atras0();
+      void adelante0();
 private:
    	int serv1,serv2;
    	int der,iz,mid,atr,ade;

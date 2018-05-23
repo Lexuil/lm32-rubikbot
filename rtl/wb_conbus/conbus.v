@@ -159,7 +159,7 @@ assign m1_dat_o = i_dat_s;
 assign m1_ack_o = i_bus_ack & gnt[1];
 
 
-assign i_bus_ack = s0_ack_i | s1_ack_i | s2_ack_i | s3_ack_i | s4_ack_i | s5_ack_i;
+assign i_bus_ack = s0_ack_i | s1_ack_i | s2_ack_i | s3_ack_i | s4_ack_i | s5_ack_i | s6_ack_i;
 
 // slave 0
 assign {s0_adr_o, s0_cti_o, s0_sel_o, s0_dat_o, s0_we_o, s0_cyc_o, s0_stb_o} 
