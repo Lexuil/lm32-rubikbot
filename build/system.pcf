@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 23 12:05:51 2018
+// Written by: Map P.20131013 on Tue May 29 15:49:44 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -22,6 +22,18 @@ PIN bram0/Mram_ram1_pins<63> = BEL "bram0/Mram_ram1" PINNAME CLKARDCLKU;
 PIN bram0/Mram_ram1_pins<62> = BEL "bram0/Mram_ram1" PINNAME CLKARDCLKL;
 PIN bram0/Mram_ram2_pins<63> = BEL "bram0/Mram_ram2" PINNAME CLKARDCLKU;
 PIN bram0/Mram_ram2_pins<62> = BEL "bram0/Mram_ram2" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram3_pins<63> = BEL "bram0/Mram_ram3" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram3_pins<62> = BEL "bram0/Mram_ram3" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram4_pins<63> = BEL "bram0/Mram_ram4" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram4_pins<62> = BEL "bram0/Mram_ram4" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram5_pins<63> = BEL "bram0/Mram_ram5" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram5_pins<62> = BEL "bram0/Mram_ram5" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram6_pins<63> = BEL "bram0/Mram_ram6" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram6_pins<62> = BEL "bram0/Mram_ram6" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram7_pins<63> = BEL "bram0/Mram_ram7" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram7_pins<62> = BEL "bram0/Mram_ram7" PINNAME CLKARDCLKL;
+PIN bram0/Mram_ram8_pins<63> = BEL "bram0/Mram_ram8" PINNAME CLKARDCLKU;
+PIN bram0/Mram_ram8_pins<62> = BEL "bram0/Mram_ram8" PINNAME CLKARDCLKL;
 TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/write_enable_w" BEL "lm0/write_enable_m" BEL "lm0/store_m" BEL
         "lm0/load_m" BEL "lm0/m_bypass_enable_m" BEL "lm0/branch_m" BEL
@@ -134,6 +146,8 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/instruction_unit/i_adr_o_30" BEL
         "lm0/instruction_unit/i_adr_o_29" BEL
         "lm0/instruction_unit/i_adr_o_28" BEL
+        "lm0/instruction_unit/i_adr_o_14" BEL
+        "lm0/instruction_unit/i_adr_o_13" BEL
         "lm0/instruction_unit/i_adr_o_12" BEL
         "lm0/instruction_unit/i_adr_o_11" BEL
         "lm0/instruction_unit/i_adr_o_10" BEL "lm0/instruction_unit/i_adr_o_9"
@@ -351,18 +365,19 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/load_store_unit/wb_data_m_1" BEL
         "lm0/load_store_unit/wb_data_m_0" BEL "lm0/load_store_unit/d_adr_o_30"
         BEL "lm0/load_store_unit/d_adr_o_29" BEL
-        "lm0/load_store_unit/d_adr_o_28" BEL "lm0/load_store_unit/d_adr_o_12"
-        BEL "lm0/load_store_unit/d_adr_o_11" BEL
-        "lm0/load_store_unit/d_adr_o_10" BEL "lm0/load_store_unit/d_adr_o_9"
-        BEL "lm0/load_store_unit/d_adr_o_8" BEL
-        "lm0/load_store_unit/d_adr_o_7" BEL "lm0/load_store_unit/d_adr_o_6"
-        BEL "lm0/load_store_unit/d_adr_o_5" BEL
-        "lm0/load_store_unit/d_adr_o_4" BEL "lm0/load_store_unit/d_adr_o_3"
-        BEL "lm0/load_store_unit/d_adr_o_2" BEL
-        "lm0/load_store_unit/d_adr_o_1" BEL "lm0/load_store_unit/d_adr_o_0"
-        BEL "lm0/load_store_unit/size_m_1" BEL "lm0/load_store_unit/size_m_0"
-        BEL "lm0/shifter/right_shift_result_31" BEL
-        "lm0/shifter/right_shift_result_30" BEL
+        "lm0/load_store_unit/d_adr_o_28" BEL "lm0/load_store_unit/d_adr_o_14"
+        BEL "lm0/load_store_unit/d_adr_o_13" BEL
+        "lm0/load_store_unit/d_adr_o_12" BEL "lm0/load_store_unit/d_adr_o_11"
+        BEL "lm0/load_store_unit/d_adr_o_10" BEL
+        "lm0/load_store_unit/d_adr_o_9" BEL "lm0/load_store_unit/d_adr_o_8"
+        BEL "lm0/load_store_unit/d_adr_o_7" BEL
+        "lm0/load_store_unit/d_adr_o_6" BEL "lm0/load_store_unit/d_adr_o_5"
+        BEL "lm0/load_store_unit/d_adr_o_4" BEL
+        "lm0/load_store_unit/d_adr_o_3" BEL "lm0/load_store_unit/d_adr_o_2"
+        BEL "lm0/load_store_unit/d_adr_o_1" BEL
+        "lm0/load_store_unit/d_adr_o_0" BEL "lm0/load_store_unit/size_m_1" BEL
+        "lm0/load_store_unit/size_m_0" BEL "lm0/shifter/right_shift_result_31"
+        BEL "lm0/shifter/right_shift_result_30" BEL
         "lm0/shifter/right_shift_result_29" BEL
         "lm0/shifter/right_shift_result_28" BEL
         "lm0/shifter/right_shift_result_27" BEL
@@ -1104,7 +1119,13 @@ TIMEGRP sys_clk_pin = BEL "conbus0/conbus_arb/state_FSM_FFd3" BEL
         "lm0/Mram_registers12/DP" BEL "lm0/Mram_registers11/SP" BEL
         "lm0/Mram_registers11/DP" PIN "bram0/Mram_ram1_pins<63>" PIN
         "bram0/Mram_ram1_pins<62>" PIN "bram0/Mram_ram2_pins<63>" PIN
-        "bram0/Mram_ram2_pins<62>";
+        "bram0/Mram_ram2_pins<62>" PIN "bram0/Mram_ram3_pins<63>" PIN
+        "bram0/Mram_ram3_pins<62>" PIN "bram0/Mram_ram4_pins<63>" PIN
+        "bram0/Mram_ram4_pins<62>" PIN "bram0/Mram_ram5_pins<63>" PIN
+        "bram0/Mram_ram5_pins<62>" PIN "bram0/Mram_ram6_pins<63>" PIN
+        "bram0/Mram_ram6_pins<62>" PIN "bram0/Mram_ram7_pins<63>" PIN
+        "bram0/Mram_ram7_pins<62>" PIN "bram0/Mram_ram8_pins<63>" PIN
+        "bram0/Mram_ram8_pins<62>";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

@@ -31,8 +31,11 @@ servos.o: servos.cpp
 cam.o: cam.cpp
 	$(LM32_CCP) $(CFLAGS) -c cam.cpp
 
-image:  main.o soc-hw.o crt0ram.o pwm.o servos.o cam.o
-	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o servos.o cam.o
+face.o: face.cpp
+	$(LM32_CCP) $(CFLAGS) -c face.cpp
+
+image:  main.o soc-hw.o crt0ram.o pwm.o servos.o cam.o face.o
+	$(LM32_LD) $(LDFLAGS) -Map image.map -N -o image crt0ram.o main.o soc-hw.o pwm.o servos.o cam.o face.o
 
 image.lst: image
 	$(LM32_OBJDUMP) -h -S $< > $@
@@ -41,7 +44,7 @@ image.srec: image.lst
 	$(LM32_OBJCOPY) $(SEGMENTS) -O srec image image.srec
 
 $(VRAMFILE): image.srec
-	$(SREC2VRAM) image.srec 0x00000000 0x10000 > $(VRAMFILE)
+	$(SREC2VRAM) image.srec 0x00000000 0x100000 > $(VRAMFILE)
 
 clean:
 	rm -f image image.lst image.bin image.srec image.map  *.o *.d *.ram

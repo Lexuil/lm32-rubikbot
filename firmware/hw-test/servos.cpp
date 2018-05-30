@@ -40,12 +40,12 @@ void arm::set_serv(int x,int y){
 	serv1 = x;
 	serv2 = y;
 
-	der = DER;
-	iz  = IZ;
-	mid = MID;
+	der = 0x29;
+	iz  = 0x09;
+	mid = 0x18;
 
-	atr = ATR;
-	ade = ADE;
+	atr = 0x30;
+	ade = 0x17;
 
 	pwm_period(serv1,200);
 	pwm_period(serv2,200);
@@ -75,17 +75,17 @@ void arm::calib(char dir,int val){
 };
 
 void arm::derecha0(){
-	pwm_duty(serv2,der);
+	pwm_duty(serv1,der);
 };
 
 
 void arm::izquierda0(){
-	pwm_duty(serv2,iz);
+	pwm_duty(serv1,iz);
 };
 
 
 void arm::medio0(){
-	pwm_duty(serv2,mid);
+	pwm_duty(serv1,mid);
 };
 
 

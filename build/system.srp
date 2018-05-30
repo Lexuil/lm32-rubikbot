@@ -191,7 +191,7 @@ WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v
 WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 289: Assignment to lm32d_lock ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/home/lexuil/Documents/GitHub/lm32-rubikbot/system.v" Line 290: Assignment to lm32d_bte ignored, since the identifier is never used
 
-Elaborating module <wb_bram(adr_width=13,mem_file_name="../firmware/hw-test/image.ram")>.
+Elaborating module <wb_bram(adr_width=15,mem_file_name="../firmware/hw-test/image.ram")>.
 Reading initialization file \"../firmware/hw-test/image.ram\".
 
 Elaborating module <wb_uart(clk_freq=100000000,baud=38400)>.
@@ -611,12 +611,12 @@ Unit <lm32_interrupt> synthesized.
 Synthesizing Unit <wb_bram>.
     Related source file is "/home/lexuil/Documents/GitHub/lm32-rubikbot/rtl/wb_bram/wb_bram.v".
         mem_file_name = "../firmware/hw-test/image.ram"
-        adr_width = 13
+        adr_width = 15
 WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <wb_adr_i<31:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_adr_i<31:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 2048x32-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 8192x32-bit single-port RAM <Mram_ram> for signal <ram>.
     Found 1-bit register for signal <ack>.
     Found 32-bit register for signal <wb_dat_o>.
     Summary:
@@ -916,9 +916,9 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 5
- 2048x32-bit single-port RAM                           : 1
  32x32-bit dual-port RAM                               : 2
  32x8-bit dual-port RAM                                : 2
+ 8192x32-bit single-port RAM                           : 1
 # Multipliers                                          : 17
  32x32-bit multiplier                                  : 1
  8x7-bit multiplier                                    : 16
@@ -981,8 +981,6 @@ Macro Statistics
 
 INFO:Xst:2261 - The FF/Latch <i_cyc_o> in Unit <instruction_unit> is equivalent to the following FF/Latch, which will be removed : <i_stb_o> 
 WARNING:Xst:1710 - FF/Latch <bus_error_x> (without init value) has a constant value of 0 in block <lm0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <i_adr_o_13> of sequential type is unconnected in block <instruction_unit>.
-WARNING:Xst:2677 - Node <i_adr_o_14> of sequential type is unconnected in block <instruction_unit>.
 WARNING:Xst:2677 - Node <i_adr_o_15> of sequential type is unconnected in block <instruction_unit>.
 WARNING:Xst:2677 - Node <i_adr_o_16> of sequential type is unconnected in block <instruction_unit>.
 WARNING:Xst:2677 - Node <i_adr_o_17> of sequential type is unconnected in block <instruction_unit>.
@@ -997,8 +995,6 @@ WARNING:Xst:2677 - Node <i_adr_o_25> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <i_adr_o_26> of sequential type is unconnected in block <instruction_unit>.
 WARNING:Xst:2677 - Node <i_adr_o_27> of sequential type is unconnected in block <instruction_unit>.
 WARNING:Xst:2677 - Node <i_adr_o_31> of sequential type is unconnected in block <instruction_unit>.
-WARNING:Xst:2677 - Node <d_adr_o_13> of sequential type is unconnected in block <load_store_unit>.
-WARNING:Xst:2677 - Node <d_adr_o_14> of sequential type is unconnected in block <load_store_unit>.
 WARNING:Xst:2677 - Node <d_adr_o_15> of sequential type is unconnected in block <load_store_unit>.
 WARNING:Xst:2677 - Node <d_adr_o_16> of sequential type is unconnected in block <load_store_unit>.
 WARNING:Xst:2677 - Node <d_adr_o_17> of sequential type is unconnected in block <load_store_unit>.
@@ -1110,7 +1106,7 @@ INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 2048-word x 32-bit                  |          |
+    |     aspect ratio   | 8192-word x 32-bit                  |          |
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk_i>         | rise     |
     |     enA            | connected to internal node          | high     |
@@ -1128,9 +1124,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 5
- 2048x32-bit single-port block RAM                     : 1
  32x32-bit dual-port distributed RAM                   : 2
  32x8-bit dual-port distributed RAM                    : 2
+ 8192x32-bit single-port block RAM                     : 1
 # MACs                                                 : 16
  8x7-to-16-bit MAC                                     : 16
 # Multipliers                                          : 1
@@ -1368,8 +1364,6 @@ WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_18> of sequential type is 
 WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_17> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_16> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_15> of sequential type is unconnected in block <system>.
-WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_14> of sequential type is unconnected in block <system>.
-WARNING:Xst:2677 - Node <lm0/instruction_unit/i_adr_o_13> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_sel_o_3> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_sel_o_2> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_sel_o_1> of sequential type is unconnected in block <system>.
@@ -1392,8 +1386,6 @@ WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_18> of sequential type is u
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_17> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_16> of sequential type is unconnected in block <system>.
 WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_15> of sequential type is unconnected in block <system>.
-WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_14> of sequential type is unconnected in block <system>.
-WARNING:Xst:2677 - Node <lm0/load_store_unit/d_adr_o_13> of sequential type is unconnected in block <system>.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_23> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_24> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo0/fifo0/contr_25> has a constant value of 0 in block <system>. This FF/Latch will be trimmed during the optimization process.
@@ -1563,7 +1555,10 @@ Forward register balancing over carry chain pwm0/pwm0/pwm3/Maddsub_period[7]_PWR
 Forward register balancing over carry chain pwm0/pwm0/pwm2/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
 Forward register balancing over carry chain pwm0/pwm0/pwm1/Maddsub_period[7]_PWR_25_o_MuLt_3_OUT_Madd2_cy<5>
 Forward register balancing over carry chain fifo0/fifo0/Mcompar_GND_31_o_cont[31]_LessThan_62_o_cy<0>
-INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_shift_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
+INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
+INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB2> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_0> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_8_BRB2> <lm0/load_store_unit/store_data_m_16_BRB0> <lm0/load_store_unit/store_data_m_24_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_1> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_9_BRB2> <lm0/load_store_unit/store_data_m_17_BRB0> <lm0/load_store_unit/store_data_m_25_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_2> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_10_BRB2> <lm0/load_store_unit/store_data_m_18_BRB0> <lm0/load_store_unit/store_data_m_26_BRB4> 
@@ -1572,10 +1567,7 @@ INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_4> in Unit <syste
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_5> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_13_BRB2> <lm0/load_store_unit/store_data_m_21_BRB0> <lm0/load_store_unit/store_data_m_29_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_6> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_14_BRB2> <lm0/load_store_unit/store_data_m_22_BRB0> <lm0/load_store_unit/store_data_m_30_BRB4> 
 INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/store_data_m_7> in Unit <system> is equivalent to the following 3 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB2> <lm0/load_store_unit/store_data_m_23_BRB0> <lm0/load_store_unit/store_data_m_31_BRB4> 
-INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_shift_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB0> 
-INFO:Xst:2261 - The FF/Latch <lm0/load_store_unit/size_m_1> in Unit <system> is equivalent to the following 16 FFs/Latches, which will be removed : <lm0/load_store_unit/store_data_m_15_BRB0> <lm0/load_store_unit/store_data_m_14_BRB0> <lm0/load_store_unit/store_data_m_13_BRB0> <lm0/load_store_unit/store_data_m_12_BRB0> <lm0/load_store_unit/store_data_m_11_BRB0> <lm0/load_store_unit/store_data_m_10_BRB0> <lm0/load_store_unit/store_data_m_9_BRB0> <lm0/load_store_unit/store_data_m_8_BRB0> <lm0/load_store_unit/store_data_m_31_BRB0> <lm0/load_store_unit/store_data_m_30_BRB0> <lm0/load_store_unit/store_data_m_29_BRB0> <lm0/load_store_unit/store_data_m_28_BRB0> <lm0/load_store_unit/store_data_m_27_BRB0> <lm0/load_store_unit/store_data_m_26_BRB0> <lm0/load_store_unit/store_data_m_25_BRB0> <lm0/load_store_unit/store_data_m_24_BRB0> 
-INFO:Xst:2261 - The FF/Latch <lm0/x_bypass_enable_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB1> 
-INFO:Xst:2261 - The FF/Latch <lm0/m_result_sel_compare_x> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/m_bypass_enable_x_BRB2> 
+INFO:Xst:2261 - The FF/Latch <lm0/load_m> in Unit <system> is equivalent to the following FF/Latch, which will be removed : <lm0/w_result_sel_load_m_BRB0> 
 
 Pipelining and Register Balancing Report ...
 
@@ -1637,8 +1629,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1842
- Flip-Flops                                            : 1842
+# Registers                                            : 1846
+ Flip-Flops                                            : 1846
 
 =========================================================================
 
@@ -1661,12 +1653,12 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4538
+# BELS                             : 4540
 #      GND                         : 1
 #      INV                         : 244
 #      LUT1                        : 222
 #      LUT2                        : 284
-#      LUT3                        : 291
+#      LUT3                        : 293
 #      LUT4                        : 321
 #      LUT5                        : 591
 #      LUT6                        : 888
@@ -1674,10 +1666,10 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 12
 #      VCC                         : 1
 #      XORCY                       : 762
-# FlipFlops/Latches                : 1845
+# FlipFlops/Latches                : 1849
 #      FD                          : 335
 #      FDC                         : 122
-#      FDCE                        : 749
+#      FDCE                        : 753
 #      FDE                         : 145
 #      FDPE                        : 36
 #      FDR                         : 31
@@ -1685,9 +1677,9 @@ Primitive and Black Box Usage:
 #      FDS                         : 3
 #      FDSE                        : 67
 #      LD                          : 3
-# RAMS                             : 82
+# RAMS                             : 88
 #      RAM32X1D                    : 80
-#      RAMB36E1                    : 2
+#      RAMB36E1                    : 8
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -1704,17 +1696,17 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1833  out of  126800     1%  
- Number of Slice LUTs:                 3001  out of  63400     4%  
-    Number used as Logic:              2841  out of  63400     4%  
+ Number of Slice Registers:            1837  out of  126800     1%  
+ Number of Slice LUTs:                 3003  out of  63400     4%  
+    Number used as Logic:              2843  out of  63400     4%  
     Number used as Memory:              160  out of  19000     0%  
        Number used as RAM:              160
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3277
-   Number with an unused Flip Flop:    1444  out of   3277    44%  
-   Number with an unused LUT:           276  out of   3277     8%  
-   Number of fully used LUT-FF pairs:  1557  out of   3277    47%  
+ Number of LUT Flip Flop pairs used:   3280
+   Number with an unused Flip Flop:    1443  out of   3280    43%  
+   Number with an unused LUT:           277  out of   3280     8%  
+   Number of fully used LUT-FF pairs:  1560  out of   3280    47%  
    Number of unique control sets:        71
 
 IO Utilization: 
@@ -1723,8 +1715,8 @@ IO Utilization:
     IOB Flip Flops/Latches:              12
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                2  out of    135     1%  
-    Number using Block RAM only:          2
+ Number of Block RAM/FIFO:                8  out of    135     5%  
+    Number using Block RAM only:          8
  Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
  Number of DSP48E1s:                      3  out of    240     1%  
 
@@ -1749,7 +1741,7 @@ Clock Information:
 ------------------------------------------+-----------------------------+-------+
 Clock Signal                              | Clock buffer(FF name)       | Load  |
 ------------------------------------------+-----------------------------+-------+
-clk                                       | BUFGP                       | 1857  |
+clk                                       | BUFGP                       | 1867  |
 fifo0/fifo0/orwr(fifo0/fifo0/orwr1:O)     | BUFG(*)(fifo0/fifo0/cont_31)| 67    |
 fifo0/fifo0/full_G(fifo0/fifo0/full_G:O)  | NONE(*)(fifo0/fifo0/full)   | 1     |
 fifo0/fifo0/empty_G(fifo0/fifo0/empty_G:O)| NONE(*)(fifo0/fifo0/empty)  | 1     |
@@ -1780,7 +1772,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.370ns (frequency: 156.992MHz)
-  Total number of paths / destination ports: 1424766 / 4127
+  Total number of paths / destination ports: 1425089 / 4135
 -------------------------------------------------------------------------
 Delay:               6.370ns (Levels of Logic = 3)
   Source:            lm0/multiplier/multiplier_3 (FF)
@@ -1831,7 +1823,7 @@ Delay:               3.953ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 6431 / 1638
+  Total number of paths / destination ports: 6435 / 1642
 -------------------------------------------------------------------------
 Offset:              3.296ns (Levels of Logic = 7)
   Source:            rst (PAD)
@@ -1929,15 +1921,15 @@ fifo0/fifo0/orwr   |    3.953|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 26.66 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.40 secs
  
 --> 
 
 
-Total memory usage is 519680 kilobytes
+Total memory usage is 520436 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  387 (   0 filtered)
+Number of warnings :  379 (   0 filtered)
 Number of infos    :  120 (   0 filtered)
 

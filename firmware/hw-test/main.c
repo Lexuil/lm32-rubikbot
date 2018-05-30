@@ -3,14 +3,16 @@
 #include "soc-hw.h"
 #include "servos.h"
 #include "cam.h"
-
+#include "face.h"
 
 char C = 'r';
 int br;
 int inst;
 int dir;
 int val;
+int adr;
 
+uint32_t FF;
 
 void instruccion(arm y,char x){
 	switch(x){
@@ -43,147 +45,101 @@ uint8_t read_command(){
         return 0;			
 }
 
-void R1(arm a, arm b, arm c, arm d){
-	a.atras0();
-	c.atras0();
-	msleep(1000);
-	b.derecha0();
-	d.izquierda0();
-	msleep(1000);
-	a.adelante0();
-	c.adelante0();
-	msleep(1000);
-	b.atras0();
-	d.atras0();
-	msleep(1000);
-	b.medio0();
-	d.medio0();
-	msleep(1000);
-	b.adelante0();
-	d.adelante0();
-	msleep(1000);
-}
+/* --- MOVE_ARM FUNCTION --- */
 
-void L1(arm a, arm b, arm c, arm d){
-	a.atras0();
-	c.atras0();
-	msleep(1000);
-	b.izquierda0();
-	d.derecha0();
-	msleep(1000);
-	a.adelante0();
-	c.adelante0();
-	msleep(1000);
-	b.atras0();
-	d.atras0();
-	msleep(1000);
-	b.medio0();
-	d.medio0();
-	msleep(1000);
-	b.adelante0();
-	d.adelante0();
-	msleep(1000);
-}
-
-void R11(arm a, arm b, arm c, arm d){
-	b.atras0();
-	d.atras0();
-	msleep(1000);
-	a.derecha0();
-	c.izquierda0();
-	msleep(1000);
-	b.adelante0();
-	d.adelante0();
-	msleep(1000);
-	a.atras0();
-	c.atras0();
-	msleep(1000);
-	a.medio0();
-	c.medio0();
-	msleep(1000);
-	a.adelante0();
-	c.adelante0();
-	msleep(1000);
-}
-
-void L11(arm a, arm b, arm c, arm d){
-	b.atras0();
-	d.atras0();
-	msleep(1000);
-	a.izquierda0();
-	c.derecha0();
-	msleep(1000);
-	b.adelante0();
-	d.adelante0();
-	msleep(1000);
-	a.atras0();
-	c.atras0();
-	msleep(1000);
-	a.medio0();
-	c.medio0();
-	msleep(1000);
-	a.adelante0();
-	c.adelante0();
-	msleep(1000);
-}
-
-int Cao  = 1;
-int Cao1 = 1;
-
-void Face(arm a, arm b, arm c, arm d, int Ca){
-	if(Ca != Cao){
-		if(Ca < 5){
-			if(Cao < 5){
-				if(Ca > Cao){
-					for(int i=0; i<(Ca-Cao); i++){
-						R1(a,b,c,d);
-					}
-				}else{
-					for(int i=0; i<(Cao-Ca); i++){
-						L1(a,b,c,d);
-					}
+void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){	
+	if (c == 0x27){  // ' = 27 (ASCII to HEX)
+			if(b == 0x52){ 
+				arm4.izquierda();
+				uart_putstr("Moving Arm 1 to the LEFT..."); // Moves ARM 1 (Cube's Right Face --ORANGE--) to the LEFT
 				}
+			if(b == 0x42){
+				arm3.izquierda();
+				uart_putstr("Moving Arm 2 to the LEFT..."); // Moves ARM 1 (Cube's Back Face --BLUE--) to the LEFT
+				} 	
+			if(b == 0x4C){
+			 	arm2.izquierda();
+				uart_putstr("Moving Arm 3 to the LEFT..."); // Moves ARM 1 (Cube's Left Face --RED--) to the LEFT
+			 } 
+			if (b == 0x46){
+				arm1.izquierda();
+				uart_putstr("Moving Arm 4 to the LEFT..."); // Moves ARM 1 (Cube's Front Face --GREEN--) to the LEFT
 			}
-			if(Cao >= 5){
-				if(Cao == 6){
-					R11(a,b,c,d);
-				}
-				if(Cao == 5){
-					L11(a,b,c,d);
-				}
-				if(Ca > Cao1){
-					for(int i=0; i<(Ca-Cao1); i++){
-						R1(a,b,c,d);
-					}
-				}else{
-					for(int i=0; i<(Cao1-Ca); i++){
-						L1(a,b,c,d);
-					}
-				}
+			if (b == 0x55){
+				arm1.izquierda();
+				uart_putstr("Moving Arm 1 to the LEFT..."); // Moves ARM 1 (Cube's Upper Face --YELLOW--) to the RIGHT
+			}
+			if (b == 0x44){
+				arm4.izquierda();
+				uart_putstr("Moving Arm 3 to the LEFT..."); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
+			}
+	}
+	else {
+			if (b == 0x52){
+				arm4.derecha();
+				uart_putstr("Moving Arm 1 to the RIGHT..."); // Moves ARM 1 (Cube's Right Face --ORANGE--) to the RIGHT
+			}
+			if (b == 0x42){
+				arm3.derecha();
+				uart_putstr("Moving Arm 2 to the RIGHT..."); // Moves ARM 1 (Cube's Back Face --BLUE--) to the RIGHT	
+			}		
+			if (b == 0x4C){
+				arm2.derecha();
+				uart_putstr("Moving Arm 3 to the RIGHT..."); // Moves ARM 1 (Cube's Left Face --RED--) to the RIGHT
+			}
+			if (b == 0x46){
+				arm1.derecha();
+				uart_putstr("Moving Arm 4 to the RIGHT..."); // Moves ARM 1 (Cube's Front Face --GREEN--) to the RIGHT
+			}
+			if (b == 0x55){
+				arm1.atras0();
+				arm3.atras0();
+				msleep(1000);
+				arm2.derecha0();
+				arm4.izquierda0();
+				msleep(1000);
+				arm1.adelante0();
+				arm3.adelante0();
+				msleep(1000);
+				arm2.atras0();
+				arm4.atras0();
+				msleep(1000);
+				arm2.medio0();
+				arm4.medio0();
+				msleep(1000);
+				arm2.adelante0();
+				arm4.adelante0();
+				msleep(1000);
+				arm1.derecha();
+				arm1.atras0();
+				arm3.atras0();
+				msleep(1000);
+				arm2.izquierda0();
+				arm4.derecha0();
+				msleep(1000);
+				arm1.adelante0();
+				arm3.adelante0();
+				msleep(1000);
+				arm2.atras0();
+				arm4.atras0();
+				msleep(1000);
+				arm2.medio0();
+				arm4.medio0();
+				msleep(1000);
+				arm2.adelante0();
+				arm4.adelante0();
 
+				uart_putstr("Moving Arm 1 to the RIGHT..."); // Moves ARM 1 (Cube's Upper Face --YELLOW--) to the RIGHT
 			}
-		}else if(Ca >= 5){
-			if(Cao < 5){
-				if(Ca == 5){
-					R11(a,b,c,d);
-				}
-				if(Ca == 6){
-					L11(a,b,c,d);
-				}
-			}
-			if(Cao >= 5){
-				for(int i = 0; i<2 ; i++){
-					R11(a,b,c,d);
-				}
+			if (b == 0x44){
+				arm4.derecha();
+				uart_putstr("Moving Arm 3 to the RIGHT..."); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
 			}
 		}
-	}
-
-	Cao1 = Cao;
-	Cao = Ca;
 }
 
 int main(){
+
 
 	cam camera;
 
@@ -194,10 +150,36 @@ int main(){
 	arm arm3;
 	arm arm4;
 
+	face F;
+
 	arm1.set_serv(0,1);
 	arm2.set_serv(2,3);
 	arm3.set_serv(4,5);
 	arm4.set_serv(6,7);
+
+	arm1.calib(0x20,0x29);
+	arm1.calib(0x21,0x05);
+	arm1.calib(0x22,0x17);
+	arm1.calib(0x23,0x30);
+	arm1.calib(0x24,0x10);
+
+	arm2.calib(0x20,0x29);
+	arm2.calib(0x21,0x05);
+	arm2.calib(0x22,0x18);
+	arm2.calib(0x23,0x30);
+	arm2.calib(0x24,0x17);
+
+	arm3.calib(0x20,0x29);
+	arm3.calib(0x21,0x09);
+	arm3.calib(0x22,0x18);
+	arm3.calib(0x23,0x30);
+	arm3.calib(0x24,0x10);
+
+	arm4.calib(0x20,0x29);
+	arm4.calib(0x21,0x9);
+	arm4.calib(0x22,0x18);
+	arm4.calib(0x23,0x30);
+	arm4.calib(0x24,0x17);
 
 	uart_putstr("Ready");
 
@@ -257,10 +239,18 @@ int main(){
 				uart_putstr("Ready");
 			}
 			if (command_array[0] == 0xfb){
-				br  = command_array[1];
-				uart_putstr("Moving...");
-				Face(arm1,arm2,arm3,arm4,br);
-				uart_putstr("Ready");
+				FF  = command_array[1];
+			 	uart_putstr("Moving...");
+			 	F.Face(arm1,arm2,arm3,arm4,FF);
+			 	uart_putstr("Ready");
+			}
+// Cube Solver
+			if (command_array[0] == 0xfa){
+				adr = command_array[1];
+				dir = command_array[2];
+				uart_putstr("Solving Cube");
+				move_arm(arm1, arm2, arm3, arm4, adr, dir);
+				uart_putstr("Done");
 			}
 
 			if (command_array[0] == 0x50){
