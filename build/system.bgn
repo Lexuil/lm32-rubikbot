@@ -4,7 +4,7 @@ Loading device for application Rf_Device from file '7a100t.nph' in environment
 /opt/Xilinx/14.7/ISE_DS/ISE/.
    "system" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
 
-Tue May 29 15:50:38 2018
+Mon Jun  4 22:08:20 2018
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -w system-routed.ncd system.bit 
 

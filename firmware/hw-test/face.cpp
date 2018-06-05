@@ -53,6 +53,63 @@ void face::Face(arm a, arm b, arm c, arm d, uint32_t Ca){
 	Cao = Ca;
 };
 
+void face::Face1(arm a, arm b, arm c, arm d, uint32_t x){
+	if(x == 1){
+		
+	}
+	if(x == 2){
+		L11(a,b,c,d);
+		R1(a,b,c,d);
+	}
+	if(x == 3){
+		L1(a,b,c,d);
+	}
+	if(x == 4){
+		L1(a,b,c,d);
+	}
+	if(x == 5){
+		R1(a,b,c,d);
+		L11(a,b,c,d);
+	}
+	if(x == 6){
+		L11(a,b,c,d);
+	}
+	if(x == 7){
+		R11(a,b,c,d);
+		R11(a,b,c,d);
+	}
+};
+
+void face::facepictureinit(arm a, arm b, arm c, arm d){
+	a.atras0();
+	c.atras0();
+	msleep(1000);
+	a.izquierda0();
+	c.derecha0();
+	msleep(1000);
+	a.adelante0();
+	c.adelante0();
+	msleep(1000);
+	b.atras0();
+	d.atras0();
+	msleep(1000);
+};
+
+void face::facepictureend(arm a, arm b, arm c, arm d){
+	b.adelante0();
+	d.adelante0();
+	msleep(1000);
+	a.atras0();
+	c.atras0();
+	msleep(1000);
+	a.medio0();
+	c.medio0();
+	msleep(1000);
+	a.adelante0();
+	c.adelante0();
+	msleep(1000);
+};
+
 void face::R1(arm a, arm b, arm c, arm d){
 	a.atras0();
 	c.atras0();

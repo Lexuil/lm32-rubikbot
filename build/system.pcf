@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 29 15:49:44 2018
+// Written by: Map P.20131013 on Mon Jun 04 22:07:24 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,7 +7,7 @@ COMP "rst" LOCATE = SITE "C12" LEVEL 1;
 COMP "pwm<0>" LOCATE = SITE "A14" LEVEL 1;
 COMP "pwm<1>" LOCATE = SITE "A13" LEVEL 1;
 COMP "pwm<2>" LOCATE = SITE "A16" LEVEL 1;
-COMP "pwm<3>" LOCATE = SITE "A15" LEVEL 1;
+COMP "pwm<3>" LOCATE = SITE "D14" LEVEL 1;
 COMP "pwm<4>" LOCATE = SITE "B17" LEVEL 1;
 COMP "pwm<5>" LOCATE = SITE "B16" LEVEL 1;
 COMP "pwm<6>" LOCATE = SITE "A18" LEVEL 1;
