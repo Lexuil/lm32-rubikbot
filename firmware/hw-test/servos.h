@@ -26,9 +26,11 @@ public:
       void medio0();
       void atras0();
       void adelante0();
+      void adelante01();
 private:
    	int serv1,serv2;
-   	int der,iz,mid,atr,ade;
+      int der,iz,mid,atr,ade;
+      int der1,iz1,mid1,atr1,ade1;
 
 };
 

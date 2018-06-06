@@ -18,7 +18,7 @@ Guión del enlazador y mapa de memoria
                 0x0000000000001000                _RAM_SIZE = 0x1000
                 0x0000000000001000                _RAM_END = (_RAM_START + _RAM_SIZE)
 
-.text           0x0000000000000000     0x39b0
+.text           0x0000000000000000     0x4e24
                 0x0000000000000000                _ftext = .
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000000000      0x208 crt0ram.o
@@ -31,138 +31,139 @@ Guión del enlazador y mapa de memoria
                 0x000000000000016c                halt
                 0x00000000000001f8                get_sp
                 0x0000000000000200                get_gp
- .text          0x0000000000000208      0x7b0 main.o
+ .text          0x0000000000000208      0xadc main.o
                 0x0000000000000208                instruccion(arm, char)
-                0x000000000000027c                read_command()
-                0x00000000000002d8                move_arm(arm, arm, arm, arm, char, char)
- .text.startup  0x00000000000009b8      0xa60 main.o
-                0x00000000000009b8                main
- .text          0x0000000000001418      0x344 soc-hw.o
-                0x0000000000001418                tic_isr
-                0x000000000000144c                isr_null
-                0x0000000000001450                irq_handler
-                0x00000000000014ac                isr_init
-                0x00000000000014d8                isr_register
-                0x00000000000014f4                isr_unregister
-                0x000000000000151c                msleep
-                0x0000000000001558                nsleep
-                0x000000000000158c                tic_init
-                0x00000000000015e0                uart_init
-                0x00000000000015e4                uart_getchar
-                0x000000000000160c                uart_putchar
-                0x0000000000001634                uart_putstr
-                0x000000000000166c                uart1_init
-                0x0000000000001670                uart1_getchar
-                0x0000000000001698                uart1_putchar
-                0x00000000000016c0                uart1_putstr
-                0x00000000000016f8                fifo_read
-                0x0000000000001710                fifo_write
-                0x0000000000001728                fifo_state
-                0x0000000000001740                fifo_reset
- .text          0x000000000000175c      0x3c4 pwm.o
-                0x000000000000175c                pwm::pause()
-                0x0000000000001778                pwm::pwm_en(int, unsigned int)
-                0x0000000000001808                pwm::pwm_duty(int, unsigned int)
-                0x0000000000001898                pwm::pwm_period(int, unsigned int)
-                0x0000000000001928                pwm::pwm_geten(unsigned int)
-                0x00000000000019d0                pwm::pwm_getduty(unsigned int)
-                0x0000000000001a78                pwm::pwm_getperiod(unsigned int)
- .text          0x0000000000001b20      0x334 servos.o
-                0x0000000000001b20                arm::init()
-                0x0000000000001b84                arm::home()
-                0x0000000000001bb8                arm::derecha()
-                0x0000000000001c34                arm::izquierda()
-                0x0000000000001cb0                arm::set_serv(int, int)
-                0x0000000000001d60                arm::calib(char, int)
-                0x0000000000001db4                arm::derecha0()
-                0x0000000000001dd4                arm::izquierda0()
-                0x0000000000001df4                arm::medio0()
-                0x0000000000001e14                arm::atras0()
-                0x0000000000001e34                arm::adelante0()
- .text          0x0000000000001e54      0x43c cam.o
-                0x0000000000001e54                cam::reset()
-                0x0000000000001ed0                cam::takepicture()
-                0x0000000000001f70                cam::getsize()
-                0x000000000000203c                cam::sendpicture()
-                0x00000000000021f0                cam::stoptaking()
- .text          0x0000000000002290     0x1720 face.o
-                0x0000000000002290                face::facepictureinit(arm, arm, arm, arm)
-                0x0000000000002304                face::facepictureend(arm, arm, arm, arm)
-                0x0000000000002378                face::R1(arm, arm, arm, arm)
-                0x000000000000241c                face::L1(arm, arm, arm, arm)
-                0x00000000000024c0                face::R11(arm, arm, arm, arm)
-                0x0000000000002564                face::L11(arm, arm, arm, arm)
-                0x0000000000002608                face::Face(arm, arm, arm, arm, unsigned int)
-                0x0000000000003074                face::Face1(arm, arm, arm, arm, unsigned int)
-                0x00000000000039b0                _etext = .
+                0x000000000000025c                read_command()
+                0x00000000000002b8                move_arm(arm, arm, arm, arm, char, char)
+ .text.startup  0x0000000000000ce4      0xf60 main.o
+                0x0000000000000ce4                main
+ .text          0x0000000000001c44      0x344 soc-hw.o
+                0x0000000000001c44                tic_isr
+                0x0000000000001c78                isr_null
+                0x0000000000001c7c                irq_handler
+                0x0000000000001cd8                isr_init
+                0x0000000000001d04                isr_register
+                0x0000000000001d20                isr_unregister
+                0x0000000000001d48                msleep
+                0x0000000000001d84                nsleep
+                0x0000000000001db8                tic_init
+                0x0000000000001e0c                uart_init
+                0x0000000000001e10                uart_getchar
+                0x0000000000001e38                uart_putchar
+                0x0000000000001e60                uart_putstr
+                0x0000000000001e98                uart1_init
+                0x0000000000001e9c                uart1_getchar
+                0x0000000000001ec4                uart1_putchar
+                0x0000000000001eec                uart1_putstr
+                0x0000000000001f24                fifo_read
+                0x0000000000001f3c                fifo_write
+                0x0000000000001f54                fifo_state
+                0x0000000000001f6c                fifo_reset
+ .text          0x0000000000001f88      0x3c4 pwm.o
+                0x0000000000001f88                pwm::pause()
+                0x0000000000001fa4                pwm::pwm_en(int, unsigned int)
+                0x0000000000002034                pwm::pwm_duty(int, unsigned int)
+                0x00000000000020c4                pwm::pwm_period(int, unsigned int)
+                0x0000000000002154                pwm::pwm_geten(unsigned int)
+                0x00000000000021fc                pwm::pwm_getduty(unsigned int)
+                0x00000000000022a4                pwm::pwm_getperiod(unsigned int)
+ .text          0x000000000000234c      0x3a8 servos.o
+                0x000000000000234c                arm::init()
+                0x00000000000023b0                arm::home()
+                0x00000000000023e4                arm::derecha()
+                0x0000000000002460                arm::izquierda()
+                0x00000000000024dc                arm::set_serv(int, int)
+                0x00000000000025a0                arm::calib(char, int)
+                0x0000000000002634                arm::derecha0()
+                0x0000000000002654                arm::izquierda0()
+                0x0000000000002674                arm::medio0()
+                0x0000000000002694                arm::atras0()
+                0x00000000000026b4                arm::adelante0()
+                0x00000000000026d4                arm::adelante01()
+ .text          0x00000000000026f4      0x43c cam.o
+                0x00000000000026f4                cam::reset()
+                0x0000000000002770                cam::takepicture()
+                0x0000000000002810                cam::getsize()
+                0x00000000000028dc                cam::sendpicture()
+                0x0000000000002a90                cam::stoptaking()
+ .text          0x0000000000002b30     0x22f4 face.o
+                0x0000000000002b30                face::facepictureinit(arm, arm, arm, arm)
+                0x0000000000002ba4                face::facepictureend(arm, arm, arm, arm)
+                0x0000000000002c18                face::R1(arm, arm, arm, arm)
+                0x0000000000002cbc                face::L1(arm, arm, arm, arm)
+                0x0000000000002d60                face::R11(arm, arm, arm, arm)
+                0x0000000000002e04                face::L11(arm, arm, arm, arm)
+                0x0000000000002ea8                face::Face(arm, arm, arm, arm, unsigned int)
+                0x0000000000003eb4                face::Face1(arm, arm, arm, arm, unsigned int)
+                0x0000000000004e24                _etext = .
 
-.rodata         0x00000000000039b0      0x274
-                0x00000000000039b0                . = ALIGN (0x4)
-                0x00000000000039b0                _frodata = .
+.rodata         0x0000000000004e24      0x274
+                0x0000000000004e24                . = ALIGN (0x4)
+                0x0000000000004e24                _frodata = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x00000000000039b0       0x84 main.o
+ .rodata.cst4   0x0000000000004e24       0x84 main.o
  .rodata.str1.4
-                0x0000000000003a34       0xe7 main.o
+                0x0000000000004ea8       0xe7 main.o
                                          0xe8 (tamaño antes de la relajación)
- *fill*         0x0000000000003b1b        0x1 
- .rodata.cst4   0x0000000000003b1c       0x60 soc-hw.o
+ *fill*         0x0000000000004f8f        0x1 
+ .rodata.cst4   0x0000000000004f90       0x60 soc-hw.o
  .rodata.str1.4
-                0x0000000000003b7c       0x14 cam.o
- .rodata.cst4   0x0000000000003b90       0x28 cam.o
- .rodata        0x0000000000003bb8       0x6c cam.o
+                0x0000000000004ff0       0x14 cam.o
+ .rodata.cst4   0x0000000000005004       0x28 cam.o
+ .rodata        0x000000000000502c       0x6c cam.o
  *(.rodata1)
-                0x0000000000003c24                _erodata = .
+                0x0000000000005098                _erodata = .
 
-.data           0x0000000000003c24       0x14
-                0x0000000000003c24                . = ALIGN (0x4)
-                0x0000000000003c24                _fdata = .
+.data           0x0000000000005098       0x14
+                0x0000000000005098                . = ALIGN (0x4)
+                0x0000000000005098                _fdata = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000003c24        0x0 crt0ram.o
- .data          0x0000000000003c24        0x1 main.o
-                0x0000000000003c24                C
- *fill*         0x0000000000003c25        0x3 
- .data          0x0000000000003c28       0x10 soc-hw.o
-                0x0000000000003c28                fifo0
-                0x0000000000003c2c                timer0
-                0x0000000000003c30                uart1
-                0x0000000000003c34                uart0
- .data          0x0000000000003c38        0x0 pwm.o
- .data          0x0000000000003c38        0x0 servos.o
- .data          0x0000000000003c38        0x0 cam.o
- .data          0x0000000000003c38        0x0 face.o
+ .data          0x0000000000005098        0x0 crt0ram.o
+ .data          0x0000000000005098        0x1 main.o
+                0x0000000000005098                C
+ *fill*         0x0000000000005099        0x3 
+ .data          0x000000000000509c       0x10 soc-hw.o
+                0x000000000000509c                fifo0
+                0x00000000000050a0                timer0
+                0x00000000000050a4                uart1
+                0x00000000000050a8                uart0
+ .data          0x00000000000050ac        0x0 pwm.o
+ .data          0x00000000000050ac        0x0 servos.o
+ .data          0x00000000000050ac        0x0 cam.o
+ .data          0x00000000000050ac        0x0 face.o
  *(.data1)
-                0x0000000000003c40                _gp = ALIGN (0x10)
+                0x00000000000050b0                _gp = ALIGN (0x10)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
-                0x0000000000003c38                _edata = .
+                0x00000000000050ac                _edata = .
 
-.bss            0x0000000000003c38       0xb0
-                0x0000000000003c38                . = ALIGN (0x4)
-                0x0000000000003c38                _fbss = .
+.bss            0x00000000000050ac       0xb0
+                0x00000000000050ac                . = ALIGN (0x4)
+                0x00000000000050ac                _fbss = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
  *(.scommon)
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000003c38        0x0 crt0ram.o
- .bss           0x0000000000003c38       0x2c main.o
-                0x0000000000003c38                command_array
-                0x0000000000003c4c                FF
-                0x0000000000003c50                adr
-                0x0000000000003c54                val
-                0x0000000000003c58                dir
-                0x0000000000003c5c                inst
-                0x0000000000003c60                br
- .bss           0x0000000000003c64        0x0 soc-hw.o
- .bss           0x0000000000003c64        0x0 pwm.o
- .bss           0x0000000000003c64        0x0 servos.o
- .bss           0x0000000000003c64        0x0 cam.o
- .bss           0x0000000000003c64        0x0 face.o
+ .bss           0x00000000000050ac        0x0 crt0ram.o
+ .bss           0x00000000000050ac       0x2c main.o
+                0x00000000000050ac                command_array
+                0x00000000000050c0                FF
+                0x00000000000050c4                adr
+                0x00000000000050c8                val
+                0x00000000000050cc                dir
+                0x00000000000050d0                inst
+                0x00000000000050d4                br
+ .bss           0x00000000000050d8        0x0 soc-hw.o
+ .bss           0x00000000000050d8        0x0 pwm.o
+ .bss           0x00000000000050d8        0x0 servos.o
+ .bss           0x00000000000050d8        0x0 cam.o
+ .bss           0x00000000000050d8        0x0 face.o
  *(COMMON)
- COMMON         0x0000000000003c64       0x84 soc-hw.o
-                0x0000000000003c64                isr_table
-                0x0000000000003ce4                tic_msec
-                0x0000000000003ce8                _ebss = .
-                0x0000000000003ce8                _end = .
+ COMMON         0x00000000000050d8       0x84 soc-hw.o
+                0x00000000000050d8                isr_table
+                0x0000000000005158                tic_msec
+                0x000000000000515c                _ebss = .
+                0x000000000000515c                _end = .
                 0x00000000000ffffc                PROVIDE (_fstack = ((ORIGIN (ram) + LENGTH (ram)) - 0x4))
 LOAD crt0ram.o
 LOAD main.o
@@ -173,21 +174,21 @@ LOAD cam.o
 LOAD face.o
 OUTPUT(image elf32-lm32)
 
-.debug_frame    0x0000000000000000      0x614
- .debug_frame   0x0000000000000000       0xb8 main.o
- .debug_frame   0x00000000000000b8      0x178 soc-hw.o
- .debug_frame   0x0000000000000230       0x94 pwm.o
- .debug_frame   0x00000000000002c4      0x164 servos.o
- .debug_frame   0x0000000000000428       0xcc cam.o
- .debug_frame   0x00000000000004f4      0x120 face.o
+.debug_frame    0x0000000000000000      0x648
+ .debug_frame   0x0000000000000000       0xcc main.o
+ .debug_frame   0x00000000000000cc      0x178 soc-hw.o
+ .debug_frame   0x0000000000000244       0x94 pwm.o
+ .debug_frame   0x00000000000002d8      0x184 servos.o
+ .debug_frame   0x000000000000045c       0xcc cam.o
+ .debug_frame   0x0000000000000528      0x120 face.o
 
-.debug_info     0x0000000000000000     0x4f0a
- .debug_info    0x0000000000000000     0x2105 main.o
- .debug_info    0x0000000000002105      0x4e9 soc-hw.o
- .debug_info    0x00000000000025ee      0x520 pwm.o
- .debug_info    0x0000000000002b0e      0x9d5 servos.o
- .debug_info    0x00000000000034e3      0x752 cam.o
- .debug_info    0x0000000000003c35     0x12d5 face.o
+.debug_info     0x0000000000000000     0x5a1a
+ .debug_info    0x0000000000000000     0x2b15 main.o
+ .debug_info    0x0000000000002b15      0x4e9 soc-hw.o
+ .debug_info    0x0000000000002ffe      0x520 pwm.o
+ .debug_info    0x000000000000351e      0xa67 servos.o
+ .debug_info    0x0000000000003f85      0x752 cam.o
+ .debug_info    0x00000000000046d7     0x1343 face.o
 
 .debug_abbrev   0x0000000000000000      0xba3
  .debug_abbrev  0x0000000000000000      0x305 main.o
@@ -197,13 +198,13 @@ OUTPUT(image elf32-lm32)
  .debug_abbrev  0x0000000000000819      0x1aa cam.o
  .debug_abbrev  0x00000000000009c3      0x1e0 face.o
 
-.debug_loc      0x0000000000000000      0xc90
- .debug_loc     0x0000000000000000      0x224 main.o
- .debug_loc     0x0000000000000224      0x15e soc-hw.o
- .debug_loc     0x0000000000000382      0x201 pwm.o
- .debug_loc     0x0000000000000583      0x1cf servos.o
- .debug_loc     0x0000000000000752      0x1fa cam.o
- .debug_loc     0x000000000000094c      0x344 face.o
+.debug_loc      0x0000000000000000      0xc8e
+ .debug_loc     0x0000000000000000      0x1db main.o
+ .debug_loc     0x00000000000001db      0x15e soc-hw.o
+ .debug_loc     0x0000000000000339      0x201 pwm.o
+ .debug_loc     0x000000000000053a      0x1f0 servos.o
+ .debug_loc     0x000000000000072a      0x1fa cam.o
+ .debug_loc     0x0000000000000924      0x36a face.o
 
 .debug_aranges  0x0000000000000000       0xc8
  .debug_aranges
@@ -219,32 +220,32 @@ OUTPUT(image elf32-lm32)
  .debug_aranges
                 0x00000000000000a8       0x20 face.o
 
-.debug_ranges   0x0000000000000000       0xc8
- .debug_ranges  0x0000000000000000       0x68 main.o
- .debug_ranges  0x0000000000000068       0x18 soc-hw.o
- .debug_ranges  0x0000000000000080       0x48 face.o
+.debug_ranges   0x0000000000000000       0xe0
+ .debug_ranges  0x0000000000000000       0x80 main.o
+ .debug_ranges  0x0000000000000080       0x18 soc-hw.o
+ .debug_ranges  0x0000000000000098       0x48 face.o
 
-.debug_line     0x0000000000000000     0x226d
- .debug_line    0x0000000000000000      0xbe1 main.o
- .debug_line    0x0000000000000be1      0x3dd soc-hw.o
- .debug_line    0x0000000000000fbe      0x614 pwm.o
- .debug_line    0x00000000000015d2      0x33b servos.o
- .debug_line    0x000000000000190d      0x34c cam.o
- .debug_line    0x0000000000001c59      0x614 face.o
+.debug_line     0x0000000000000000     0x275e
+ .debug_line    0x0000000000000000     0x102c main.o
+ .debug_line    0x000000000000102c      0x3dd soc-hw.o
+ .debug_line    0x0000000000001409      0x614 pwm.o
+ .debug_line    0x0000000000001a1d      0x3e1 servos.o
+ .debug_line    0x0000000000001dfe      0x34c cam.o
+ .debug_line    0x000000000000214a      0x614 face.o
 
-.debug_str      0x0000000000000000      0x87c
- .debug_str     0x0000000000000000      0x6cf main.o
-                                        0x700 (tamaño antes de la relajación)
- .debug_str     0x00000000000006cf      0x189 soc-hw.o
+.debug_str      0x0000000000000000      0x8b1
+ .debug_str     0x0000000000000000      0x704 main.o
+                                        0x735 (tamaño antes de la relajación)
+ .debug_str     0x0000000000000704      0x189 soc-hw.o
                                         0x288 (tamaño antes de la relajación)
- .debug_str     0x0000000000000858        0x8 pwm.o
+ .debug_str     0x000000000000088d        0x8 pwm.o
                                         0x2bc (tamaño antes de la relajación)
- .debug_str     0x0000000000000860        0xb servos.o
-                                        0x3e8 (tamaño antes de la relajación)
- .debug_str     0x000000000000086b        0x8 cam.o
+ .debug_str     0x0000000000000895        0xb servos.o
+                                        0x41d (tamaño antes de la relajación)
+ .debug_str     0x00000000000008a0        0x8 cam.o
                                         0x283 (tamaño antes de la relajación)
- .debug_str     0x0000000000000873        0x9 face.o
-                                        0x515 (tamaño antes de la relajación)
+ .debug_str     0x00000000000008a8        0x9 face.o
+                                        0x54a (tamaño antes de la relajación)
 
 .comment        0x0000000000000000       0x11
  .comment       0x0000000000000000       0x11 main.o

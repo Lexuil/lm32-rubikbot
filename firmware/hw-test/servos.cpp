@@ -47,6 +47,13 @@ void arm::set_serv(int x,int y){
 	atr = 0x30;
 	ade = 0x17;
 
+	der1 = 0x29;
+	iz1  = 0x09;
+	mid1 = 0x18;
+
+	atr1 = 0x30;
+	ade1 = 0x17;
+
 	pwm_period(serv1,200);
 	pwm_period(serv2,200);
 	pwm_duty(serv1,mid);
@@ -72,29 +79,47 @@ void arm::calib(char dir,int val){
 	if(dir == 0x24){
 		ade = val;
 	}
+	if(dir == 0x25){
+		der1 = val;
+	}
+	if(dir == 0x26){
+		iz1 = val;
+	}
+	if(dir == 0x27){
+		mid1 = val;
+	}
+	if(dir == 0x28){
+		atr1 = val;
+	}
+	if(dir == 0x29){
+		ade1 = val;
+	}
 };
 
 void arm::derecha0(){
-	pwm_duty(serv1,der);
+	pwm_duty(serv1,der1);
 };
 
 
 void arm::izquierda0(){
-	pwm_duty(serv1,iz);
+	pwm_duty(serv1,iz1);
 };
 
 
 void arm::medio0(){
-	pwm_duty(serv1,mid);
+	pwm_duty(serv1,mid1);
 };
 
 
 void arm::atras0(){
-	pwm_duty(serv2,atr);
+	pwm_duty(serv2,atr1);
 };
 
 
 void arm::adelante0(){
+	pwm_duty(serv2,ade1);
+};
+void arm::adelante01(){
 	pwm_duty(serv2,ade);
 };
 

@@ -66,42 +66,45 @@ void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){
 				uart_putstr("F'"); // Moves ARM 1 (Cube's Front Face --GREEN--) to the LEFT
 			}
 			if (b == 0x55){
-				arm1.atras0();
-				arm3.atras0();
-				msleep(1000);
-				arm2.derecha0();
-				arm4.izquierda0();
-				msleep(1000);
 				arm1.adelante0();
 				arm3.adelante0();
 				msleep(1000);
 				arm2.atras0();
 				arm4.atras0();
 				msleep(1000);
-				arm2.medio0();
-				arm4.medio0();
+				arm1.derecha0();
+				arm3.izquierda0();
 				msleep(1000);
 				arm2.adelante0();
 				arm4.adelante0();
 				msleep(1000);
-				arm1.izquierda();
 				arm1.atras0();
 				arm3.atras0();
 				msleep(1000);
-				arm2.izquierda0();
-				arm4.derecha0();
+				arm1.medio0();
+				arm3.medio0();
 				msleep(1000);
 				arm1.adelante0();
 				arm3.adelante0();
 				msleep(1000);
+				arm4.izquierda();
 				arm2.atras0();
 				arm4.atras0();
 				msleep(1000);
-				arm2.medio0();
-				arm4.medio0();
+				arm1.izquierda0();
+				arm3.derecha0();
 				msleep(1000);
 				arm2.adelante0();
 				arm4.adelante0();
+				msleep(1000);
+				arm1.atras0();
+				arm3.atras0();
+				msleep(1000);
+				arm1.medio0();
+				arm3.medio0();
+				msleep(1000);
+				arm1.adelante0();
+				arm3.adelante0();
 				uart_putstr("U'"); // Moves ARM 1 (Cube's Upper Face --YELLOW--) to the RIGHT
 			}
 			if (b == 0x44){
@@ -139,12 +142,14 @@ void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){
 				arm2.medio0();
 				arm4.medio0();
 				msleep(1000);
-				arm2.adelante0();
-				arm4.adelante0();
+				arm2.adelante01();
+				arm4.adelante01();
+				msleep(1000);
+				uart_putstr("D "); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
 				uart_putstr("D'"); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
 			}
-	}
-	else {
+	}else if(c == 0x32){
+		for(int i = 0; i < 2; i++){
 			if (b == 0x52){
 				arm4.derecha();
 				uart_putstr("R "); // Moves ARM 1 (Cube's Right Face --ORANGE--) to the RIGHT
@@ -152,7 +157,7 @@ void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){
 			if (b == 0x42){
 				arm3.derecha();
 				uart_putstr("B "); // Moves ARM 1 (Cube's Back Face --BLUE--) to the RIGHT	
-			}		
+			}
 			if (b == 0x4C){
 				arm2.derecha();
 				uart_putstr("L "); // Moves ARM 1 (Cube's Left Face --RED--) to the RIGHT
@@ -162,50 +167,46 @@ void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){
 				uart_putstr("F "); // Moves ARM 1 (Cube's Front Face --GREEN--) to the RIGHT
 			}
 			if (b == 0x55){
-				arm1.atras0();
-				arm3.atras0();
-				msleep(1000);
-				arm2.calib(0x24,0x09);
-				arm4.calib(0x24,0x09);
-				arm2.adelante0();
-				arm4.adelante0();
-				msleep(500);
-				arm2.derecha0();
-				arm4.izquierda0();
-				msleep(1000);
 				arm1.adelante0();
 				arm3.adelante0();
 				msleep(1000);
 				arm2.atras0();
 				arm4.atras0();
 				msleep(1000);
-				arm2.medio0();
-				arm4.medio0();
+				arm1.derecha0();
+				arm3.izquierda0();
 				msleep(1000);
 				arm2.adelante0();
 				arm4.adelante0();
 				msleep(1000);
-				arm1.derecha();
 				arm1.atras0();
 				arm3.atras0();
 				msleep(1000);
-				arm2.izquierda0();
-				arm4.derecha0();
+				arm1.medio0();
+				arm3.medio0();
 				msleep(1000);
 				arm1.adelante0();
 				arm3.adelante0();
 				msleep(1000);
+				arm4.derecha();
 				arm2.atras0();
 				arm4.atras0();
 				msleep(1000);
-				arm2.medio0();
-				arm4.medio0();
+				arm1.izquierda0();
+				arm3.derecha0();
 				msleep(1000);
-				arm2.calib(0x24,0x12);
-				arm4.calib(0x24,0x15);
 				arm2.adelante0();
 				arm4.adelante0();
-				msleep(500);
+				msleep(1000);
+				arm1.atras0();
+				arm3.atras0();
+				msleep(1000);
+				arm1.medio0();
+				arm3.medio0();
+				msleep(1000);
+				arm1.adelante01();
+				arm3.adelante01();
+				msleep(1000);
 
 				uart_putstr("U "); // Moves ARM 1 (Cube's Upper Face --YELLOW--) to the RIGHT
 			}
@@ -246,9 +247,115 @@ void move_arm(arm arm1, arm arm2, arm arm3, arm arm4,char b, char c){
 				msleep(1000);
 				arm2.adelante0();
 				arm4.adelante0();
+				msleep(1000);
 				uart_putstr("D "); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
 			}
+
 		}
+	}
+	else {
+		if (b == 0x52){
+			arm4.derecha();
+			uart_putstr("R "); // Moves ARM 1 (Cube's Right Face --ORANGE--) to the RIGHT
+		}
+		if (b == 0x42){
+			arm3.derecha();
+			uart_putstr("B "); // Moves ARM 1 (Cube's Back Face --BLUE--) to the RIGHT	
+		}
+		if (b == 0x4C){
+			arm2.derecha();
+			uart_putstr("L "); // Moves ARM 1 (Cube's Left Face --RED--) to the RIGHT
+		}
+		if (b == 0x46){
+			arm1.derecha();
+			uart_putstr("F "); // Moves ARM 1 (Cube's Front Face --GREEN--) to the RIGHT
+		}
+		if (b == 0x55){
+			arm1.adelante0();
+			arm3.adelante0();
+			msleep(1000);
+			arm2.atras0();
+			arm4.atras0();
+			msleep(1000);
+			arm1.derecha0();
+			arm3.izquierda0();
+			msleep(1000);
+			arm2.adelante0();
+			arm4.adelante0();
+			msleep(1000);
+			arm1.atras0();
+			arm3.atras0();
+			msleep(1000);
+			arm1.medio0();
+			arm3.medio0();
+			msleep(1000);
+			arm1.adelante0();
+			arm3.adelante0();
+			msleep(1000);
+			arm4.derecha();
+			arm2.atras0();
+			arm4.atras0();
+			msleep(1000);
+			arm1.izquierda0();
+			arm3.derecha0();
+			msleep(1000);
+			arm2.adelante0();
+			arm4.adelante0();
+			msleep(1000);
+			arm1.atras0();
+			arm3.atras0();
+			msleep(1000);
+			arm1.medio0();
+			arm3.medio0();
+			msleep(1000);
+			arm1.adelante01();
+			arm3.adelante01();
+			msleep(1000);
+
+			uart_putstr("U "); // Moves ARM 1 (Cube's Upper Face --YELLOW--) to the RIGHT
+		}
+		if (b == 0x44){
+			arm1.atras0();
+			arm3.atras0();
+			msleep(1000);
+			arm2.izquierda0();
+			arm4.derecha0();
+			msleep(1000);
+			arm1.adelante0();
+			arm3.adelante0();
+			msleep(1000);
+			arm2.atras0();
+			arm4.atras0();
+			msleep(1000);
+			arm2.medio0();
+			arm4.medio0();
+			msleep(1000);
+			arm2.adelante0();
+			arm4.adelante0();
+			msleep(1000);
+			arm1.derecha();
+			arm1.atras0();
+			arm3.atras0();
+			msleep(1000);
+			arm2.derecha0();
+			arm4.izquierda0();
+			msleep(1000);
+			arm1.adelante0();
+			arm3.adelante0();
+			msleep(1000);
+			arm2.atras0();
+			arm4.atras0();
+			msleep(1000);
+			arm2.medio0();
+			arm4.medio0();
+			msleep(1000);
+			arm2.adelante0();
+			arm4.adelante0();
+			msleep(1000);
+			uart_putstr("D "); // Moves ARM 1 (Cube's Down Face --WHITE--) to the RIGHT
+		}
+	}
+	
 }
 
 int main(){
@@ -274,25 +381,45 @@ int main(){
 	arm1.calib(0x21,0x03);
 	arm1.calib(0x22,0x17);
 	arm1.calib(0x23,0x32);
-	arm1.calib(0x24,0x0C);
+	arm1.calib(0x24,0x0E);
+	arm1.calib(0x25,0x27);
+	arm1.calib(0x26,0x08);
+	arm1.calib(0x27,0x17);
+	arm1.calib(0x28,0x32);
+	arm1.calib(0x29,0x09);
 
 	arm2.calib(0x20,0x29);
 	arm2.calib(0x21,0x05);
 	arm2.calib(0x22,0x18);
 	arm2.calib(0x23,0x30);
-	arm2.calib(0x24,0x12);
+	arm2.calib(0x24,0x11);
+	arm2.calib(0x25,0x2B);
+	arm2.calib(0x26,0x08);
+	arm2.calib(0x27,0x18);
+	arm2.calib(0x28,0x30);
+	arm2.calib(0x29,0x10);
 
-	arm3.calib(0x20,0x2A);
+	arm3.calib(0x20,0x2B);
 	arm3.calib(0x21,0x05);
 	arm3.calib(0x22,0x18);
 	arm3.calib(0x23,0x30);
-	arm3.calib(0x24,0x12);
+	arm3.calib(0x24,0x11);
+	arm3.calib(0x25,0x27);
+	arm3.calib(0x26,0x08);
+	arm3.calib(0x27,0x18);
+	arm3.calib(0x28,0x30);
+	arm3.calib(0x29,0x10);
 
 	arm4.calib(0x20,0x2A);
 	arm4.calib(0x21,0x08);
 	arm4.calib(0x22,0x18);
 	arm4.calib(0x23,0x30);
-	arm4.calib(0x24,0x15);
+	arm4.calib(0x24,0x16);
+	arm4.calib(0x25,0x27);
+	arm4.calib(0x26,0x08);
+	arm4.calib(0x27,0x18);
+	arm4.calib(0x28,0x30);
+	arm4.calib(0x29,0x13);
 
 	uart_putstr("Ready");
 
